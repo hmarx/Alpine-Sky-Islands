@@ -1,0 +1,1490 @@
+input_name,accepted_name,name_class,ncbi_id
+Abies alba,Abies alba,scientific name,45372
+Acer campestre,Acer campestre,scientific name,66205
+Acer monspessulanum,Acer monspessulanum,scientific name,168566
+Acer opalus,Acer opalus,scientific name,168567
+Acer platanoides,Acer platanoides,scientific name,4025
+Acer pseudoplatanus,Acer pseudoplatanus,scientific name,4026
+Achillea distans,Achillea distans,scientific name,282733
+Achillea macrophylla,Achillea macrophylla,scientific name,282746
+Achillea millefolium,Achillea millefolium,scientific name,13329
+Achillea nana,Achillea nana,scientific name,282752
+Achillea nobilis,Achillea nobilis,scientific name,282753
+Achillea roseo-alba,Achillea roseoalba,synonym,282763
+Achillea stricta,,,
+Achnatherum calamagrostis,Achnatherum calamagrostis,scientific name,487912
+Acinos alpinus,Clinopodium alpinum,synonym,224743
+Acinos arvensis,Clinopodium acinos,synonym,306377
+Aconitum anthora,Aconitum anthora,scientific name,112588
+Aconitum lycoctonum,Aconitum lycoctonum,scientific name,112589
+Aconitum variegatum,Aconitum variegatum,scientific name,112594
+Actaea spicata,Actaea spicata,scientific name,64025
+Adenostyles alliariae,,,
+Adenostyles alpina,Adenostyles alpina,scientific name,462377
+Adenostyles leucophylla,Adenostyles leucophylla,scientific name,217500
+Adonis aestivalis,Adonis aestivalis,scientific name,113211
+Adoxa moschatellina,Adoxa moschatellina,scientific name,4208
+Aegopodium podagraria,Aegopodium podagraria,scientific name,40902
+Aethionema saxatile,Aethionema saxatile,scientific name,202778
+Aethusa cynapium,Aethusa cynapium,scientific name,40954
+Agrimonia eupatoria,Agrimonia eupatoria,scientific name,57912
+Agrostis alpina,,,
+Agrostis capillaris,Agrostis capillaris,scientific name,204232
+Agrostis rupestris,,,
+Agrostis schraderiana,,,
+Agrostis stolonifera,Agrostis stolonifera,scientific name,63632
+Ajuga chamaepitys,Ajuga chamaepitys,scientific name,49984
+Ajuga genevensis,,,
+Ajuga pyramidalis,,,
+Ajuga reptans,Ajuga reptans,scientific name,38596
+Alchemilla alpigena,,,
+Alchemilla alpina,Alchemilla alpina,scientific name,57943
+Alchemilla amphibola,,,
+Alchemilla chirophylla,,,
+Alchemilla conjuncta,,,
+Alchemilla connivens,,,
+Alchemilla coriacea,Alchemilla coriacea,scientific name,478296
+Alchemilla decumbens,Alchemilla decumbens,scientific name,478299
+Alchemilla fallax,Alchemilla fallax,scientific name,478307
+Alchemilla fissa,Alchemilla fissa,scientific name,478309
+Alchemilla flabellata,Alchemilla flabellata,scientific name,478310
+Alchemilla flavovirens,,,
+Alchemilla glabra,Alchemilla glabra,scientific name,1155248
+Alchemilla glaucescens,Alchemilla glaucescens,scientific name,667203
+Alchemilla incisa,Alchemilla incisa,scientific name,478321
+Alchemilla micans,,,
+Alchemilla monticola,,,
+Alchemilla nitida,Alchemilla nitida,scientific name,478330
+Alchemilla pallens,,,
+Alchemilla pentaphyllea,Alchemilla pentaphyllea,scientific name,478333
+Alchemilla plicata,Alchemilla plicata,scientific name,478334
+Alchemilla saxatilis,Alchemilla saxatilis,scientific name,478338
+Alchemilla splendens,Alchemilla splendens,scientific name,478341
+Alchemilla subcrenata,,,
+Alchemilla transiens,Alchemilla transiens,scientific name,478348
+Alchemilla xanthochlora,Alchemilla xanthochlora,scientific name,1155249
+Alisma plantago-aquatica,Alisma plantago-aquatica,scientific name,15000
+Alliaria petiolata,Alliaria petiolata,scientific name,126270
+Allium flavum,Allium flavum,scientific name,138322
+Allium lineare,Allium lineare,scientific name,165631
+Allium lusitanicum,Allium lusitanicum,scientific name,165632
+Allium oleraceum,Allium oleraceum,scientific name,467612
+Allium schoenoprasum,Allium schoenoprasum,scientific name,74900
+Allium scorodoprasum,Allium scorodoprasum,scientific name,166823
+Allium sphaerocephalon,Allium sphaerocephalon,scientific name,166824
+Allium ursinum,Allium ursinum,scientific name,4684
+Allium victorialis,Allium victorialis,scientific name,88845
+Alnus alnobetula,Alnus alnobetula,scientific name,38784
+Alnus glutinosa,Alnus glutinosa,scientific name,3517
+Alnus incana,Alnus incana,scientific name,3516
+Alopecurus alpinus,,,
+Alopecurus myosuroides,Alopecurus myosuroides,scientific name,81473
+Alyssoides utriculata,Alyssoides utriculata,scientific name,457762
+Alyssum alpestre,Alyssum alpestre,scientific name,226019
+Alyssum alyssoides,Alyssum alyssoides,scientific name,169068
+Amelanchier ovalis,Amelanchier ovalis,scientific name,1000415
+Anacamptis morio,Anacamptis morio,scientific name,59340
+Anagallis arvensis,Anagallis arvensis,scientific name,4337
+Androsace adfinis,Androsace adfinis,scientific name,229423
+Androsace carnea,,,
+Androsace helvetica,Androsace helvetica,scientific name,199610
+Androsace maxima,Androsace maxima,scientific name,229449
+Androsace obtusifolia,Androsace obtusifolia,scientific name,229450
+Androsace pubescens,Androsace pubescens,scientific name,229451
+Androsace vandellii,Androsace vandellii,scientific name,229460
+Androsace vitaliana,Androsace vitaliana,scientific name,439397
+Anemone baldensis,Anemone baldensis,scientific name,1077386
+Anemone hepatica,Hepatica nobilis,synonym,168011
+Anemone narcissiflora,Anemone narcissiflora,scientific name,168002
+Anemone narcissifolia,Anemone narcissiflora,synonym,168002
+Anemone ranunculoides,Anemone ranunculoides,scientific name,168005
+Angelica sylvestris,Angelica sylvestris,scientific name,54703
+Antennaria carpatica,Antennaria carpatica,scientific name,49050
+Antennaria dioica,Antennaria dioica,scientific name,49054
+Anthericum liliago,Anthericum liliago,scientific name,51434
+Anthoxanthum odoratum,Anthoxanthum odoratum,scientific name,29661
+Anthriscus sylvestris,Anthriscus sylvestris,scientific name,48027
+Anthyllis montana,Anthyllis montana,scientific name,168124
+Anthyllis vulneraria,Anthyllis vulneraria,scientific name,118891
+Antirrhinum latifolium,Antirrhinum latifolium,scientific name,237483
+Aquilegia alpina,Aquilegia alpina,scientific name,218850
+Aquilegia vulgaris,Aquilegia vulgaris,scientific name,3451
+Arabidopsis thaliana,Arabidopsis thaliana,scientific name,3702
+Arabis allionii,,,
+Arabis alpina,Arabis alpina,scientific name,50452
+Arabis auriculata,Arabis auriculata,scientific name,571350
+Arabis caerulea,Arabis caerulea,scientific name,586519
+Arabis ciliata,Arabis ciliata,scientific name,571353
+Arabis collina,Arabis collina,scientific name,571354
+Arabis hirsuta,Arabis hirsuta,scientific name,78191
+Arabis nova,Arabis nova,scientific name,571360
+Arabis sagittata,Arabis sagittata,scientific name,571369
+Arabis soyeri,Arabis soyeri,scientific name,208901
+Arabis turrita,Pseudoturritis turrita,synonym,81982
+Arctium minus,Arctium minus,scientific name,143172
+Arctium nemorosum,,,
+Arctostaphylos uva-ursi,Arctostaphylos uva-ursi,scientific name,84009
+Arenaria biflora,,,
+Arenaria gothica,,,
+Arenaria leptoclados,Arenaria leptoclados,scientific name,693400
+Arenaria serpyllifolia,Arenaria serpyllifolia,scientific name,254029
+Armeria alpina,Armeria alpina,scientific name,71836
+Armeria arenaria,Armeria arenaria,scientific name,218559
+Arnica montana,Arnica montana,scientific name,436207
+Arrhenatherum elatius,Arrhenatherum elatius,scientific name,52139
+Artemisia absinthium,Artemisia absinthium,scientific name,72332
+Artemisia alba,Artemisia alba,scientific name,1227615
+Artemisia atrata,Artemisia atrata,scientific name,669120
+Artemisia campestris,Artemisia campestris,scientific name,72337
+Artemisia eriantha,Artemisia eriantha,scientific name,333950
+Artemisia genipi,Artemisia genipi,scientific name,223866
+Artemisia umbelliformis,Artemisia umbelliformis,scientific name,72355
+Artemisia vulgaris,Artemisia vulgaris,scientific name,4220
+Arum maculatum,Arum maculatum,scientific name,4458
+Aruncus dioicus,Aruncus dioicus,scientific name,32220
+Asarum europaeum,Asarum europaeum,scientific name,49456
+Asparagus tenuifolius,,,
+Asperugo procumbens,Asperugo procumbens,scientific name,581244
+Asperula cynanchica,Asperula cynanchica,scientific name,35891
+Asphodelus albus,Asphodelus albus,scientific name,207931
+Asphodelus macrocarpus,,,
+Asplenium adiantum-nigrum,Asplenium adiantum-nigrum,scientific name,169373
+Asplenium ceterach,Asplenium ceterach,scientific name,147945
+Asplenium fontanum,Asplenium fontanum,scientific name,169376
+Asplenium ruta-muraria,Asplenium ruta-muraria,scientific name,169379
+Asplenium septentrionale,Asplenium septentrionale,scientific name,169380
+Asplenium trichomanes,Asplenium trichomanes,scientific name,78464
+Asplenium viride,Asplenium viride,scientific name,147940
+Aster alpinus,Aster alpinus,scientific name,669631
+Aster bellidiastrum,Aster bellidiastrum,scientific name,191233
+Aster novi-belgii,Symphyotrichum novi-belgii,synonym,199233
+Astragalus alpinus,Astragalus alpinus,scientific name,20403
+Astragalus australis,Astragalus australis,scientific name,90161
+Astragalus austriacus,Astragalus austriacus,scientific name,339474
+Astragalus cicer,Astragalus cicer,scientific name,20410
+Astragalus danicus,Astragalus danicus,scientific name,512688
+Astragalus depressus,Astragalus depressus,scientific name,339484
+Astragalus glycyphyllos,Astragalus glycyphyllos,scientific name,83862
+Astragalus hypoglottis,,,
+Astragalus monspessulanus,Astragalus monspessulanus,scientific name,287756
+Astragalus onobrychis,Astragalus onobrychis,scientific name,1091133
+Astragalus penduliflorus,Astragalus penduliflorus,scientific name,158323
+Astragalus sempervirens,,,
+Astragalus stella,,,
+Astragalus vesicarius,Astragalus vesicarius,scientific name,713681
+Astrantia major,Astrantia major,scientific name,52448
+Astrantia minor,Astrantia minor,scientific name,155272
+Athamanta cretensis,Athamanta cretensis,scientific name,109084
+Athyrium distentifolium,Athyrium distentifolium,scientific name,157494
+Athyrium filix-femina,Athyrium filix-femina,scientific name,32110
+Atropa belladonna,Atropa belladonna,scientific name,33113
+Avenula pratensis,Helictochloa pratensis,synonym,49770
+Avenula pubescens,Helictotrichon pubescens,synonym,87471
+Avenula versicolor,,,
+Barbarea intermedia,Barbarea intermedia,scientific name,264400
+Barbarea vulgaris,Barbarea vulgaris,scientific name,50459
+Bartsia alpina,Bartsia alpina,scientific name,46052
+Bellardiochloa variegata,Bellardiochloa variegata,scientific name,368336
+Bellidiastrum michelii,Aster bellidiastrum,synonym,191233
+Berardia subacaulis,Berardia subacaulis,scientific name,143176
+Berberis vulgaris,Berberis vulgaris,scientific name,258209
+Betula alba,Betula pubescens,synonym,38787
+Betula pendula,Betula pendula,scientific name,3505
+Betula pubescens,Betula pubescens,scientific name,38787
+Biscutella laevigata,Biscutella laevigata,scientific name,264427
+Blackstonia perfoliata,Blackstonia perfoliata,scientific name,82736
+Blechnum spicant,Blechnum spicant,scientific name,114457
+Blysmus compressus,Blysmus compressus,scientific name,130937
+Bombycilaena erecta,Bombycilaena erecta,scientific name,702209
+Bothriochloa ischaemum,Bothriochloa ischaemum,scientific name,29660
+Botrychium lunaria,Botrychium lunaria,scientific name,37231
+Botrychium Swartz,,,
+Brachypodium pinnatum,Brachypodium pinnatum,scientific name,29663
+Brachypodium rupestre,Brachypodium rupestre,scientific name,52143
+Brachypodium sylvaticum,Brachypodium sylvaticum,scientific name,29664
+Brassica repanda,Brassica repanda,scientific name,308267
+Briza media,Briza media,scientific name,281077
+Bromus benekenii,Bromopsis benekenii,synonym,1155254
+Bromus erectus,Bromus erectus,scientific name,29666
+Bromus hordeaceus,Bromus hordeaceus,scientific name,52147
+Bromus inermis,Bromus inermis,scientific name,15371
+Bromus squarrosus,Bromus squarrosus,scientific name,55762
+Bromus sterilis,Bromus sterilis,scientific name,55777
+Bromus tectorum,Bromus tectorum,scientific name,29667
+Bryonia dioica,Bryonia dioica,scientific name,3652
+Buddleja davidii,Buddleja davidii,scientific name,28540
+Bulbocodium vernum,Colchicum vernum,synonym,225779
+Bunias orientalis,Bunias orientalis,scientific name,358661
+Bunium bulbocastanum,Bunium bulbocastanum,scientific name,377473
+Buphthalmum salicifolium,Buphthalmum salicifolium,scientific name,56523
+Bupleurum alpigenum,,,
+Bupleurum falcatum,Bupleurum falcatum,scientific name,46367
+Bupleurum longifolium,Bupleurum longifolium,scientific name,198846
+Bupleurum petraeum,,,
+Bupleurum ranunculoides,Bupleurum ranunculoides,scientific name,52452
+Bupleurum rotundifolium,Bupleurum rotundifolium,scientific name,90446
+Bupleurum stellatum,Bupleurum stellatum,scientific name,199753
+Buxus sempervirens,Buxus sempervirens,scientific name,4002
+Calamagrostis epigejos,Calamagrostis epigeios,synonym,29668
+Calamagrostis pseudophragmites,Calamagrostis pseudophragmites,scientific name,535810
+Calamagrostis varia,Calamagrostis varia,scientific name,1000416
+Calamagrostis villosa,Calamagrostis villosa,scientific name,258806
+Calamintha grandiflora,,,
+Calamintha nepeta,,,
+Callianthemum coriandrifolium,Callianthemum coriandrifolium,scientific name,253619
+Calluna vulgaris,Calluna vulgaris,scientific name,13385
+Caltha palustris,Caltha palustris,scientific name,3449
+Calystegia sepium,Calystegia sepium,scientific name,47519
+Camelina microcarpa,Camelina microcarpa,scientific name,71324
+Campanula alpestris,Campanula alpestris,scientific name,440356
+Campanula cenisia,Campanula cenisia,scientific name,361375
+Campanula cochleariifolia,Campanula cochleariifolia,scientific name,428162
+Campanula glomerata,Campanula glomerata,scientific name,82281
+Campanula latifolia,Campanula latifolia,scientific name,239410
+Campanula patula,Campanula patula,scientific name,440359
+Campanula persicifolia,Campanula persicifolia,scientific name,239416
+Campanula rapunculoides,Campanula rapunculoides,scientific name,209536
+Campanula rhomboidalis,Campanula rhomboidalis,scientific name,649663
+Campanula rotundifolia,Campanula rotundifolia,scientific name,239422
+Campanula scheuchzeri,Campanula scheuchzeri,scientific name,361399
+Campanula spicata,Campanula spicata,scientific name,361401
+Campanula trachelium,Campanula trachelium,scientific name,85178
+Capsella bursa-pastoris,Capsella bursa-pastoris,scientific name,3719
+Cardamine alpina,Cardamine alpina,scientific name,352360
+Cardamine bellidifolia,Cardamine bellidifolia,scientific name,109591
+Cardamine heptaphylla,Cardamine heptaphylla,scientific name,558121
+Cardamine hirsuta,Cardamine hirsuta,scientific name,50463
+Cardamine impatiens,Cardamine impatiens,scientific name,82286
+Cardamine pentaphyllos,Cardamine pentaphyllos,scientific name,82288
+Cardamine resedifolia,Cardamine resedifolia,scientific name,352370
+Carduus acanthoides,Carduus acanthoides,scientific name,416131
+Carduus carlinifolius,,,
+Carduus defloratus,Carduus defloratus,scientific name,313513
+Carduus medius,,,
+Carduus nutans,Carduus nutans,scientific name,92906
+Carduus personata,,,
+Carex acutiformis,Carex acutiformis,scientific name,140783
+Carex alba,Carex alba,scientific name,241195
+Carex atrata,Carex atrata,scientific name,241196
+Carex capillaris,Carex capillaris,scientific name,241203
+Carex caryophyllea,Carex caryophyllea,scientific name,502401
+Carex cuprina,Carex cuprina,scientific name,614180
+Carex curvula,Carex curvula,scientific name,234476
+Carex davalliana,Carex davalliana,scientific name,240674
+Carex digitata,Carex digitata,scientific name,140805
+Carex echinata,Carex echinata,scientific name,234467
+Carex elata,Carex elata,scientific name,241206
+Carex ferruginea,Carex ferruginea,scientific name,241208
+Carex fimbriata,Carex fimbriata,scientific name,502412
+Carex flacca,Carex flacca,scientific name,140814
+Carex flava,Carex flava,scientific name,140816
+Carex foetida,Carex foetida,scientific name,240675
+Carex frigida,Carex frigida,scientific name,241209
+Carex halleriana,Carex halleriana,scientific name,529425
+Carex hirta,Carex hirta,scientific name,15193
+Carex hordeistichos,,,
+Carex hostiana,Carex hostiana,scientific name,13399
+Carex humilis,Carex humilis,scientific name,140822
+Carex liparocarpos,Carex liparocarpos,scientific name,241215
+Carex montana,Carex montana,scientific name,140837
+Carex myosuroides,,,
+Carex nigra,Carex nigra,scientific name,234464
+Carex ornithopoda,Carex ornithopoda,scientific name,241222
+Carex ovalis,Carex ovalis,scientific name,140840
+Carex pairae,Carex pairae,scientific name,502425
+Carex pallescens,Carex pallescens,scientific name,140842
+Carex panicea,Carex panicea,scientific name,241224
+Carex paniculata,Carex paniculata,scientific name,240683
+Carex parviflora,Carex parviflora,scientific name,241225
+Carex rostrata,Carex rostrata,scientific name,241230
+Carex rupestris,Carex rupestris,scientific name,100286
+Carex sempervirens,Carex sempervirens,scientific name,241232
+Carex spicata,Carex spicata,scientific name,240682
+Carex sylvatica,Carex sylvatica,scientific name,241234
+Carex tomentosa,Carex tomentosa,scientific name,140859
+Carex vesicaria,Carex vesicaria,scientific name,241236
+Carex viridula,Carex viridula,scientific name,241237
+Carlina acanthifolia,Carlina acanthifolia,scientific name,143181
+Carlina acaulis,Carlina acaulis,scientific name,538471
+Carlina vulgaris,Carlina vulgaris,scientific name,41500
+Carum carvi,Carum carvi,scientific name,48032
+Catananche caerulea,Catananche caerulea,scientific name,114285
+Caucalis platycarpos,Caucalis platycarpos,scientific name,52456
+Cedrus atlantica,Cedrus atlantica,scientific name,123597
+Centaurea cyanus,Centaurea cyanus,scientific name,41522
+Centaurea jacea,Centaurea jacea,scientific name,351340
+Centaurea leucophaea,Centaurea leucophaea,scientific name,124930
+Centaurea montana,Centaurea montana,scientific name,41537
+Centaurea scabiosa,Centaurea scabiosa,scientific name,145517
+Centaurea solstitialis,Centaurea solstitialis,scientific name,347529
+Centaurea stoebe,Centaurea stoebe,scientific name,72152
+Centaurea timbalii,,,
+Centaurea uniflora,Centaurea uniflora,scientific name,1000417
+Centaurium erythraea,Centaurium erythraea,scientific name,172057
+Centranthus angustifolius,Centranthus angustifolius,scientific name,245818
+Cephalanthera damasonium,Cephalanthera damasonium,scientific name,78719
+Cephalanthera longifolia,Cephalanthera longifolia,scientific name,210729
+Cephalanthera rubra,Cephalanthera rubra,scientific name,210728
+Cephalaria alpina,,,
+Cerastium alpinum,Cerastium alpinum,scientific name,271556
+Cerastium arvense,Cerastium arvense,scientific name,271558
+Cerastium cerastoides,Cerastium cerastoides,scientific name,271580
+Cerastium fontanum,Cerastium fontanum,scientific name,230722
+Cerastium latifolium,Cerastium latifolium,scientific name,271544
+Cerastium pedunculatum,Cerastium pedunculatum,scientific name,271594
+Cerastium pumilum,Cerastium pumilum,scientific name,271565
+Cerastium semidecandrum,Cerastium semidecandrum,scientific name,271564
+Cerastium uniflorum,Cerastium uniflorum,scientific name,271547
+Cerinthe glabra,,,
+Cerinthe minor,Cerinthe minor,scientific name,131385
+Ceterach officinarum,Asplenium ceterach,synonym,147945
+Chaenorrhinum minus,Chaenorhinum minus,synonym,105913
+Chaenorrhinum rubrifolium,,,
+Chaerophyllum aureum,Chaerophyllum aureum,scientific name,109094
+Chaerophyllum temulum,Chaerophyllum temulum,scientific name,105274
+Chaerophyllum villarsii,Chaerophyllum villarsii,scientific name,109111
+Chamorchis alpina,Chamorchis alpina,scientific name,413032
+Chara Linnaeus,,,
+Chelidonium majus,Chelidonium majus,scientific name,71251
+Chenopodium album,Chenopodium album,scientific name,3559
+Chenopodium bonus-henricus,Blitum bonus-henricus,synonym,122298
+Chondrilla juncea,Chondrilla juncea,scientific name,75963
+Chrysosplenium alternifolium,Chrysosplenium alternifolium,scientific name,80774
+Cicerbita alpina,Cicerbita alpina,scientific name,75961
+Cichorium intybus,Cichorium intybus,scientific name,13427
+Cirsium acaule,Cirsium acaule,scientific name,192477
+Cirsium arvense,Cirsium arvense,scientific name,41550
+Cirsium eriophorum,Cirsium eriophorum,scientific name,688286
+Cirsium monspessulanum,Cirsium monspessulanum,scientific name,196729
+Cirsium morisianum,,,
+Cirsium palustre,Cirsium palustre,scientific name,143190
+Cirsium spinosissimum,Cirsium spinosissimum,scientific name,196741
+Cirsium vulgare,Cirsium vulgare,scientific name,92907
+Cladium mariscus,Cladium mariscus,scientific name,241641
+Clematis alpina,Clematis alpina,scientific name,522534
+Clematis vitalba,Clematis vitalba,scientific name,37490
+Clinopodium acinos,Clinopodium acinos,scientific name,306377
+Clinopodium alpinum,Clinopodium alpinum,scientific name,224743
+Clinopodium grandiflorum,Clinopodium grandiflorum,scientific name,887129
+Clinopodium nepeta,Clinopodium nepeta,scientific name,306383
+Clinopodium vulgare,Clinopodium vulgare,scientific name,204222
+Coincya cheiranthos,,,
+Coincya richeri,,,
+Colchicum alpinum,Colchicum alpinum,scientific name,1094039
+Colchicum autumnale,Colchicum autumnale,scientific name,45005
+Colutea arborescens,Colutea arborescens,scientific name,47649
+Consolida regalis,Consolida regalis,scientific name,984867
+Convallaria majalis,Convallaria majalis,scientific name,32189
+Convolvulus arvensis,Convolvulus arvensis,scientific name,4123
+Conyza canadensis,Conyza canadensis,scientific name,72917
+Corallorhiza trifida,Corallorhiza trifida,scientific name,451881
+Coristospermum ferulaceum,,,
+Cornus sanguinea,Cornus sanguinea,scientific name,367354
+Coronilla minima,Coronilla minima,scientific name,181252
+Coronilla vaginalis,Coronilla vaginalis,scientific name,390707
+Corydalis intermedia,Corydalis intermedia,scientific name,54425
+Corydalis solida,Corydalis solida,scientific name,38914
+Corylus avellana,Corylus avellana,scientific name,13451
+Cotoneaster integerrimus,Cotoneaster integerrimus,scientific name,690321
+Cotoneaster juranus,,,
+Cotoneaster obtusisepalus,,,
+Cotoneaster tomentosus,Cotoneaster tomentosus,scientific name,1143230
+Crataegus laevigata,Crataegus laevigata,scientific name,298643
+Crataegus monogyna,Crataegus monogyna,scientific name,140997
+Crepis aurea,Crepis aurea,scientific name,212669
+Crepis biennis,Crepis biennis,scientific name,122532
+Crepis bocconi,Crepis bocconi,scientific name,268013
+Crepis conyzifolia,Crepis conyzifolia,scientific name,268015
+Crepis foetida,Crepis foetida,scientific name,268017
+Crepis nicaeensis,Crepis nicaeensis,scientific name,268024
+Crepis paludosa,Crepis paludosa,scientific name,310247
+Crepis pontana,,,
+Crepis pygmaea,Crepis pygmaea,scientific name,268348
+Crepis pyrenaica,Crepis pyrenaica,scientific name,122533
+Crepis vesicaria,Crepis vesicaria,scientific name,268032
+Crocus albiflorus,,,
+Crocus vernus,Crocus vernus,scientific name,87752
+Cruciata glabra,Cruciata glabra,scientific name,29785
+Cruciata laevipes,Cruciata laevipes,scientific name,29786
+Crupina vulgaris,Crupina vulgaris,scientific name,145813
+Cryptogramma crispa,Cryptogramma crispa,scientific name,306132
+Cucubalus baccifer,Silene baccifera,synonym,54818
+Cuscuta epilinum,Cuscuta epilinum,scientific name,186060
+Cuscuta epithymum,Cuscuta epithymum,scientific name,186058
+Cuscuta europaea,Cuscuta europaea,scientific name,41803
+Cuscuta planiflora,Cuscuta planiflora,scientific name,192822
+Cyanus montanus,Centaurea montana,synonym,41537
+Cynoglossum officinale,Cynoglossum officinale,scientific name,181189
+Cynosurus cristatus,Cynosurus cristatus,scientific name,211939
+Cypripedium calceolus,Cypripedium calceolus,scientific name,53038
+Cystopteris dickieana,,,
+Cystopteris fragilis,Cystopteris fragilis,scientific name,32112
+Cytisophyllum sessilifolium,Cytisophyllum sessilifolium,scientific name,3834
+Dactylis glomerata,Dactylis glomerata,scientific name,4509
+Dactylorhiza alpestris,Dactylorhiza alpestris,scientific name,469780
+Dactylorhiza angustata,Dactylorhiza angustata,scientific name,337434
+Dactylorhiza cruenta,Dactylorhiza incarnata subsp. cruenta,synonym,469782
+Dactylorhiza fistulosa,,,
+Dactylorhiza fuchsii,Dactylorhiza fuchsii,scientific name,230571
+Dactylorhiza latifolia,,,
+Dactylorhiza maculata,Dactylorhiza maculata,scientific name,230572
+Dactylorhiza majalis,Dactylorhiza majalis,scientific name,231484
+Dactylorhiza sambucina,Dactylorhiza sambucina,scientific name,65785
+Dactylorhiza viridis,Dactylorhiza viridis,scientific name,230577
+Danthonia decumbens,Danthonia decumbens,scientific name,500232
+Daphne alpina,,,
+Daphne cneorum,Daphne cneorum,scientific name,224033
+Daphne laureola,Daphne laureola,scientific name,223749
+Daphne mezereum,Daphne mezereum,scientific name,66680
+Daucus carota,Daucus carota,scientific name,4039
+Deschampsia cespitosa,Deschampsia cespitosa,scientific name,37723
+Deschampsia flexuosa,Avenella flexuosa,synonym,29672
+Descurainia sophia,Descurainia sophia,scientific name,89411
+Descurainia tanacetifolia,Descurainia tanacetifolia,scientific name,376441
+Dianthus carthusianorum,Dianthus carthusianorum,scientific name,288951
+Dianthus caryophyllus,Dianthus caryophyllus,scientific name,3570
+Dianthus deltoides,Dianthus deltoides,scientific name,202448
+Dianthus hyssopifolius,Dianthus hyssopifolius,scientific name,746774
+Dianthus pavonius,Dianthus pavonius,scientific name,746795
+Dianthus sylvestris,Dianthus sylvestris,scientific name,288953
+Digitalis grandiflora,Digitalis grandiflora,scientific name,38791
+Digitalis lutea,Digitalis lutea,scientific name,285825
+Dittrichia graveolens,,,
+Doronicum grandiflorum,Doronicum grandiflorum,scientific name,118763
+Doronicum pardalianches,Doronicum pardalianches,scientific name,118770
+Dorycnium pentaphyllum,Dorycnium pentaphyllum,scientific name,181254
+Draba aizoides,Draba aizoides,scientific name,87302
+Draba dubia,Draba dubia,scientific name,87303
+Draba fladnizensis,Draba fladnizensis,scientific name,95392
+Dracocephalum austriacum,,,
+Dracocephalum ruyschiana,Dracocephalum ruyschiana,scientific name,39297
+Drosera rotundifolia,Drosera rotundifolia,scientific name,173423
+Dryas octopetala,Dryas octopetala,scientific name,57948
+Dryopteris dilatata,Dryopteris dilatata,scientific name,239561
+Dryopteris expansa,Dryopteris expansa,scientific name,239563
+Dryopteris filix-mas,Dryopteris filix-mas,scientific name,3289
+Dryopteris villarii,,,
+Echinops ritro,Echinops ritro,scientific name,41571
+Echinops sphaerocephalus,Echinops sphaerocephalus,scientific name,92910
+Echium vulgare,Echium vulgare,scientific name,34253
+Eleocharis mamillata,Eleocharis mamillata,scientific name,280064
+Eleocharis palustris,Eleocharis palustris,scientific name,110297
+Eleocharis quinqueflora,Eleocharis quinqueflora,scientific name,46325
+Eleocharis uniglumis,Eleocharis uniglumis,scientific name,669671
+Elytrigia campestris,,,
+Elytrigia intermedia,Thinopyrum intermedium,synonym,85679
+Elytrigia repens,Elymus repens,synonym,52152
+Empetrum nigrum,Empetrum nigrum,scientific name,191066
+Epilobium alpestre,,,
+Epilobium alsinifolium,Epilobium alsinifolium,scientific name,669676
+Epilobium anagallidifolium,Epilobium anagallidifolium,scientific name,669677
+Epilobium angustifolium,Chamerion angustifolium,synonym,13055
+Epilobium collinum,,,
+Epilobium dodonaei,Epilobium dodonaei,scientific name,33136
+Epilobium hirsutum,Epilobium hirsutum,scientific name,210355
+Epilobium montanum,Epilobium montanum,scientific name,470570
+Epilobium palustre,Epilobium palustre,scientific name,669682
+Epilobium parviflorum,Epilobium parviflorum,scientific name,644182
+Epipactis atrorubens,Epipactis atrorubens,scientific name,492483
+Epipactis helleborine,Epipactis helleborine,scientific name,28472
+Epipactis palustris,Epipactis palustris,scientific name,210730
+Epipogium aphyllum,Epipogium aphyllum,scientific name,449980
+Equisetum arvense,Equisetum arvense,scientific name,3258
+Equisetum fluviatile,Equisetum fluviatile,scientific name,231680
+Equisetum hyemale,Equisetum hyemale,scientific name,3262
+Equisetum palustre,Equisetum palustre,scientific name,113538
+Equisetum variegatum,Equisetum variegatum,scientific name,231678
+Erigeron acer,Erigeron acris,misspelling,91246
+Erigeron acris,Erigeron acris,scientific name,91246
+Erigeron alpinus,,,
+Erigeron annuus,Erigeron annuus,scientific name,91248
+Erigeron atticus,,,
+Erigeron gaudinii,,,
+Erigeron glabratus,,,
+Erigeron neglectus,,,
+Erigeron uniflorus,Erigeron uniflorus,scientific name,72932
+Erinus alpinus,Erinus alpinus,scientific name,165304
+Eriophorum angustifolium,Eriophorum angustifolium,scientific name,100292
+Eriophorum latifolium,Eriophorum latifolium,scientific name,1155236
+Eriophorum polystachion,Eriophorum angustifolium,synonym,100292
+Eriophorum scheuchzeri,Eriophorum scheuchzeri,scientific name,395292
+Eritrichium nanum,Eritrichium nanum,scientific name,184082
+Erodium cicutarium,Erodium cicutarium,scientific name,301481
+Erophila verna,Erophila verna,scientific name,161951
+Erucastrum nasturtiifolium,Erucastrum nasturtiifolium,scientific name,308294
+Eryngium alpinum,Eryngium alpinum,scientific name,90454
+Eryngium campestre,Eryngium campestre,scientific name,82086
+Erysimum jugicola,,,
+Erysimum ochroleucum,,,
+Erysimum rhaeticum,Erysimum rhaeticum,scientific name,761866
+Erysimum ruscinonense,,,
+Erysimum virgatum,,,
+Euonymus europaeus,Euonymus europaeus,scientific name,123417
+Euonymus latifolius,Euonymus latifolius,scientific name,1089399
+Eupatorium cannabinum,Eupatorium cannabinum,scientific name,102770
+Euphorbia cyparissias,Euphorbia cyparissias,scientific name,38844
+Euphorbia dulcis,Euphorbia dulcis,scientific name,3992
+Euphorbia exigua,Euphorbia exigua,scientific name,756618
+Euphorbia flavicoma,Euphorbia flavicoma,scientific name,1091626
+Euphorbia helioscopia,Euphorbia helioscopia,scientific name,154990
+Euphrasia alpina,Euphrasia alpina,scientific name,474997
+Euphrasia drosocalyx,,,
+Euphrasia hirtella,Euphrasia hirtella,scientific name,290218
+Euphrasia minima,Euphrasia minima,scientific name,475014
+Euphrasia officinalis,Euphrasia officinalis,scientific name,290213
+Euphrasia pectinata,Euphrasia pectinata,scientific name,290215
+Euphrasia picta,Euphrasia picta,scientific name,475017
+Euphrasia salisburgensis,Euphrasia salisburgensis,scientific name,475020
+Euphrasia stricta,Euphrasia stricta,scientific name,374709
+Evonymus europaeus,,,
+Evonymus latifolius,,,
+Fagus sylvatica,Fagus sylvatica,scientific name,28930
+Fallopia convolvulus,Fallopia convolvulus,scientific name,76029
+Festuca acuminata,,,
+Festuca alpina,Festuca alpina,scientific name,145834
+Festuca altissima,Festuca altissima,scientific name,145835
+Festuca arundinacea,Festuca arundinacea,scientific name,4606
+Festuca cinerea,,,
+Festuca flavescens,,,
+Festuca gigantea,Festuca gigantea,scientific name,29677
+Festuca halleri,Festuca halleri,scientific name,464054
+Festuca heterophylla,Festuca heterophylla,scientific name,89682
+Festuca laevigata,Festuca laevigata,scientific name,464060
+Festuca marginata,Festuca marginata,scientific name,370717
+Festuca melanopsis,Festuca melanopsis,scientific name,464063
+Festuca nigrescens,Festuca nigrescens,scientific name,370721
+Festuca paniculata,Festuca paniculata,scientific name,145848
+Festuca pratensis,Festuca pratensis,scientific name,4608
+Festuca quadriflora,Festuca quadriflora,scientific name,145851
+Festuca rubra,Festuca rubra,scientific name,52153
+Festuca valesiaca,Festuca valesiaca,scientific name,98753
+Festuca violacea,Festuca violacea,scientific name,464085
+Filago arvensis,Filago arvensis,scientific name,702219
+Filipendula ulmaria,Filipendula ulmaria,scientific name,57917
+Filipendula vulgaris,Filipendula vulgaris,scientific name,32228
+Fourraea alpina,Fourraea alpina,scientific name,81980
+Fragaria vesca,Fragaria vesca,scientific name,57918
+Frangula dodonei,,,
+Fraxinus excelsior,Fraxinus excelsior,scientific name,38873
+Fumana procumbens,Fumana procumbens,scientific name,1033236
+Gagea fragifera,Gagea fragifera,scientific name,391250
+Gagea liotardii,Gagea liotardii,scientific name,319175
+Gagea lutea,Gagea lutea,scientific name,82209
+Gagea serotina,Gagea serotina,scientific name,1119043
+Galeopsis angustifolia,Galeopsis angustifolia,scientific name,457138
+Galeopsis ladanum,Galeopsis ladanum,scientific name,1030043
+Galeopsis tetrahit,Galeopsis tetrahit,scientific name,1000418
+Galium anisophyllon,,,
+Galium aparine,Galium aparine,scientific name,29788
+Galium aristatum,,,
+Galium boreale,Galium boreale,scientific name,35896
+Galium corrudifolium,Galium corrudifolium,scientific name,715671
+Galium glaucum,,,
+Galium lucidum,Galium lucidum,scientific name,29792
+Galium megalospermum,,,
+Galium mollugo,Galium mollugo,scientific name,254777
+Galium obliquum,,,
+Galium odoratum,Galium odoratum,scientific name,35899
+Galium palustre,Galium palustre,scientific name,29793
+Galium pseudohelveticum,,,
+Galium pumilum,Galium pumilum,scientific name,715709
+Galium rotundifolium,Galium rotundifolium,scientific name,715713
+Galium spurium,Galium spurium,scientific name,1117032
+Galium sylvaticum,Galium sylvaticum,scientific name,581248
+Galium timeroyi,,,
+Galium verum,Galium verum,scientific name,462873
+Genista cinerea,Genista cinerea,scientific name,49820
+Genista pilosa,Genista pilosa,scientific name,238501
+Genista sagittalis,Genista sagittalis,scientific name,49809
+Gentiana acaulis,Gentiana acaulis,scientific name,49933
+Gentiana alpina,Gentiana alpina,scientific name,49934
+Gentiana angustifolia,Gentiana angustifolia,scientific name,38849
+Gentiana asclepiadea,Gentiana asclepiadea,scientific name,49935
+Gentiana bavarica,Gentiana bavarica,scientific name,49937
+Gentiana brachyphylla,Gentiana brachyphylla,scientific name,49939
+Gentiana cruciata,Gentiana cruciata,scientific name,49943
+Gentiana delphinensis,,,
+Gentiana lutea,Gentiana lutea,scientific name,38851
+Gentiana nivalis,Gentiana nivalis,scientific name,38852
+Gentiana orbicularis,Gentiana orbicularis,scientific name,1085736
+Gentiana pneumonanthe,Gentiana pneumonanthe,scientific name,49950
+Gentiana punctata,Gentiana punctata,scientific name,49953
+Gentiana verna,Gentiana verna,scientific name,38855
+Gentianella campestris,Gentianella campestris,scientific name,49940
+Gentianella ciliata,,,
+Gentianella tenella,Gentianella tenella,scientific name,49963
+Geranium argenteum,Geranium argenteum,scientific name,387081
+Geranium columbinum,Geranium columbinum,scientific name,379943
+Geranium lucidum,Geranium lucidum,scientific name,379949
+Geranium molle,Geranium molle,scientific name,581251
+Geranium nodosum,Geranium nodosum,scientific name,379951
+Geranium phaeum,Geranium phaeum,scientific name,379952
+Geranium pyrenaicum,Geranium pyrenaicum,scientific name,379953
+Geranium rivulare,,,
+Geranium robertianum,Geranium robertianum,scientific name,122183
+Geranium rotundifolium,Geranium rotundifolium,scientific name,379955
+Geranium sanguineum,Geranium sanguineum,scientific name,70270
+Geranium sylvaticum,Geranium sylvaticum,scientific name,379956
+Geum montanum,Geum montanum,scientific name,148895
+Geum reptans,Geum reptans,scientific name,148896
+Geum rivale,Geum rivale,scientific name,148897
+Geum urbanum,Geum urbanum,scientific name,57919
+Glechoma hederacea,Glechoma hederacea,scientific name,28509
+Globularia bisnagarica,,,
+Globularia cordifolia,Globularia cordifolia,scientific name,69063
+Glyceria fluitans,Glyceria fluitans,scientific name,254778
+Glyceria notata,Glyceria notata,scientific name,388682
+Gnaphalium hoppeanum,Gnaphalium hoppeanum,scientific name,595331
+Gnaphalium supinum,Gnaphalium supinum,scientific name,261773
+Gnaphalium sylvaticum,Gnaphalium sylvaticum,scientific name,595333
+Goodyera repens,Goodyera repens,scientific name,164261
+Gymnadenia conopsea,Gymnadenia conopsea,scientific name,59324
+Gymnadenia corneliana,,,
+Gymnadenia nigra,Gymnadenia nigra,scientific name,254896
+Gymnadenia rhellicani,Gymnadenia rhellicani,scientific name,1126420
+Gymnocarpium dryopteris,Gymnocarpium dryopteris,scientific name,32116
+Gymnocarpium robertianum,Gymnocarpium robertianum,scientific name,983334
+Gypsophila repens,Gypsophila repens,scientific name,325494
+Hedera helix,Hedera helix,scientific name,4052
+Hedysarum boutignyanum,Hedysarum boutignyanum,scientific name,754886
+Hedysarum hedysaroides,Hedysarum hedysaroides,scientific name,669703
+Helianthemum apenninum,Helianthemum apenninum,scientific name,482940
+Helianthemum grandiflorum,Helianthemum grandiflorum,scientific name,69454
+Helianthemum nummularium,Helianthemum nummularium,scientific name,478958
+Helianthemum oelandicum,Helianthemum oelandicum,scientific name,632760
+Helictotrichon parlatorei,Helictotrichon parlatorei,scientific name,106812
+Helictotrichon sedenense,Helictotrichon sedenense,scientific name,100805
+Helictotrichon sempervirens,Helictotrichon sempervirens,scientific name,87473
+Helleborus foetidus,Helleborus foetidus,scientific name,46996
+Hepatica nobilis,Hepatica nobilis,scientific name,168011
+Heracleum sphondylium,Heracleum sphondylium,scientific name,40919
+Herniaria alpina,,,
+Herniaria hirsuta,Herniaria hirsuta,scientific name,1137871
+Herniaria incana,,,
+Hieracium alpinum,Hieracium alpinum,scientific name,261240
+Hieracium amplexicaule,Hieracium amplexicaule,scientific name,269348
+Hieracium andryaloides,,,
+Hieracium argillaceum,,,
+Hieracium aurantiacum,Hieracium aurantiacum,scientific name,221188
+Hieracium bifidum,Hieracium bifidum,scientific name,212670
+Hieracium caesioides,,,
+Hieracium chondrillifolium,,,
+Hieracium cydoniifolium,,,
+Hieracium cymosum,Hieracium cymosum,scientific name,221193
+Hieracium diaphanoides,,,
+Hieracium glaciale,Hieracium angustifolium,synonym,268043
+Hieracium glaucinum,,,
+Hieracium intybaceum,Hieracium intybaceum,scientific name,268054
+Hieracium inuloides,,,
+Hieracium juranum,,,
+Hieracium lachenalii,Hieracium lachenalii,scientific name,269350
+Hieracium lactucella,Pilosella lactucella,synonym,221202
+Hieracium lawsonii,Hieracium lawsonii,scientific name,546195
+Hieracium murorum,Hieracium murorum,scientific name,212671
+Hieracium niphobium,,,
+Hieracium pedadifolium,,,
+Hieracium peleterianum,Hieracium peleterianum,scientific name,268057
+Hieracium piliferum,Hieracium piliferum,scientific name,269352
+Hieracium pilosella,Hieracium pilosella,scientific name,221204
+Hieracium piloselloides,Hieracium piloselloides,scientific name,102746
+Hieracium pilosum,Hieracium pilosum,scientific name,546200
+Hieracium praealtum,Hieracium piloselloides subsp. praealtum,synonym,221207
+Hieracium prenanthoides,Hieracium prenanthoides,scientific name,268058
+Hieracium ramosissimum,,,
+Hieracium rapunculoides,,,
+Hieracium sabaudum,Hieracium sabaudum,scientific name,269349
+Hieracium schmidtii,Hieracium schmidtii,scientific name,269344
+Hieracium scorzonerifolium,,,
+Hieracium tomentosum,Hieracium tomentosum,scientific name,546207
+Hieracium ucenicum,,,
+Hieracium umbellatum,Hieracium umbellatum,scientific name,268065
+Hieracium umbrosum,,,
+Hieracium urticaceum,,,
+Hieracium valdepilosum,,,
+Hieracium villosum,Hieracium villosum,scientific name,269347
+Himantoglossum hircinum,Himantoglossum hircinum,scientific name,59326
+Hippocrepis comosa,Hippocrepis comosa,scientific name,390710
+Hippocrepis emerus,Hippocrepis emerus,scientific name,72429
+Hippophae rhamnoides,Hippophae rhamnoides,scientific name,193516
+Holcus lanatus,Holcus lanatus,scientific name,29679
+Holosteum umbellatum,Holosteum umbellatum,scientific name,325497
+Homogyne alpina,Homogyne alpina,scientific name,257033
+Hordelymus europaeus,Hordelymus europaeus,scientific name,376113
+Hordeum marinum,Hordeum marinum,scientific name,4519
+Hugueninia tanacetifolia,,,
+Humulus lupulus,Humulus lupulus,scientific name,3486
+Huperzia selago,Huperzia selago,scientific name,70001
+Hylotelephium anacampseros,Hylotelephium anacampseros,scientific name,202966
+Hylotelephium telephium,Hylotelephium telephium,scientific name,91097
+Hyoscyamus niger,Hyoscyamus niger,scientific name,4079
+Hypericum hirsutum,Hypericum hirsutum,scientific name,673928
+Hypericum maculatum,Hypericum maculatum,scientific name,269006
+Hypericum montanum,Hypericum montanum,scientific name,673929
+Hypericum perforatum,Hypericum perforatum,scientific name,65561
+Hypericum richeri,Hypericum richeri,scientific name,673934
+Hypochaeris maculata,Hypochaeris maculata,scientific name,58650
+Hypochaeris radicata,Hypochaeris radicata,scientific name,58656
+Hyssopus officinalis,Hyssopus officinalis,scientific name,39324
+Iberis pinnata,,,
+Ilex aquifolium,Ilex aquifolium,scientific name,4298
+Impatiens glandulifera,Impatiens glandulifera,scientific name,253017
+Imperatoria ostruthium,Imperatoria ostruthium,scientific name,52477
+Inula conyza,Inula conyza,scientific name,119177
+Inula montana,Inula montana,scientific name,119178
+Isatis tinctoria,Isatis tinctoria,scientific name,161756
+Jacobaea erucifolia,Jacobaea erucifolia,scientific name,189238
+Jacobaea incana,Jacobaea incana,scientific name,189239
+Jasione montana,Jasione montana,scientific name,239452
+Juglans nigra,Juglans nigra,scientific name,16719
+Juglans regia,Juglans regia,scientific name,51240
+Juncus alpinoarticulatus,Juncus alpinoarticulatus,scientific name,253143
+Juncus arcticus,Juncus arcticus,scientific name,253145
+Juncus articulatus,Juncus articulatus,scientific name,223654
+Juncus bufonius,Juncus bufonius,scientific name,223656
+Juncus compressus,Juncus compressus,scientific name,223661
+Juncus effusus,Juncus effusus,scientific name,13579
+Juncus filiformis,Juncus filiformis,scientific name,253148
+Juncus inflexus,Juncus inflexus,scientific name,318445
+Juncus jacquini,,,
+Juncus trifidus,Juncus trifidus,scientific name,223681
+Juncus triglumis,Juncus triglumis,scientific name,223682
+Juniperus communis,Juniperus communis,scientific name,58039
+Juniperus sabina,Juniperus sabina,scientific name,224740
+Juniperus sibirica,Juniperus communis var. saxatilis,synonym,244309
+Kandis perfoliata,,,
+Kernera saxatilis,Kernera saxatilis,scientific name,169074
+Knautia arvensis,Knautia arvensis,scientific name,105271
+Knautia dipsacifolia,Knautia dipsacifolia,scientific name,596799
+Knautia maxima,,,
+Knautia timeroyi,,,
+Kobresia myosuroides,Kobresia myosuroides,scientific name,140873
+Kobresia Willd.,Kobresia,authority,46330
+Koeleria cenisia,,,
+Koeleria macrantha,Koeleria macrantha,scientific name,366481
+Koeleria pyramidata,Koeleria pyramidata,scientific name,49772
+Koeleria vallesiana,Koeleria vallesiana,scientific name,366483
+Laburnum alpinum,Laburnum alpinum,scientific name,3852
+Laburnum anagyroides,Laburnum anagyroides,scientific name,49828
+Lactuca alpina,,,
+Lactuca muralis,Lactuca muralis,scientific name,75960
+Lactuca perennis,Lactuca perennis,scientific name,43195
+Lactuca serriola,Lactuca serriola,scientific name,75943
+Lamium amplexicaule,Lamium amplexicaule,scientific name,53160
+Lamium galeobdolon,Lamium galeobdolon,scientific name,53161
+Lamium garganicum,Lamium garganicum,scientific name,53162
+Lamium maculatum,Lamium maculatum,scientific name,53163
+Lamium purpureum,Lamium purpureum,scientific name,53164
+Lappula squarrosa,Lappula squarrosa,scientific name,203740
+Lapsana communis,Lapsana communis,scientific name,268080
+Larix decidua,Larix decidua,scientific name,71402
+Laserpitium gallicum,Laserpitium gallicum,scientific name,571622
+Laserpitium halleri,Laserpitium halleri,scientific name,571627
+Laserpitium latifolium,Laserpitium latifolium,scientific name,48039
+Laserpitium siler,Laserpitium siler,scientific name,40869
+Lathyrus heterophyllus,Lathyrus heterophyllus,scientific name,313088
+Lathyrus latifolius,Lathyrus latifolius,scientific name,154494
+Lathyrus linifolius,Lathyrus linifolius,scientific name,313096
+Lathyrus occidentalis,,,
+Lathyrus ochraceus,,,
+Lathyrus pratensis,Lathyrus pratensis,scientific name,254779
+Lathyrus sphaericus,Lathyrus sphaericus,scientific name,3861
+Lathyrus sylvestris,Lathyrus sylvestris,scientific name,313117
+Lathyrus vernus,Lathyrus vernus,scientific name,313120
+Lavandula angustifolia,Lavandula angustifolia,scientific name,39329
+Leontodon autumnalis,Scorzoneroides autumnalis,synonym,212686
+Leontodon crispus,Leontodon crispus,scientific name,212687
+Leontodon hirtus,,,
+Leontodon hispidus,Leontodon hispidus,scientific name,58660
+Leontodon hyoseroides,,,
+Leontodon montanus,Scorzoneroides montana,synonym,379116
+Leontodon pyrenaicus,Scorzoneroides pyrenaica,synonym,379629
+Leontopodium alpinum,Leontopodium alpinum,scientific name,49078
+Leontopodium nivale,Leontopodium nivale,scientific name,595348
+Leucanthemopsis alpina,Leucanthemopsis alpina,scientific name,133253
+Leucanthemum adustum,Leucanthemum adustum,scientific name,1000419
+Leucanthemum atratum,Leucanthemum atratum,scientific name,1155825
+Leucanthemum cuneifolium,,,
+Leucanthemum pallens,Leucanthemum pallens,scientific name,1155854
+Leucanthemum vulgare,Leucanthemum vulgare,scientific name,99072
+Leuzea conifera,Rhaponticum coniferum,synonym,145817
+Ligustrum vulgare,Ligustrum vulgare,scientific name,13597
+Lilium bulbiferum,Lilium bulbiferum,scientific name,84044
+Lilium martagon,Lilium martagon,scientific name,82322
+Limodorum abortivum,Limodorum abortivum,scientific name,242627
+Linaria alpina,Linaria alpina,scientific name,299780
+Linaria angustissima,Linaria angustissima,scientific name,1315780
+Linaria repens,Linaria repens,scientific name,299782
+Linaria simplex,Linaria simplex,scientific name,1138105
+Linum alpinum,Linum alpinum,scientific name,1000420
+Linum catharticum,Linum catharticum,scientific name,524254
+Linum suffruticosum,Linum suffruticosum,scientific name,586395
+Linum tenuifolium,Linum tenuifolium,scientific name,586397
+Listera ovata,Listera ovata,scientific name,29712
+Lithospermum arvense,Buglossoides arvensis,genbank synonym,181181
+Lithospermum incrassatum,Lithospermum incrassatum,scientific name,543574
+Lithospermum officinale,Lithospermum officinale,scientific name,475907
+Lloydia serotina,Lloydia serotina,scientific name,59080
+Lolium perenne,Lolium perenne,scientific name,4522
+Lomelosia graminifolia,Lomelosia graminifolia,scientific name,596804
+Lonicera alpigena,Lonicera alpigena,scientific name,486660
+Lonicera caerulea,Lonicera caerulea,scientific name,134520
+Lonicera etrusca,Lonicera etrusca,scientific name,245821
+Lonicera nigra,Lonicera nigra,scientific name,486680
+Lonicera xylosteum,Lonicera xylosteum,scientific name,439142
+Lotus alpinus,Lotus alpinus,scientific name,347376
+Lotus corniculatus,Lotus corniculatus,scientific name,47247
+Lotus delortii,Lotus delortii,scientific name,347998
+Lotus maritimus,Lotus maritimus,scientific name,118937
+Lunaria annua,Lunaria annua,scientific name,153659
+Lunaria rediviva,Lunaria rediviva,scientific name,283746
+Luzula alpina,,,
+Luzula alpinopilosa,Luzula alpinopilosa,scientific name,630085
+Luzula campestris,Luzula campestris,scientific name,218141
+Luzula lutea,Luzula lutea,scientific name,630107
+Luzula luzulina,Luzula luzulina,scientific name,223695
+Luzula multiflora,Luzula multiflora,scientific name,178423
+Luzula nivea,Luzula nivea,scientific name,223697
+Luzula nutans,,,
+Luzula sieberi,,,
+Luzula spicata,Luzula spicata,scientific name,223703
+Luzula sudetica,Luzula sudetica,scientific name,223705
+Luzula sylvatica,Luzula sylvatica,scientific name,59018
+Lycopus europaeus,Lycopus europaeus,scientific name,260603
+Lysimachia arvensis,,,
+Lysimachia nemorum,Lysimachia nemorum,scientific name,110756
+Lysimachia vulgaris,Lysimachia vulgaris,scientific name,191068
+Lythrum salicaria,Lythrum salicaria,scientific name,13129
+Maianthemum bifolium,Maianthemum bifolium,scientific name,191662
+Malus domestica,Malus x domestica,synonym,3750
+Malus sylvestris,Malus sylvestris,scientific name,3752
+Malva alcea,Malva alcea,scientific name,446150
+Malva moschata,Malva moschata,scientific name,446345
+Matricaria discoidea,Matricaria discoidea,scientific name,883867
+Medicago lupulina,Medicago lupulina,scientific name,47085
+Medicago minima,Medicago minima,scientific name,70957
+Medicago sativa,Medicago sativa,scientific name,3879
+Melampyrum italicum,Melampyrum italicum,scientific name,439137
+Melampyrum nemorosum,Melampyrum nemorosum,scientific name,374717
+Melampyrum sylvaticum,Melampyrum sylvaticum,scientific name,86092
+Melampyrum vaudense,,,
+Melica ciliata,Melica ciliata,scientific name,52156
+Melica nutans,Melica nutans,scientific name,860324
+Melica uniflora,Melica uniflora,scientific name,29686
+Melilotus albus,Melilotus albus,scientific name,47082
+Melilotus officinalis,Melilotus officinalis,scientific name,47083
+Melittis melissophyllum,Melittis melissophyllum,scientific name,457147
+Mentha aquatica,Mentha aquatica,scientific name,190902
+Mentha arvensis,Mentha arvensis,scientific name,292239
+Mentha longifolia,Mentha longifolia,scientific name,38859
+Mercurialis perennis,Mercurialis perennis,scientific name,3985
+Meum athamanticum,Meum athamanticum,scientific name,82093
+Milium effusum,Milium effusum,scientific name,376129
+Minuartia laricifolia,Minuartia laricifolia,scientific name,258340
+Minuartia recurva,,,
+Minuartia rostrata,,,
+Minuartia rupestris,Minuartia rupestris,scientific name,325503
+Minuartia sedoides,,,
+Minuartia verna,Minuartia verna,scientific name,325504
+Minuartia villarii,,,
+Moehringia muscosa,Moehringia muscosa,scientific name,325507
+Moehringia trinervia,Moehringia trinervia,scientific name,169227
+Molinia caerulea,Molinia caerulea,scientific name,38689
+Moneses uniflora,Moneses uniflora,scientific name,93817
+Monotropa hypopitys,Monotropa hypopitys,scientific name,176248
+Murbeckiella pinnatifida,,,
+Muscari comosum,Leopoldia comosa,synonym,81770
+Muscari neglectum,Muscari neglectum,scientific name,59072
+Mutellina adonidifolia,,,
+Mycelis muralis,Lactuca muralis,synonym,75960
+Myosotis alpestris,Myosotis alpestris,scientific name,192337
+Myosotis arvensis,Myosotis arvensis,scientific name,192338
+Myosotis corsicana,,,
+Myosotis decumbens,Myosotis decumbens,scientific name,192347
+Myosotis ramosissima,Myosotis ramosissima,scientific name,1060937
+Myosotis stricta,Myosotis stricta,scientific name,192842
+Myricaria germanica,Myricaria germanica,scientific name,269175
+Narcissus poeticus,Narcissus poeticus,scientific name,54855
+Nardus stricta,Nardus stricta,scientific name,29687
+Nasturtium officinale,Nasturtium officinale,scientific name,65948
+Neotinea ustulata,Neotinea ustulata,scientific name,59351
+Neottia nidus-avis,Neottia nidus-avis,scientific name,48534
+Nepeta nepetella,Nepeta nepetella,scientific name,1000421
+Nepeta nuda,,,
+Noccaea brachypetala,,,
+Noccaea caerulescens,Noccaea caerulescens,scientific name,107243
+Noccaea rotundifolia,Noccaea rotundifolia,scientific name,1230357
+Odontites glutinosus,,,
+Odontites lanceolatus,,,
+Odontites luteus,Odontites luteus,scientific name,691781
+Odontites viscosus,Odontites viscosus,scientific name,1005697
+Omalotheca hoppeana,,,
+Omalotheca supina,Gnaphalium supinum,synonym,261773
+Omalotheca sylvatica,,,
+Onobrychis montana,Onobrychis montana,scientific name,47033
+Onobrychis saxatilis,,,
+Onobrychis viciifolia,Onobrychis viciifolia,scientific name,3882
+Ononis cristata,Ononis cristata,scientific name,797998
+Ononis fruticosa,Ononis fruticosa,scientific name,798002
+Ononis natrix,Ononis natrix,scientific name,200954
+Ononis pusilla,Ononis pusilla,scientific name,798026
+Ononis rotundifolia,Ononis rotundifolia,scientific name,798033
+Ononis spinosa,Ononis spinosa,scientific name,58890
+Ophioglossum vulgatum,Ophioglossum vulgatum,scientific name,49227
+Ophrys fuciflora,Ophrys fuciflora,scientific name,145941
+Ophrys insectifera,Ophrys insectifera,scientific name,145946
+Ophrys litigiosa,,,
+Orchis anthropophora,Orchis anthropophora,scientific name,59314
+Orchis mascula,Orchis mascula,scientific name,59338
+Orchis militaris,Orchis militaris,scientific name,59339
+Orchis pallens,,,
+Orchis purpurea,Orchis purpurea,scientific name,59346
+Oreoselinum nigrum,Oreoselinum nigrum,scientific name,203708
+Origanum vulgare,Origanum vulgare,scientific name,39352
+Orlaya grandiflora,Orlaya grandiflora,scientific name,40863
+Ornithogalum angustifolium,Ornithogalum angustifolium,scientific name,81779
+Ornithogalum umbellatum,Ornithogalum umbellatum,scientific name,81785
+Orobanche caryophyllacea,Orobanche caryophyllacea,scientific name,86094
+Orobanche laserpitii-sileris,,,
+Orobanche major,,,
+Orobanche ozanonis,Orobanche ozanonis,scientific name,320800
+Orobanche purpurea,Orobanche purpurea,scientific name,223125
+Orobanche teucrii,Orobanche teucrii,scientific name,223133
+Orthilia secunda,Orthilia secunda,scientific name,93819
+Oxalis acetosella,Oxalis acetosella,scientific name,341461
+Oxalis fontana,Oxalis fontana,scientific name,469458
+Oxyria digyna,Oxyria digyna,scientific name,284366
+Oxytropis amethystea,Oxytropis amethystea,scientific name,754903
+Oxytropis campestris,Oxytropis campestris,scientific name,20803
+Oxytropis fetida,,,
+Oxytropis halleri,,,
+Oxytropis helvetica,,,
+Oxytropis jacquini,,,
+Oxytropis lapponica,,,
+Oxytropis pilosa,Oxytropis pilosa,scientific name,83865
+Pachypleurum mutellinoides,Pachypleurum mutellinoides,scientific name,239666
+Paeonia officinalis,Paeonia officinalis,scientific name,69717
+Papaver alpinum,Papaver alpinum,scientific name,152832
+Papaver aurantiacum,,,
+Papaver dubium,Papaver dubium,scientific name,357469
+Paradisea liliastrum,Paradisea liliastrum,scientific name,51471
+Paris quadrifolia,Paris quadrifolia,scientific name,231488
+Parnassia palustris,Parnassia palustris,scientific name,38862
+Paronychia kapela,Paronychia kapela,scientific name,157632
+Paronychia polygonifolia,,,
+Pastinaca sativa,Pastinaca sativa,scientific name,4041
+Pedicularis asparagoides,,,
+Pedicularis cenisia,,,
+Pedicularis comosa,,,
+Pedicularis foliosa,Pedicularis foliosa,scientific name,46033
+Pedicularis gyroflexa,,,
+Pedicularis kerneri,Pedicularis kerneri,scientific name,326829
+Pedicularis rostratospicata,,,
+Pedicularis tuberosa,Pedicularis tuberosa,scientific name,326853
+Pedicularis verticillata,Pedicularis verticillata,scientific name,65042
+Persicaria alpina,,,
+Persicaria amphibia,Persicaria amphibia,scientific name,254780
+Persicaria bistorta,Bistorta officinalis,synonym,125587
+Persicaria lapathifolia,Persicaria lapathifolia,scientific name,430754
+Persicaria maculosa,Persicaria maculosa,scientific name,457184
+Persicaria mitis,Persicaria mitis,scientific name,1155347
+Persicaria vivipara,Bistorta vivipara,synonym,371026
+Petasites albus,Petasites albus,scientific name,904458
+Petasites hybridus,Petasites hybridus,scientific name,278673
+Petasites paradoxus,,,
+Petrorhagia prolifera,Petrorhagia prolifera,scientific name,746822
+Petrorhagia saxifraga,Petrorhagia saxifraga,scientific name,46121
+Phegopteris connectilis,Phegopteris connectilis,scientific name,173899
+Phleum alpinum,Phleum alpinum,scientific name,669775
+Phleum phleoides,Phleum phleoides,scientific name,204233
+Phleum pratense,Phleum pratense,scientific name,15957
+Phragmites australis,Phragmites australis,scientific name,29695
+Phyteuma betonicifolium,Phyteuma betonicifolium,scientific name,649683
+Phyteuma charmelii,,,
+Phyteuma hemisphaericum,Phyteuma hemisphaericum,scientific name,649684
+Phyteuma michelii,,,
+Phyteuma nigrum,,,
+Phyteuma orbiculare,Phyteuma orbiculare,scientific name,239468
+Phyteuma ovatum,Phyteuma ovatum,scientific name,1241227
+Phyteuma spicatum,Phyteuma spicatum,scientific name,239469
+Picea abies,Picea abies,scientific name,3329
+Picris hieracioides,Picris hieracioides,scientific name,212690
+Pimpinella major,Pimpinella major,scientific name,1000425
+Pimpinella saxifraga,Pimpinella saxifraga,scientific name,40959
+Pinguicula alpina,Pinguicula alpina,scientific name,192263
+Pinguicula vulgaris,Pinguicula vulgaris,scientific name,204362
+Pinus cembra,Pinus cembra,scientific name,58041
+Pinus mugo,Pinus mugo,scientific name,28528
+Pinus nigra,Pinus nigra,scientific name,58042
+Pinus sylvestris,Pinus sylvestris,scientific name,3349
+Pinus uncinata,Pinus mugo subsp. uncinata,synonym,38864
+Plantago alpina,Plantago alpina,scientific name,197791
+Plantago atrata,Plantago atrata,scientific name,101997
+Plantago holosteum,Plantago holosteum,scientific name,1211594
+Plantago lanceolata,Plantago lanceolata,scientific name,39414
+Plantago major,Plantago major,scientific name,29818
+Plantago maritima,Plantago maritima,scientific name,197809
+Plantago media,Plantago media,scientific name,101992
+Plantago sempervirens,Plantago sempervirens,scientific name,197819
+Platanthera bifolia,Platanthera bifolia,scientific name,431291
+Platanthera chlorantha,Platanthera chlorantha,scientific name,59353
+Pleurospermum austriacum,Pleurospermum austriacum,scientific name,584760
+Poa alpina,Poa alpina,scientific name,87701
+Poa annua,Poa annua,scientific name,93036
+Poa badensis,Poa badensis,scientific name,269364
+Poa bulbosa,Poa bulbosa,scientific name,202404
+Poa cenisia,Poa cenisia,scientific name,269372
+Poa chaixii,Poa chaixii,scientific name,269367
+Poa glauca,Poa glauca,scientific name,227214
+Poa humilis,Poa pratensis subsp. irrigata,synonym,764772
+Poa laxa,Poa laxa,scientific name,269370
+Poa nemoralis,Poa nemoralis,scientific name,269376
+Poa perconcinna,,,
+Poa pratensis,Poa pratensis,scientific name,4545
+Poa supina,Poa supina,scientific name,289064
+Poa trivialis,Poa trivialis,scientific name,89684
+Polycnemum majus,Polycnemum majus,scientific name,240102
+Polygala alpestris,,,
+Polygala alpina,,,
+Polygala amarella,Polygala amarella,scientific name,690759
+Polygala calcarea,Polygala calcarea,scientific name,375120
+Polygala chamaebuxus,Polygala chamaebuxus,scientific name,58882
+Polygala comosa,Polygala comosa,scientific name,162884
+Polygala vulgaris,Polygala vulgaris,scientific name,174553
+Polygonatum odoratum,Polygonatum odoratum,scientific name,82207
+Polygonatum verticillatum,Polygonatum verticillatum,scientific name,261426
+Polygonum amphibium,Persicaria amphibia,synonym,254780
+Polygonum aviculare,Polygonum aviculare,scientific name,137693
+Polygonum bistorta,Bistorta officinalis,synonym,125587
+Polygonum viviparum,Bistorta vivipara,synonym,371026
+Polypodium interjectum,Polypodium interjectum,scientific name,983336
+Polypodium vulgare,Polypodium vulgare,scientific name,58048
+Polystichum aculeatum,Polystichum aculeatum,scientific name,983335
+Polystichum lonchitis,Polystichum lonchitis,scientific name,207865
+Populus alba,Populus alba,scientific name,43335
+Populus nigra,Populus nigra,scientific name,3691
+Populus tremula,Populus tremula,scientific name,113636
+Potamogeton alpinus,Potamogeton alpinus,scientific name,246694
+Potentilla argentea,Potentilla argentea,scientific name,654633
+Potentilla aurea,Potentilla aurea,scientific name,581249
+Potentilla caulescens,Potentilla caulescens,scientific name,637897
+Potentilla cinerea,,,
+Potentilla crantzii,Potentilla crantzii,scientific name,667241
+Potentilla delphinensis,,,
+Potentilla erecta,Potentilla erecta,scientific name,57940
+Potentilla frigida,Potentilla frigida,scientific name,667251
+Potentilla grandiflora,Potentilla grandiflora,scientific name,654638
+Potentilla hirta,Potentilla hirta,scientific name,667256
+Potentilla inclinata,Potentilla inclinata,scientific name,516013
+Potentilla neumanniana,Potentilla neumaniana,synonym,654621
+Potentilla nivalis,,,
+Potentilla reptans,Potentilla reptans,scientific name,57933
+Potentilla rupestris,Drymocallis rupestris,synonym,637895
+Potentilla thuringiaca,Potentilla thuringiaca,scientific name,654642
+Prenanthes purpurea,Prenanthes purpurea,scientific name,43204
+Primula elatior,Primula elatior,scientific name,175059
+Primula farinosa,Primula farinosa,scientific name,133892
+Primula hirsuta,Primula hirsuta,scientific name,184183
+Primula latifolia,Primula latifolia,scientific name,152139
+Primula pedemontana,Primula pedemontana,scientific name,184185
+Primula veris,Primula veris,scientific name,170927
+Primula vulgaris,Primula vulgaris,scientific name,175104
+Pritzelago alpina,Pritzelago alpina,scientific name,153458
+Prunella grandiflora,Prunella grandiflora,scientific name,39356
+Prunella laciniata,,,
+Prunella vulgaris,Prunella vulgaris,scientific name,39358
+Prunus avium,Prunus avium,scientific name,42229
+Prunus domestica,Prunus domestica,scientific name,3758
+Prunus dulcis,Prunus dulcis,scientific name,3755
+Prunus mahaleb,Prunus mahaleb,scientific name,129217
+Prunus padus,Prunus padus,scientific name,97307
+Prunus spinosa,Prunus spinosa,scientific name,114937
+Pseudorchis albida,Pseudorchis albida,scientific name,367781
+Pteridium aquilinum,Pteridium aquilinum,scientific name,32101
+Pteroselinum austriacum,Pteroselinum austriacum,scientific name,203897
+Ptychotis saxifraga,,,
+Pulmonaria angustifolia,Pulmonaria angustifolia,scientific name,256499
+Pulmonaria longifolia,,,
+Pulmonaria montana,,,
+Pulmonaria saccharata,,,
+Pulsatilla alpina,Anemone alpina,synonym,470566
+Pulsatilla halleri,Pulsatilla halleri,scientific name,445228
+Pulsatilla montana,Anemone montana,synonym,387932
+Pulsatilla vernalis,Pulsatilla vernalis,scientific name,445233
+Pyrola chlorantha,Pyrola chlorantha,scientific name,93824
+Pyrola media,Pyrola media,scientific name,642534
+Pyrola minor,Pyrola minor,scientific name,93826
+Pyrola rotundifolia,Pyrola rotundifolia,scientific name,13651
+Pyrus pyraster,Pyrus pyraster,scientific name,356590
+Quercus petraea,Quercus petraea,scientific name,38865
+Quercus pubescens,Quercus pubescens,scientific name,39471
+Quercus robur,Quercus robur,scientific name,38942
+Ranunculus aconitifolius,Ranunculus aconitifolius,scientific name,286847
+Ranunculus acris,Ranunculus acris,scientific name,3447
+Ranunculus aduncus,Ranunculus aduncus,scientific name,286849
+Ranunculus arvensis,Ranunculus arvensis,scientific name,286858
+Ranunculus auricomus,Ranunculus auricomus,scientific name,568533
+Ranunculus bulbosus,Ranunculus bulbosus,scientific name,74828
+Ranunculus glacialis,Ranunculus glacialis,scientific name,235900
+Ranunculus gramineus,Ranunculus gramineus,scientific name,286907
+Ranunculus grenierianus,,,
+Ranunculus kuepferi,Ranunculus kuepferi,scientific name,286921
+Ranunculus lanuginosus,Ranunculus lanuginosus,scientific name,286924
+Ranunculus montanus,Ranunculus montanus,scientific name,286941
+Ranunculus parnassifolius,Ranunculus parnassiifolius,synonym,286960
+Ranunculus platanifolius,Ranunculus platanifolius,scientific name,286971
+Ranunculus polyanthemophyllus,,,
+Ranunculus pyrenaeus,Ranunculus pyrenaeus,scientific name,286985
+Ranunculus repens,Ranunculus repens,scientific name,137665
+Ranunculus seguieri,Ranunculus seguieri,scientific name,286992
+Ranunculus trichophyllus,Ranunculus trichophyllus,scientific name,22903
+Ranunculus tuberosus,Ranunculus tuberosus,scientific name,1000426
+Reseda lutea,Reseda lutea,scientific name,202615
+Reseda phyteuma,Reseda phyteuma,scientific name,415822
+Reynoutria japonica,Fallopia japonica,synonym,488216
+Rhamnus alpina,Rhamnus alpina,scientific name,280016
+Rhamnus cathartica,Rhamnus cathartica,scientific name,3610
+Rhamnus pumila,Rhamnus pumila,scientific name,280023
+Rhamnus saxatilis,Rhamnus saxatilis,scientific name,280025
+Rhaponticum coniferum,Rhaponticum coniferum,scientific name,145817
+Rhaponticum scariosum,Rhaponticum scariosum,scientific name,362644
+Rhinanthus alectorolophus,Rhinanthus alectorolophus,scientific name,374724
+Rhinanthus glacialis,Rhinanthus glacialis,scientific name,374726
+Rhinanthus minor,Rhinanthus minor,scientific name,254782
+Rhinanthus ovifugus,,,
+Rhododendron ferrugineum,Rhododendron ferrugineum,scientific name,49622
+Ribes alpinum,Ribes alpinum,scientific name,134913
+Ribes petraeum,Ribes petraeum,scientific name,175225
+Ribes uva-crispa,Ribes uva-crispa,scientific name,135518
+Roegneria canina,Elymus caninus,synonym,129741
+Rorippa amphibia,Rorippa amphibia,scientific name,65951
+Rorippa islandica,Rorippa islandica,scientific name,157092
+Rorippa sylvestris,Rorippa sylvestris,scientific name,65952
+Rosa agrestis,Rosa agrestis,scientific name,267229
+Rosa caesia,Rosa caesia,scientific name,267233
+Rosa canina,Rosa canina,scientific name,74635
+Rosa corymbifera,Rosa corymbifera,scientific name,267235
+Rosa elliptica,Rosa elliptica,scientific name,323240
+Rosa ferruginea,,,
+Rosa micrantha,Rosa micrantha,scientific name,267241
+Rosa montana,Rosa montana,scientific name,267243
+Rosa pendulina,Rosa pendulina,scientific name,74642
+Rosa pimpinellifolia,Rosa spinosissima,synonym,74630
+Rosa rubiginosa,Rosa eglanteria,synonym,74636
+Rosa villosa,Rosa villosa,scientific name,267261
+Rosa vosagiaca,,,
+Rubus caesius,Rubus caesius,scientific name,75065
+Rubus canescens,Rubus canescens,scientific name,190221
+Rubus corylifolius,,,
+Rubus fruticosus,Rubus fruticosus,scientific name,211815
+Rubus gremlii,,,
+Rubus idaeus,Rubus idaeus,scientific name,32247
+Rubus saxatilis,Rubus saxatilis,scientific name,75091
+Rubus ulmifolius,Rubus ulmifolius,scientific name,75099
+Rumex acetosa,Rumex acetosa,scientific name,41241
+Rumex acetosella,Rumex acetosella,scientific name,61450
+Rumex alpinus,,,
+Rumex arifolius,Rumex alpestris,synonym,565439
+Rumex crispus,Rumex crispus,scientific name,174649
+Rumex obtusifolius,Rumex obtusifolius,scientific name,3619
+Rumex pseudoalpinus,,,
+Rumex scutatus,Rumex scutatus,scientific name,242528
+Sagina glabra,,,
+Sagina procumbens,Sagina procumbens,scientific name,230724
+Sagina saginoides,Sagina saginoides,scientific name,669803
+Salix alba,Salix alba,scientific name,75704
+Salix appendiculata,,,
+Salix aurita,Salix aurita,scientific name,470270
+Salix breviserrata,,,
+Salix caprea,Salix caprea,scientific name,172267
+Salix cinerea,Salix cinerea,scientific name,470278
+Salix daphnoides,Salix daphnoides,scientific name,470274
+Salix eleagnos,Salix elaeagnos,synonym,386449
+Salix foetida,,,
+Salix glaucosericea,,,
+Salix hastata,Salix hastata,scientific name,75710
+Salix herbacea,Salix herbacea,scientific name,77064
+Salix laggeri,,,
+Salix myrsinifolia,Salix myrsinifolia,scientific name,339964
+Salix pentandra,Salix pentandra,scientific name,75715
+Salix purpurea,Salix purpurea,scientific name,77065
+Salix repens,Salix repens,scientific name,467613
+Salix reticulata,Salix reticulata,scientific name,75717
+Salix retusa,Salix retusa,scientific name,77066
+Salix serpyllifolia,Salix serpyllifolia,scientific name,77067
+Salix triandra,Salix triandra,scientific name,77069
+Salvia glutinosa,Salvia glutinosa,scientific name,49211
+Salvia pratensis,Salvia pratensis,scientific name,49216
+Sambucus ebulus,Sambucus ebulus,scientific name,28503
+Sambucus nigra,Sambucus nigra,scientific name,4202
+Sambucus racemosa,Sambucus racemosa,scientific name,4203
+Sanguisorba minor,Sanguisorba minor,scientific name,137456
+Sanguisorba officinalis,Sanguisorba officinalis,scientific name,137457
+Sanicula europaea,Sanicula europaea,scientific name,71982
+Saponaria ocymoides,Saponaria ocymoides,scientific name,42033
+Saponaria officinalis,Saponaria officinalis,scientific name,3572
+Satureja montana,Satureja montana,scientific name,49988
+Saussurea alpina,Saussurea alpina,scientific name,143208
+Saussurea discolor,Saussurea discolor,scientific name,143209
+Saxifraga aizoides,Saxifraga aizoides,scientific name,102714
+Saxifraga androsacea,Saxifraga androsacea,scientific name,134767
+Saxifraga aspera,,,
+Saxifraga biflora,Saxifraga biflora,scientific name,192742
+Saxifraga bryoides,,,
+Saxifraga cuneifolia,Saxifraga cuneifolia,scientific name,102722
+Saxifraga exarata,Saxifraga exarata,scientific name,83410
+Saxifraga granulata,Saxifraga granulata,scientific name,83409
+Saxifraga moschata,Saxifraga moschata,scientific name,134788
+Saxifraga oppositifolia,Saxifraga oppositifolia,scientific name,29771
+Saxifraga paniculata,Saxifraga paniculata,scientific name,102734
+Saxifraga retusa,Saxifraga retusa,scientific name,85263
+Saxifraga rotundifolia,Saxifraga rotundifolia,scientific name,23265
+Saxifraga stellaris,Micranthes stellaris,synonym,90614
+Scabiosa columbaria,Scabiosa columbaria,scientific name,180561
+Scabiosa lucida,Scabiosa lucida,scientific name,467601
+Scabiosa triandra,Scabiosa triandra,scientific name,467602
+Schoenus nigricans,Schoenus nigricans,scientific name,76506
+Scirpus sylvaticus,Scirpus sylvaticus,scientific name,434052
+Scleranthus annuus,Scleranthus annuus,scientific name,230712
+Scleranthus perennis,Scleranthus perennis,scientific name,230711
+Scorzonera austriaca,Scorzonera austriaca,scientific name,261619
+Scorzonera hispanica,Scorzonera hispanica,scientific name,114289
+Scorzoneroides autumnalis,Scorzoneroides autumnalis,scientific name,212686
+Scorzoneroides pyrenaica,Scorzoneroides pyrenaica,scientific name,379629
+Scrophularia canina,Scrophularia canina,scientific name,258519
+Scrophularia lucida,,,
+Scrophularia nodosa,Scrophularia nodosa,scientific name,90363
+Scrophularia peregrina,Scrophularia peregrina,scientific name,160383
+Scutellaria alpina,Scutellaria alpina,scientific name,53167
+Securigera varia,Securigera varia,scientific name,53861
+Sedum acre,Sedum acre,scientific name,23028
+Sedum album,Sedum album,scientific name,23029
+Sedum alpestre,,,
+Sedum anacampseros,Hylotelephium anacampseros,synonym,202966
+Sedum annuum,,,
+Sedum anopetalum,,,
+Sedum atratum,,,
+Sedum dasyphyllum,Sedum dasyphyllum,scientific name,91129
+Sedum montanum,,,
+Sedum rupestre,Sedum rupestre,scientific name,91145
+Sedum sediforme,Sedum sediforme,scientific name,28519
+Sedum sexangulare,Sedum sexangulare,scientific name,91147
+Sedum telephium,Hylotelephium telephium,synonym,91097
+Selaginella selaginoides,Selaginella selaginoides,scientific name,69996
+Sempervivum arachnoideum,,,
+Sempervivum montanum,,,
+Sempervivum tectorum,Sempervivum tectorum,scientific name,91155
+Senecio doria,Senecio doria,scientific name,189237
+Senecio doronicum,Senecio doronicum,scientific name,462523
+Senecio erucifolius,Jacobaea erucifolia,synonym,189238
+Senecio incanus,Jacobaea incana,synonym,189239
+Senecio ovatus,,,
+Senecio squalidus,Senecio squalidus,scientific name,121554
+Senecio viscosus,Senecio viscosus,scientific name,85882
+Serratula tinctoria,Serratula tinctoria,scientific name,65004
+Seseli annuum,,,
+Sesleria caerulea,Sesleria caerulea,scientific name,58931
+Setaria viridis,Setaria viridis,scientific name,4556
+Sibbaldia procumbens,Sibbaldia procumbens,scientific name,57947
+Silaum silaus,Silaum silaus,scientific name,460609
+Silene acaulis,Silene acaulis,scientific name,39862
+Silene armeria,Silene armeria,scientific name,39866
+Silene dioica,Silene dioica,scientific name,39879
+Silene flos-cuculi,Silene flos-cuculi,scientific name,42036
+Silene flos-jovis,Silene flos-jovis,scientific name,39858
+Silene italica,Silene italica,scientific name,42037
+Silene latifolia,Silene latifolia,scientific name,37657
+Silene nutans,Silene nutans,scientific name,42038
+Silene otites,Silene otites,scientific name,42039
+Silene pusilla,Heliosperma pusillum,synonym,39905
+Silene rupestris,Atocion rupestre,synonym,39910
+Silene saxifraga,Silene saxifraga,scientific name,39912
+Silene vallesia,Silene vallesia,scientific name,39920
+Silene vulgaris,Silene vulgaris,scientific name,42043
+Sinapis alba,Sinapis alba,scientific name,3728
+Sinapis arvensis,Sinapis arvensis,scientific name,29728
+Sisymbrium austriacum,Sisymbrium austriacum,scientific name,203569
+Solanum dulcamara,Solanum dulcamara,scientific name,45834
+Soldanella alpina,Soldanella alpina,scientific name,66308
+Solidago gigantea,Solidago gigantea,scientific name,330183
+Solidago virgaurea,Solidago virgaurea,scientific name,462879
+Sonchus arvensis,Sonchus arvensis,scientific name,50192
+Sonchus oleraceus,Sonchus oleraceus,scientific name,50207
+Sorbus aria,Sorbus aria,scientific name,186520
+Sorbus aucuparia,Sorbus aucuparia,scientific name,36599
+Sorbus chamaemespilus,Sorbus chamaemespilus,scientific name,1000427
+Sorbus domestica,Sorbus domestica,scientific name,1155369
+Sorbus mougeotii,Sorbus mougeotii,scientific name,1000428
+Sparganium angustifolium,Sparganium angustifolium,scientific name,669838
+Sparganium emersum,Sparganium emersum,scientific name,361423
+Sparganium erectum,Sparganium erectum,scientific name,767568
+Stachys annua,,,
+Stachys officinalis,Betonica officinalis,synonym,53173
+Stachys pradica,Stachys pradica,scientific name,1000429
+Stachys recta,Stachys recta,scientific name,53174
+Stachys sylvatica,Stachys sylvatica,scientific name,53175
+Staehelina dubia,Staehelina dubia,scientific name,313545
+Stellaria alsine,Stellaria alsine,scientific name,254021
+Stellaria graminea,Stellaria graminea,scientific name,271541
+Stellaria holostea,Stellaria holostea,scientific name,581250
+Stellaria media,Stellaria media,scientific name,13274
+Stellaria nemorum,Stellaria nemorum,scientific name,325516
+Stipa capillata,Stipa capillata,scientific name,665498
+Stipa eriocaulis,Stipa pennata subsp. eriocaulis,synonym,376135
+Stipa pennata,Stipa pennata,scientific name,399722
+Streptopus amplexifolius,Streptopus amplexifolius,scientific name,134860
+Succisa pratensis,Succisa pratensis,scientific name,105906
+Swertia perennis,Swertia perennis,scientific name,39379
+Symphytum officinale,Symphytum officinale,scientific name,278672
+Symphytum tuberosum,Symphytum tuberosum,scientific name,256504
+Tamus communis,Dioscorea communis,synonym,55634
+Tanacetum corymbosum,Tanacetum corymbosum,scientific name,127994
+Taraxacum alpinum,Taraxacum alpinum,scientific name,268103
+Taraxacum campylodes,,,
+Taraxacum dissectum,,,
+Taraxacum erythrospermum,Taraxacum erythrospermum,scientific name,268104
+Taraxacum F.H.,,,
+Taraxacum fulvum,,,
+Taraxacum rubicundum,Taraxacum rubicundum,scientific name,90050
+Taraxacum sellandii,,,
+Taxus baccata,Taxus baccata,scientific name,25629
+Telephium imperati,Telephium imperati,scientific name,645216
+Tetragonolobus maritimus,Lotus maritimus,synonym,118937
+Teucrium chamaedrys,Teucrium chamaedrys,scientific name,53176
+Teucrium montanum,Teucrium montanum,scientific name,1000430
+Teucrium scordium,Teucrium scordium,scientific name,1132410
+Teucrium scorodonia,Teucrium scorodonia,scientific name,53178
+Thalictrum aquilegiifolium,Thalictrum aquilegiifolium,scientific name,619227
+Thalictrum foetidum,Thalictrum foetidum,scientific name,1084670
+Thalictrum minus,Thalictrum minus,scientific name,476039
+Thalictrum simplex,Thalictrum simplex,scientific name,495765
+Thesium alpinum,Thesium alpinum,scientific name,705353
+Thesium divaricatum,,,
+Thesium humifusum,Thesium humifusum,scientific name,705376
+Thesium linophyllon,,,
+Thlaspi arvense,Thlaspi arvense,scientific name,13288
+Thymus froelichianus,,,
+Thymus glabrescens,,,
+Thymus longicaulis,,,
+Thymus oenipontanus,,,
+Thymus polytrichus,Thymus praecox subsp. polytrichus,synonym,1155380
+Thymus praecox,Thymus praecox,scientific name,347388
+Thymus pulegioides,Thymus pulegioides,scientific name,751873
+Thymus serpyllum,Thymus serpyllum,scientific name,204219
+Tilia cordata,Tilia cordata,scientific name,172266
+Tilia platyphyllos,Tilia platyphyllos,scientific name,82423
+Tofieldia calyculata,Tofieldia calyculata,scientific name,85290
+Tolpis staticifolia,Chlorocrepis staticifolia,synonym,122554
+Torilis japonica,Torilis japonica,scientific name,49576
+Tozzia alpina,Tozzia alpina,scientific name,46058
+Tragopogon crocifolius,Tragopogon crocifolius,scientific name,261643
+Tragopogon dubius,Tragopogon dubius,scientific name,45322
+Tragopogon porrifolius,Tragopogon porrifolius,scientific name,13731
+Tragopogon pratensis,Tragopogon pratensis,scientific name,41653
+Traunsteinera globosa,Traunsteinera globosa,scientific name,413040
+Trichophorum alpinum,Trichophorum alpinum,scientific name,291103
+Trichophorum cespitosum,Trichophorum cespitosum,scientific name,76515
+Trifolium alpestre,Trifolium alpestre,scientific name,97007
+Trifolium alpinum,Trifolium alpinum,scientific name,97008
+Trifolium arvense,Trifolium arvense,scientific name,361560
+Trifolium aureum,Trifolium aureum,scientific name,361561
+Trifolium badium,Trifolium badium,scientific name,97012
+Trifolium campestre,Trifolium campestre,scientific name,97015
+Trifolium diffusum,Trifolium diffusum,scientific name,97020
+Trifolium medium,Trifolium medium,scientific name,97028
+Trifolium montanum,Trifolium montanum,scientific name,74522
+Trifolium ochroleucon,Trifolium ochroleucon,scientific name,1000431
+Trifolium pallescens,Trifolium pallescens,scientific name,74526
+Trifolium pratense,Trifolium pratense,scientific name,57577
+Trifolium repens,Trifolium repens,scientific name,3899
+Trifolium rubens,Trifolium rubens,scientific name,97037
+Trifolium saxatile,,,
+Trifolium thalii,Trifolium thalii,scientific name,74531
+Triglochin palustre,,,
+Trigonella monspeliaca,Medicago monspeliaca,synonym,70959
+Trinia glauca,Trinia glauca,scientific name,1000432
+Trisetum distichophyllum,,,
+Trisetum flavescens,Trisetum flavescens,scientific name,87477
+Trisetum spicatum,Trisetum spicatum,scientific name,100813
+Triticum aestivum,Triticum aestivum,scientific name,4565
+Triticum durum,Triticum durum,scientific name,4567
+Trollius europaeus,Trollius europaeus,scientific name,212754
+Tulipa sylvestris,Tulipa sylvestris,scientific name,248498
+Turritis glabra,Turritis glabra,scientific name,63678
+Tussilago farfara,Tussilago farfara,scientific name,118778
+Typha latifolia,Typha latifolia,scientific name,4733
+Ulmus glabra,Ulmus glabra,scientific name,172265
+Ulmus minor,Ulmus minor,scientific name,262084
+Urtica dioica,Urtica dioica,scientific name,3501
+Vaccinium myrtillus,Vaccinium myrtillus,scientific name,180763
+Vaccinium uliginosum,Vaccinium uliginosum,scientific name,190548
+Vaccinium vitis-idaea,Vaccinium vitis-idaea,scientific name,180772
+Valeriana dioica,Valeriana dioica,scientific name,183948
+Valeriana montana,Valeriana montana,scientific name,243118
+Valeriana officinalis,Valeriana officinalis,scientific name,19953
+Valeriana rotundifolia,Valeriana rotundifolia,scientific name,1027241
+Valeriana saliunca,Valeriana saliunca,scientific name,245826
+Valeriana tripteris,Valeriana tripteris,scientific name,183955
+Valeriana tuberosa,Valeriana tuberosa,scientific name,368320
+Valerianella dentata,Valerianella dentata,scientific name,300936
+Valerianella locusta,Valerianella locusta,scientific name,59166
+Veratrum album,Veratrum album,scientific name,50243
+Veratrum lobelianum,Veratrum lobelianum,scientific name,203095
+Verbascum chaixii,Verbascum chaixii,scientific name,1211623
+Verbascum lychnitis,Verbascum lychnitis,scientific name,1000433
+Verbascum nigrum,Verbascum nigrum,scientific name,90364
+Verbascum pulverulentum,Verbascum pulverulentum,scientific name,90366
+Verbascum thapsus,Verbascum thapsus,scientific name,39388
+Verbena officinalis,Verbena officinalis,scientific name,79772
+Veronica agrestis,Veronica agrestis,scientific name,99384
+Veronica allionii,Veronica allionii,scientific name,195123
+Veronica alpina,Veronica alpina,scientific name,165325
+Veronica anagallis-aquatica,Veronica anagallis-aquatica,scientific name,74693
+Veronica aphylla,Veronica aphylla,scientific name,201447
+Veronica arvensis,Veronica arvensis,scientific name,46032
+Veronica austriaca,Veronica austriaca,scientific name,165327
+Veronica beccabunga,Veronica beccabunga,scientific name,165328
+Veronica bellidioides,Veronica bellidioides,scientific name,165329
+Veronica catenata,Veronica catenata,scientific name,39418
+Veronica chamaedrys,Veronica chamaedrys,scientific name,165330
+Veronica fruticans,Veronica fruticans,scientific name,207273
+Veronica fruticulosa,Veronica fruticulosa,scientific name,165333
+Veronica hederifolia,Veronica hederifolia,scientific name,202477
+Veronica officinalis,Veronica officinalis,scientific name,160511
+Veronica persica,Veronica persica,scientific name,138560
+Veronica serpyllifolia,Veronica serpyllifolia,scientific name,164258
+Veronica spicata,Veronica spicata,scientific name,165318
+Veronica triphyllos,Veronica triphyllos,scientific name,195143
+Veronica urticifolia,Veronica urticifolia,scientific name,165344
+Veronica verna,Veronica verna,scientific name,195145
+Viburnum lantana,Viburnum lantana,scientific name,237945
+Viburnum opulus,Viburnum opulus,scientific name,85293
+Vicia cracca,Vicia cracca,scientific name,3905
+Vicia hirsuta,Vicia hirsuta,scientific name,3910
+Vicia hybrida,Vicia hybrida,scientific name,298727
+Vicia onobrychioides,Vicia onobrychioides,scientific name,1276840
+Vicia sativa,Vicia sativa,scientific name,3908
+Vicia sepium,Vicia sepium,scientific name,347188
+Vicia sylvatica,Vicia sylvatica,scientific name,287755
+Vicia tenuifolia,Vicia tenuifolia,scientific name,1042229
+Vicia tetrasperma,Vicia tetrasperma,scientific name,154499
+Vinca minor,Vinca minor,scientific name,60093
+Vincetoxicum hirundinaria,Vincetoxicum hirundinaria,scientific name,141524
+Viola biflora,Viola biflora,scientific name,214529
+Viola calcarata,Viola calcarata,scientific name,97420
+Viola canina,Viola canina,scientific name,502511
+Viola cenisia,,,
+Viola hirta,Viola hirta,scientific name,369421
+Viola laricicola,Viola laricicola,scientific name,1017136
+Viola mirabilis,Viola mirabilis,scientific name,369422
+Viola odorata,Viola odorata,scientific name,97441
+Viola palustris,Viola palustris,scientific name,462882
+Viola pyrenaica,Viola pyrenaica,scientific name,1042420
+Viola reichenbachiana,Viola reichenbachiana,scientific name,97450
+Viola riviniana,Viola riviniana,scientific name,214052
+Viola rupestris,Viola rupestris,scientific name,502521
+Viola suavis,Viola suavis,scientific name,369424
+Viola thomasiana,Viola thomasiana,scientific name,1042419
+Viola tricolor,Viola tricolor,scientific name,214053
+Viscum album,Viscum album,scientific name,3972
+Woodsia alpina,,,
+Xeranthemum inapertum,Xeranthemum inapertum,scientific name,143216

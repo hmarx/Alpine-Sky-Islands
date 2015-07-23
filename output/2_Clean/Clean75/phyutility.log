@@ -1,0 +1,25 @@
+starting log: 16/07/15 04:00
+clean
+cleannum: 0.75
+in filename: ITS.unique.fasta
+outfile: ITS.unique.fasta.clean75
+starting log: 16/07/15 04:00
+clean
+cleannum: 0.75
+in filename: atpB.unique.fasta
+outfile: atpB.unique.fasta.clean75
+starting log: 16/07/15 04:00
+clean
+cleannum: 0.75
+in filename: matK.unique.fasta
+outfile: matK.unique.fasta.clean75
+starting log: 16/07/15 04:01
+clean
+cleannum: 0.75
+in filename: rbcL.unique.fasta
+outfile: rbcL.unique.fasta.clean75
+starting log: 16/07/15 04:01
+clean
+cleannum: 0.75
+in filename: trnTLF.unique.fasta
+outfile: trnTLF.unique.fasta.clean75
