@@ -127,7 +127,7 @@ UnderIce.sesmntd.phylonull <- ses.mntd(pezAlpes.UnderIce$comm, cophenetic.phylo(
 
 
 ###################################################################################### 
-############################### Null Pool: Summits ###################################
+############################### Null : Source Pool ###################################
 ###################################################################################### 
 
 ######################################################################################  
@@ -154,6 +154,35 @@ comm.sesmpd.sourcePoolNull.under <- ses.mpd.sourcePool(phy=pezAlpes$phy, com = p
 comm.sesmntd.sourcePoolNull.under <- ses.mntd.sourcePool(phy=pezAlpes$phy, com = pezAlpes$comm, sourcePool = "underIce", N =999)
 #write.csv(comm.sesmntd.sourcePoolNull.under, file="output/9_PhyoDiversity/dispersion/comm.sesmntd.sourcePoolNull.under.csv")
 
+
+###################################################################################### 
+############################### Null : Historic Source Pool = Persistent ###################################
+###################################################################################### 
+
+## Contemporary species pool = summits 
+## Hisoric source pool = persistent abouve glacier through LGM
+
+summits.sites <- as.data.frame(cbind("taxa" = colnames(alps.sites), as.data.frame(t(alps.sites))))
+summits.sites <- filter(summits.sites, Summits > 0)
+head(summits.sites)
+rownames(summits.sites) <- summits.sites$taxa
+dim(summits.sites)
+summits.sites <- t(summits.sites[-1])
+summits.sites <- data.matrix(summits.sites)
+
+## Reduce data, without traits
+pezAlpes.summits <- comparative.comm(phy = alps.phy, comm = summits.sites[-c(2:3),], env = alps.env)
+pezAlpes.summits # 231  taxa
+
+summits.sesmpd.sourcePersis <- ses.mpd.sourcePool(phy=pezAlpes.summits$phy, com = pezAlpes.summits$comm, sourcePool = "persistant", N =999)
+summits.sesmntd.sourcePersis <- ses.mntd.sourcePool(phy=pezAlpes.summits$phy, com = pezAlpes.summits$comm, sourcePool = "persistant", N =999)
+
+
+## Contemporary species pool = summits 
+## Hisoric source pool = summits (persistent + under ice?)
+
+summits.sesmpd.sourceSummits <- ses.mpd.sourcePool(phy=pezAlpes.summits$phy, com = pezAlpes.summits$comm, sourcePool = "Summits", N =999)
+summits.sesmntd.sourceSUmmits <- ses.mntd.sourcePool(phy=pezAlpes.summits$phy, com = pezAlpes.summits$comm, sourcePool = "Summits", N =999)
 
 
 

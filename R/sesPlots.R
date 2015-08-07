@@ -1,4 +1,4 @@
-
+      
 ###################################################################################### 
 ############################### Pool : Ecrins NP ##################################### 
 ###################################################################################### 
@@ -147,7 +147,7 @@ mpd.pools.melt <- melt(mpd.pools, id=c(colnames(comm.sesmpd.phylonull)))
 mpd.pools.melt <- na.omit(mpd.pools.melt)
 mpd.pools.melt$L1 <- factor(mpd.pools.melt$L1)
 
-pdf(file="output/9_PhyoDiversity/mpd.sourcepools.pdf") 
+#pdf(file="output/9_PhyoDiversity/mpd.sourcepools.pdf") 
 p1 <- ggplot(mpd.pools.melt, aes(mpd.obs.z, colour=L1)) + 
   geom_density() +
   scale_color_discrete(name="Source Pool",
@@ -155,7 +155,7 @@ p1 <- ggplot(mpd.pools.melt, aes(mpd.obs.z, colour=L1)) +
                        labels=c("Ecrins NP", "Summits", "Peristent", "Under Ice")) +
   ggtitle("Distribution of SES mpd for different source pools") 
 p1
-dev.off()
+#dev.off()
 
 
 mntd.pools <- list(comm.sesmntd, summits.sesmntd.phylonull, persistent.sesmntd.phylonull, UnderIce.sesmntd.phylonull)
@@ -288,6 +288,32 @@ p1 <- ggplot(all.mpd, aes(mpd.obs.z, colour=L1, linetype=L1)) +
   ggtitle("Distribution of SES mpd for different source pools") 
 p1
 #dev.off()
+
+
+
+
+###################################################################################### 
+########################   Summarize Null : Historic Source Pool = Persistent ########################   
+###################################################################################### 
+
+## Contemporary species pool = Summits 
+## Hisoric source pool = Ecrins NP
+plotSESdispersion(mntd = comm.sesmntd, mpd = comm.sesmpd.phylonull, 
+                  mainTitle = "Dispersion Metrics Ecrins NP\nnull.model = equal probability draw from Ecrins Pool")
+
+## Contemporary species pool = summits 
+## Hisoric source pool = persistent abouve glacier through LGM
+plotSESdispersion(mpd = summits.sesmpd.sourcePersis,mntd = summits.sesmntd.sourcePersis, 
+                  mainTitle = "Dispersion Metrics Persistent above LGM\nnull.model = weighted draw from summits source pool")
+
+
+## Contemporary species pool = summits 
+## Hisoric source pool = summits (persistent + under ice?)
+plotSESdispersion(mpd = summits.sesmpd.sourceSummits, mntd = summits.sesmntd.sourceSUmmits, 
+                  mainTitle = "Dispersion Metrics Summits\nnull.model = weighted draw from summits source pool")
+
+
+
 
 
 

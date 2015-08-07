@@ -37,6 +37,20 @@ head(t(CommunityMatrixFinal))
 alps.sites <- com.Alpes2
 head(alps.sites)
 row.names(alps.sites)[3] <- "EcrinsNP"
+ 
+## Combine certain area to one peak: 
+alps.sites <- rbind(alps.sites, "Râteau" = colSums(alps.sites[c("brèche.du.râteau", "le.râteau", "pic.ouest..le.rateau."),]))
+alps.sites <- rbind(alps.sites, "Lauvitel" = colSums(alps.sites[c("brèche.de.valsenestre", "signal.du.lauvitel", "pic.du.clapier.du.peyron"),]))
+tail(alps.sites)
+
+rownames(alps.sites)
+
+alps.sites <- alps.sites[-c(6,7,9,15,16,20),]
+
+rownames(alps.sites) <- c("persistent", "underIce", "EcrinsNP", "Plat de la Selle", "Barre des Ecrins", "La Meije",
+                          "Sirac", "Rouies", "Olan", "Pelvoux", "Occidentale Ailefroide", "Brevoort", "Burlan", 
+                          "Rocher de la Selle", "Choisy", "Muraillette", "Summits", "Rateau", "Lauvitel")
+
 #write.csv(alps.sites, file="data/AnalysesDatasets/alps.sites.csv")
 
 
@@ -151,14 +165,36 @@ head(disc.traits.alps.taxize.avg)
 disc.traits <- as.data.frame(disc.traits.alps.taxize.avg[2:ncol(disc.traits.alps.taxize.avg)])
 rownames(disc.traits) <- disc.traits.alps.taxize.avg$taxized
 
+summary(disc.traits)
+head(disc.traits)
+disc.traits.dummy <- disc.traits  %>% mutate(diploid = PLOIDY == "diploid") %>% mutate(woody = WOODY == "suffrutescent") %>% mutate(annual = LIFESPAN == "annual") %>% mutate(cushions = VEG_DISP == "cushions")
+head(disc.traits.dummy)
+
+disc.traits.dummy[disc.traits.dummy == FALSE] <- 0
+disc.traits.dummy[disc.traits.dummy == TRUE] <- 1
+rownames(disc.traits.dummy) <- rownames(disc.traits)
+
 ## Merge the two 
 trait.Alps.tmp <- merge(cont.traits, disc.traits, by=0)
 trait.Alps<- trait.Alps.tmp[2:ncol(trait.Alps.tmp)]
 rownames(trait.Alps) <- sub(trait.Alps.tmp$Row.names, pattern =" ", replacement="_")
 head(trait.Alps)
-
+dim(trait.Alps) #1400 12
 alps.traits <- trait.Alps
-write.csv(alps.traits, file="data/AnalysesDatasets/alps.traits.csv")
+
+#write.csv(alps.traits, file="data/AnalysesDatasets/alps.traits.csv")
+
+
+## Merge the two 
+trait.Alps.tmp <- merge(cont.traits, disc.traits.dummy, by=0)
+trait.Alps<- trait.Alps.tmp[2:ncol(trait.Alps.tmp)]
+rownames(trait.Alps) <- sub(trait.Alps.tmp$Row.names, pattern =" ", replacement="_")
+head(trait.Alps)
+dim(trait.Alps) #1400 12
+alps.traits.dummy <- trait.Alps
+
+#write.csv(alps.traits.dummy, file="data/AnalysesDatasets/alps.traits.dummy.csv")
+
 
 
 ################################################# Metadata ################################################# 
@@ -172,19 +208,6 @@ head(summits)
 dim(summits) #20 summits 85 variables
 names(summits)
 
-## rename to match community matrix
-summits$NOM[4] <- "brèche.du.râteau"
-summits$NOM[6] <- "brèche.de.valsenestre"
-summits$NOM[8] <- "aiguille.du.plat.de.la.selle"
-summits$NOM[10] <- "rocher.de.la.selle"
-summits$NOM[12] <- "pic.du.clapier.du.peyron"
-summits$NOM[14] <- "tête.de.la.muraillette"
-summits$NOM[18] <- "pic.ouest..le.rateau."
-summits$NOM[20] <- "le.râteau"
-
-summits$NOM[13] # not in the community matrix
-
-
 ### Just checking coverage
 summits$NOM %in% rownames(com.Alpes2)
 rownames(com.Alpes2) %in% summits$NOM 
@@ -192,13 +215,62 @@ rownames(com.Alpes2) %in% summits$NOM
 envAlps <- summits[-3]
 rownames(envAlps) <- summits$NOM
 envAlps
+## rename to match community matrix
+#summits$NOM[4] <- "brèche.du.râteau"
+#summits$NOM[6] <- "brèche.de.valsenestre"
+#summits$NOM[8] <- "aiguille.du.plat.de.la.selle"
+#summits$NOM[10] <- "rocher.de.la.selle"
+#summits$NOM[12] <- "pic.du.clapier.du.peyron"
+#summits$NOM[14] <- "tête.de.la.muraillette"
+#summits$NOM[18] <- "pic.ouest..le.rateau."
+#summits$NOM[20] <- "le.râteau"
+#summits$NOM[13] # not in the community matrix
+
+rownames(envAlps)
+
+rownames(envAlps)[1] <- "Occidentale Ailefroide"
+rownames(envAlps)[2] <- "Choisy"
+rownames(envAlps)[3] <- "Olan"
+rownames(envAlps)[4] <- "brèche.du.râteau" ## Combined into Rateau
+rownames(envAlps)[5] <- "Lauvitel"
+rownames(envAlps)[6] <- "brèche.de.valsenestre" ## Combined into lauvitel
+rownames(envAlps)[7] <- "Brevoort"
+rownames(envAlps)[8] <- "Plat de la Selle"
+rownames(envAlps)[9] <- "Rouies"
+rownames(envAlps)[10] <- "Rocher de la Selle"
+rownames(envAlps)[11] <- "Burlan"
+rownames(envAlps)[12] <- "Peyron" ## Combined into lauvitel
+rownames(envAlps)[13] <- "Dibona"
+rownames(envAlps)[14] <- "Muraillette"
+rownames(envAlps)[15] <- "Sirac"
+rownames(envAlps)[16] <- "Pelvoux"
+rownames(envAlps)[17] <- "La Meije"
+rownames(envAlps)[18] <- "pic ouest (le rateau)" ## Combined into Rateau
+rownames(envAlps)[19] <- "Barre des Ecrins"
+rownames(envAlps)[20] <- "Rateau"
+
 
 ### Add fill rows for analyses:
-envAlps2 <- rbind("persistant" = rep("NA", times = ncol(envAlps)), "underIce" = rep("NA", times = ncol(envAlps)), 
+envAlps2 <- rbind("persistent" = rep("NA", times = ncol(envAlps)), "underIce" = rep("NA", times = ncol(envAlps)), 
                   "EcrinsNP" = rep("NA", times = ncol(envAlps)), envAlps, "Summits" = rep("NA", times = ncol(envAlps)))
 
-rownames(alps.sites) %in% rownames(envAlps2)
+rownames(alps.sites) %in% rownames(envAlps2) #ALL TRUE
 
 alps.env <- envAlps2
-write.csv(alps.env, file="data/AnalysesDatasets/alps.env.csv")
+
+#### Read in elevation abouve LGM, and slope 
+lgm.elevation <- read.csv(file="data/RAW/stat_elevation.csv")
+colnames(lgm.elevation) <- c("obg", "Summit", "zone", "ct", "area", "min_elev", "max_elev", "range_elev",
+                             "mean_elev", "std_elev","median_elev")
+slope <- read.csv(file="data/RAW/stat_slope.csv")
+colnames(slope) <- c("obg", "Summit", "zone", "ct", "min_slope", "max_slope", "range_slope",
+                             "mean_slope", "std_slope")
+env.new <- full_join(lgm.elevation[c(2,5:ncol(lgm.elevation))], slope[c(2,5:ncol(slope))])
+head(env.new)
+rownames(env.new) <- env.new[,1] 
+
+envAlps3 <- merge(envAlps2, env.new[-1], by=0, all.x=T, all.y=T)
+rownames(envAlps3) <- envAlps3[,1]
+alps.env <- envAlps3[-1]
+#write.csv(alps.env, file="data/AnalysesDatasets/alps.env.csv")
 

@@ -1,4 +1,4 @@
-
+library(FD)
 library(geiger)
 library(picante)
 library(spacodiR)
@@ -19,9 +19,12 @@ library(MonoPhy)
 #devtools::install_github("wcornwell/TaxonLookup")
 library(TaxonLookup)
 #install.packages("stringi")
+library(cluster)
 
 # Deal with French properly
 options(encoding="latin1")
+
+source("R/TaxonomyHarmony.R")
 
 ################################################# 
 ################################################# 
@@ -41,6 +44,9 @@ alps.sites <- data.matrix(alps.sites)
 
 alps.traits <- read.csv(file="data/AnalysesDatasets/alps.traits.csv", row.names=1)
 alps.traits
+
+alps.traits.dummy <- read.csv(file="data/AnalysesDatasets/alps.traits.dummy.csv", row.names=1)
+head(alps.traits.dummy)
 
 ################################################# Metadata ################################################# 
 

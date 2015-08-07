@@ -15,6 +15,7 @@ require(phytools)
 require(phylobase)
 library(picante)
 library(cati)
+library(gridExtra)
 
 
 ############################ Prepare Data ########################################################  
@@ -44,10 +45,102 @@ rownames(alps.data.complete) <- tmp$Row.names
 pezAlpes.Traits <- comparative.comm(phy = alps.phy, comm = alps.sites, env = alps.env, traits = (alps.data.complete)) #599
 pezAlpes.Traits$data$PL_H_flora_MAX <- log(pezAlpes.Traits$data$PL_H_flora_MAX)
 pezAlpes.Traits$data$SEEDM <- log(pezAlpes.Traits$data$SEEDM)
-pezAlpes.Traits$data$PLOIDY <- as.numeric(pezAlpes.Traits$data$PLOIDY)
-pezAlpes.Traits$data$VEG_DISP <- as.numeric(pezAlpes.Traits$data$VEG_DISP)
-pezAlpes.Traits$data$WOODY <- as.numeric(pezAlpes.Traits$data$WOODY)
+#pezAlpes.Traits$data$PLOIDY <- as.numeric(pezAlpes.Traits$data$PLOIDY)
+#pezAlpes.Traits$data$VEG_DISP <- as.numeric(pezAlpes.Traits$data$VEG_DISP)
+#pezAlpes.Traits$data$WOODY <- as.numeric(pezAlpes.Traits$data$WOODY)
 
+tmp <- merge(t(pezAlpes.Traits$comm), pezAlpes.Traits$data, by=0, all.y=T)
+head(tmp)
+tmp2 <- melt(tmp, id.vars = c("Row.names", c(colnames(pezAlpes.Traits$data))))
+head(tmp2)
+tmp2 <- tmp2[tmp2$value != 0,]
+
+
+#tmp.tr <- melt(t(pezAlpes.Traits$comm))
+#head(tmp.tr)
+#dim(tmp.tr)
+
+#tmp.tr %>% group_by(X2) %>% full_join(tmp.tr, pezAlpes.Traits$data)
+
+#tmp.tr.m <- (merge(tmp.tr, pezAlpes.Traits$data, by.x=1, by.y=0, all.x =T, all.y=F))
+#dim(tmp.tr.m)
+#head(tmp.tr.m)
+
+pdf(file="output/8_TraitDiveristy/traitValues_SeedMass.pdf") 
+p <- ggplot(tmp2, aes(x=reorder(factor(variable), value), y=SEEDM)) #, col=c("magenta1", "green3"))
+p <- p + geom_boxplot(width = 1, notch=T,fill="green3")
+#sla <- sla + geom_smooth(method="lm", se=FALSE, color="black", aes(group=1))
+p <- p + scale_x_discrete("Island (increasing size)") #, breaks=seq(0, 80, 10)) 
+p <- p + scale_y_continuous("Seed Mass") 
+p <- p + theme_bw() 
+p <- p + theme(legend.position="top")
+p <- p + theme(axis.text.x = element_text(angle = -45, hjust = 0))
+#p <- p + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
+p
+
+dev.off()
+
+pdf(file="output/8_TraitDiveristy/traitValues_MaxHeight.pdf") 
+p1 <- ggplot(tmp2, aes(x=reorder(factor(variable), value), y=PL_H_flora_MAX)) #, col=c("magenta1", "green3"))
+p1 <- p1 + geom_boxplot(width = 1, notch=T, fill="magenta1")
+#sla <- sla + geom_smooth(method="lm", se=FALSE, color="black", aes(group=1))
+p1 <- p1 + scale_x_discrete("Island (increasing size)") #, breaks=seq(0, 80, 10)) 
+p1 <- p1 + scale_y_continuous("Maximum Height") 
+p1 <- p1 + theme_bw() 
+#p1 <- p1  + scale_fill_manual(values=c("i"= "magenta1", "n"="green3")) ##breaks=rev(factor(SJnew$status)),
+p1 <- p1 + guides(fill=guide_legend(title=""))
+p1 <- p1 + theme(legend.position="top")
+p1 <- p1 + theme(axis.text.x = element_text(angle = -45, hjust = 0))
+#p1 <- p1 + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
+p1
+dev.off()
+
+pdf(file="output/8_TraitDiveristy/traitValues_Ploidy.pdf") 
+p2 <- ggplot(tmp2, aes(x=reorder(factor(variable), value), fill=factor(PLOIDY))) #, col=c("magenta1", "green3"))
+p2 <- p2 + geom_bar(stat="bin")
+#sla <- sla + geom_smooth(method="lm", se=FALSE, color="black", aes(group=1))
+p2 <- p2 + scale_x_discrete("Island (increasing size)") #, breaks=seq(0, 80, 10)) 
+p2 <- p2 + scale_y_continuous("Ploidy") 
+p2 <- p2 + theme_bw() 
+#p2 <- p2  + scale_fill_manual(values=c("i"= "magenta1", "n"="green3")) ##breaks=rev(factor(SJnew$status)),
+p2 <- p2 + guides(fill=guide_legend(title=""))
+p2 <- p2 + theme(legend.position="right")
+p2 <- p2 + theme(axis.text.x = element_text(angle = -45, hjust = 0))
+#p2 <- p2 + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
+p2
+dev.off()
+
+pdf(file="output/8_TraitDiveristy/traitValues_Habit.pdf") 
+p3 <- ggplot(tmp2, aes(x=reorder(factor(variable), value), fill=factor(VEG_DISP))) #, col=c("magenta1", "green3"))
+p3 <- p3 + geom_bar(stat="bin")
+#sla <- sla + geom_smooth(method="lm", se=FALSE, color="black", aes(group=1))
+p3 <- p3 + scale_x_discrete("Island (increasing size)") #, breaks=seq(0, 80, 10)) 
+p3 <- p3 + scale_y_continuous("Habit") 
+p3 <- p3 + theme_bw() 
+#p3 <- p3  + scale_fill_manual(values=c("i"= "magenta1", "n"="green3")) ##breaks=rev(factor(SJnew$status)),
+p3 <- p3 + guides(fill=guide_legend(title=""))
+p3 <- p3 + theme(legend.position="right")
+p3 <- p3 + theme(axis.text.x = element_text(angle = -45, hjust = 0))
+#p3 <- p3 + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
+p3
+dev.off()
+
+pdf(file="output/8_TraitDiveristy/traitValues_Woody.pdf") 
+p4 <- ggplot(tmp2, aes(x=reorder(factor(variable), value), fill=factor(WOODY))) #, col=c("magenta1", "green3"))
+p4 <- p4 + geom_bar(stat="bin")
+#sla <- sla + geom_smooth(method="lm", se=FALSE, color="black", aes(group=1))
+p4 <- p4 + scale_x_discrete("Island (increasing size)") #, breaks=seq(0, 80, 10)) 
+p4 <- p4 + scale_y_continuous("Woodiness") 
+p4 <- p4 + theme_bw() 
+#p4 <- p4  + scale_fill_manual(values=c("i"= "magenta1", "n"="green3")) ##breaks=rev(factor(SJnew$status)),
+p4 <- p4 + guides(fill=guide_legend(title=""))
+p4 <- p4 + theme(legend.position="right")
+p4 <- p4 + theme(axis.text.x = element_text(angle = -45, hjust = 0))
+#p4 <- p4 + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
+p4
+dev.off()
+
+grid.arrange(p, p1, p2, p3, p4)
 
 ############################ Hill Smith coordinate of variation ############################ 
 

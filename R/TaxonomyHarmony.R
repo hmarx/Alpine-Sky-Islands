@@ -9,9 +9,9 @@ library(taxize)
 options(encoding="latin1")
 
 ### Load dataset
-head(releves) 
-dim(releves)
-colnames(releves)
+#head(releves) 
+#dim(releves)
+#colnames(releves)
 
 
 get.genus.species <- function(df, colnum, spliton, sepas){

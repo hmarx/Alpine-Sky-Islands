@@ -284,7 +284,7 @@ res1=congruify.phylo(fatol, phy, tax, tol=0, scale="NA")
 ## WRITE OUT TREEPL FILE -- you'll need to do more than just run the exported file, but this gives you a start
 # 4600 
 nsites=3509 #SHOULD be number of nucleotides in alignment 
-write.treePL(res1$target, res1$calibrations, nsites, base="output/5_Scaling/clean75/EcrinSpPool.EcrinSpPool.clean75.16072015.1000.treePL", opts=list(prime=TRUE))
+#write.treePL(res1$target, res1$calibrations, nsites, base="output/5_Scaling/clean75/EcrinSpPool.EcrinSpPool.clean75.16072015.1000.treePL", opts=list(prime=TRUE))
 ##had to modify .infile to adjust location of .intree
 
 ##Run on fortytwo: treePL EcrinSpPool.120515.1000.treePL.infile
@@ -321,7 +321,7 @@ treePL #1154
 
 ##### Match bootstrap node labels from ML tree to treePL scaled tree ####
 ## Takes a while for large trees...
-plotTreePLBoot(treePL=treePL, bootTree=treeBSroot, file="output/5_Scaling/clean75/EcrinSpPool.clean75.bootstrap.tre") 
+plotTreePLBoot(treePL=treePL, bootTree=treeBSroot, file="output/5_Scaling/EcrinSpPool.bootstrap.tre") 
 ## Deleted "Root" label from nexus in TextWrangler
 
 ########################################################### 6_Visualize Tree ######################################################### 
@@ -433,9 +433,9 @@ dim(conflict.names) #33...should equal TipLabelsChange, N= 33 GOOD!!
 
 ######## Nodes Object ################
 #### Need to re-run Congruifier to get cal object (calibrated nodes)
-genetree=phy.Alpes
+genetree=pezAlpes$phy
 
-tax=read.csv(file="~/Dropbox/Work/TankLab/Programs/Congruify/congruify_hannah/fleshed_genera.csv", as.is=TRUE, row=1) 
+tax=read.csv(file="output/5_Scaling/Congruify/fleshed_genera.csv", as.is=TRUE, row=1) 
 head(tax)
 tips=sapply(genetree$tip.label, function(x){
   unlist(strsplit(x,"_",fixed=TRUE))[1]
@@ -468,14 +468,14 @@ sum(vec)==nrow(cal) ## check on whether the function is working appropriately
 
 
 ##### Vector of BS supports 
-p2 <- character(length(phy.Alpes$node.label)) # create a vector of colors that correspond to different support ranges 
+p2 <- character(length(pezAlpes$phy$node.label)) # create a vector of colors that correspond to different support ranges 
 p2[] <- "#0000ff00" ## Transparent color: "#RRGGBBAA" and the AA portion is the opacity/trasparency.
-p2[phy.Alpes$node.label >=  95] <- "black"
-p2[phy.Alpes$node.label ==  100] <- "black"
-p2[phy.Alpes$node.label < 95 & phy.Alpes$node.label >= 75] <- "slategray4"
+p2[pezAlpes$phy$node.label >=  95] <- "black"
+p2[pezAlpes$phy$node.label ==  100] <- "black"
+p2[pezAlpes$phy$node.label < 95 & pezAlpes$phy$node.label >= 75] <- "slategray4"
 #p2[treePLboots$node.label < 95 & treePLboots$node.label >= 75] <- "slategray"
 #p2[treePLboots$node.label < 75] <- "red1"
-p2[phy.Alpes$node.label == ""] <- "black" # node = 353 = 100
+p2[pezAlpes$phy$node.label == ""] <- "black" # node = 353 = 100
 p2 
 
 #### From SanJuans_TreeVisFinal.R 
@@ -486,4 +486,19 @@ colorsIsl <- c("cyan3", "chocolate1")
 color.plot.phylo3NoTrait(phy.Alpes.drop, data.Alpes.drop.pa, taxa.names = "phyloTips", trait = "Summits", col.names = colorsIsl, label.offset=5.2, phy.cex=.05, cut.labs =c( "Ecrin NP", "Alpine Summits"), leg.cex=.8, main="Vascular Flora of the Le Parc national des Ecrins")
 #dev.off()
 
+
+pdf(file="output/4_Trees/phy.dots.pdf")
+plot(pezAlpes$phy, show.tip.label = FALSE, type="fan", )
+tiplabels(tip = which(pezAlpes$comm["Summits",] > 0), pch = 19, cex = .25, col = "darkorange2")
+dev.off()
+
+dat.plot[dat.plot > 0] <- 1
+dat.plot <- as.data.frame(dat.plot)
+head(dat.plot)
+
+#pdf(file="output/4_Trees/phy.dots.v2.pdf")
+trait.plot(pezAlpes$phy, dat.plot, cols = list(dat.plot = c("white", "darkorange2")), font = 0, cex.lab = .0001)
+nodelabels(text=NULL, cex=ifelse(vec==0, NA, 1), frame="n", col="black", pch=21, bg="white") # Plot congruified nodes
+nodelabels(pch = 21, cex = 0.3, col=p2, bg = p2) # Plot bootstrap support
+#dev.off()
 

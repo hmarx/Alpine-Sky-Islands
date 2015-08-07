@@ -112,9 +112,3 @@ color.plot.phylo3NoTrait <- function (phylo, df, trait, taxa.names, label.offset
   on.exit(par(init.par))
 }
 
-
-
-
-
-
-
