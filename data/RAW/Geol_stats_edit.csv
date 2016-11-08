@@ -1,0 +1,66 @@
+"OBJECTID,N,10,0","sommet,C,50","LITHO_SIMP,C,50","SI_CO3,C,25","AREA,N,19,11","PERCENTAGE,N,19,11"
+1,Barre des Ecrins,,Acide (siliceux),12733.55649540000,1.95686345280
+2,Barre des Ecrins,Dolerites,Basique (carbonate),2790.30338523000,0.42880735785
+3,Barre des Ecrins,Gneiss,Acide (siliceux),77718.81082050000,11.94364673720
+4,Barre des Ecrins,Migmatites,Acide (siliceux),523048.64902500000,80.38090424160
+5,Barre des Ecrins,NA,Autre,34421.22724410000,5.28977443330
+6,Brevoort,Granites,Acide (siliceux),76548.58147220000,87.10152818880
+7,Brevoort,NA,Autre,11335.75945160000,12.89850121880
+8,Burlan,Gneiss,Acide (siliceux),24626.62939300000,45.92215250140
+9,Burlan,Granites,Acide (siliceux),28203.14999680000,52.59141779020
+10,Burlan,NA,Autre,797.12212874900,1.48642200987
+11,Choisy,Gneiss,Acide (siliceux),37322.51533240000,37.92541486130
+12,Choisy,Granites,Acide (siliceux),48250.36377980000,49.02978931780
+13,Choisy,NA,Autre,12837.41623810000,13.04478897630
+14,Dibona,Granites,Acide (siliceux),49125.60578210000,81.73086111320
+15,Dibona,NA,Autre,10980.96098900000,18.26915685200
+16,La Meije,Gneiss,Acide (siliceux),16705.81738790000,1.89033488286
+17,La Meije,Granites,Acide (siliceux),381004.14330500000,43.11225280890
+18,La Meije,Migmatites,Acide (siliceux),84106.13011870000,9.51696932481
+19,La Meije,NA,Autre,401892.67752600000,45.47588003970
+20,Lauvitel,Gneiss,Acide (siliceux),61756.23039670000,72.56170316400
+21,Lauvitel,NA,Autre,23352.32530410000,27.43827604150
+22,Muraillette,Gneiss,Acide (siliceux),292973.37916900000,93.57730232870
+23,Muraillette,NA,Autre,20108.30484850000,6.42270272972
+24,Occidentale Ailefroide,,Basique (carbonate),799.97074383200,0.18892640294
+25,Occidentale Ailefroide,Gneiss,Acide (siliceux),293731.14643500000,69.36949801560
+26,Occidentale Ailefroide,Granites,Acide (siliceux),50149.41423820000,11.84361867550
+27,Occidentale Ailefroide,Migmatites,Acide (siliceux),1182.57995364000,0.27928593458
+28,Occidentale Ailefroide,NA,Autre,77566.70079470000,18.31866712860
+29,Olan,,Basique (carbonate),9868.57474246000,2.42369393567
+30,Olan,Gneiss,Acide (siliceux),310064.48816400000,76.15095788800
+31,Olan,NA,Autre,87237.09497870000,21.42518282360
+32,Pelvoux,Calcaires,Basique (carbonate),2623.62834972000,0.57187227432
+33,Pelvoux,Calcite,Basique (carbonate),12686.72014160000,2.76532440343
+34,Pelvoux,Gneiss,Acide (siliceux),95561.33987540000,20.82950535940
+35,Pelvoux,Migmatites,Acide (siliceux),319731.25553200000,69.69182212550
+36,Pelvoux,NA,Autre,28175.78531900000,6.14147595746
+37,Peyron,,Basique (carbonate),35253.80020240000,6.53760849516
+38,Peyron,Dolerites,Basique (carbonate),3789.76931353000,0.70279027840
+39,Peyron,Gneiss,Acide (siliceux),195210.05544500000,36.20054886270
+40,Peyron,Granites,Acide (siliceux),209613.56099600000,38.87159367800
+41,Peyron,Micaschistes,Acide (siliceux),20046.26678700000,3.71746147339
+42,Peyron,NA,Autre,24788.37354320000,4.59685709135
+43,Peyron,NA,Acide (siliceux),50544.31967910000,9.37314479061
+44,Plat de la Selle,,Basique (carbonate),70319.51883920000,13.56961180840
+45,Plat de la Selle,Dolerites,Basique (carbonate),1275.96403139000,0.24622376366
+46,Plat de la Selle,Gneiss,Acide (siliceux),227567.57431400000,43.91389040490
+47,Plat de la Selle,Granites,Acide (siliceux),201030.55461700000,38.79302123820
+48,Plat de la Selle,NA,Autre,18019.61851010000,3.47725968771
+49,Rateau,Granites,Acide (siliceux),376527.79615900000,82.62167559080
+50,Rateau,NA,Autre,79197.39530490000,17.37832258140
+51,Rocher de la Selle,Gneiss,Acide (siliceux),140923.48661400000,90.54694254570
+52,Rocher de la Selle,Granites,Acide (siliceux),8127.46839509000,5.22210620453
+53,Rocher de la Selle,NA,Basique (carbonate),6584.84799964000,4.23093316679
+54,Rouies,,Basique (carbonate),72130.06998550000,17.78816004010
+55,Rouies,Gneiss,Acide (siliceux),115883.68462000000,28.57833811160
+56,Rouies,Migmatites,Acide (siliceux),143361.69769700000,35.35475319490
+57,Rouies,NA,Autre,74119.40711220000,18.27875497770
+58,Sirac,Gneiss,Acide (siliceux),9738.81233108000,1.04591729426
+59,Sirac,Migmatites,Acide (siliceux),739841.86161900000,79.45664951500
+60,Sirac,NA,Autre,145424.35431500000,15.61811050610
+61,Sirac,NA,Acide (siliceux),36121.33475580000,3.87931581680
+62,Valsenestre,Gneiss,Acide (siliceux),36302.80082320000,31.04778299730
+63,Valsenestre,Granites,Acide (siliceux),66113.18428050000,56.54295955840
+64,Valsenestre,Micaschistes,Acide (siliceux),177.41614619200,0.15173424315
+65,Valsenestre,NA,Autre,14332.15006070000,12.25749735230

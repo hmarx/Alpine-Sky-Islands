@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -q reg
+#PBS -N hannahDAMOCLESsummitEcrinsAster
+
+cd $PBS_O_WORKDIR
+source /usr/modules/init/bash
+module load R
+
+Rscript alps.damocles.chooseClade.Aster.EcrinsPool.R $PBS_ARRAYID

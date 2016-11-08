@@ -77,7 +77,6 @@ p <- p + theme(legend.position="top")
 p <- p + theme(axis.text.x = element_text(angle = -45, hjust = 0))
 #p <- p + ggtitle(plot.title) + theme(plot.title=element_text(size=rel(1.5)))
 p
-
 dev.off()
 
 pdf(file="output/8_TraitDiveristy/traitValues_MaxHeight.pdf") 

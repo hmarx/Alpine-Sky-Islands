@@ -1,0 +1,4 @@
+Started Fri Sep 18 13:56:02 2015
+muscle -maxmb 5000 -spscore matK_TEMPFILES/TEMPOUT.PROFILE -log matK_TEMPFILES/prlog 
+File=matK_TEMPFILES/TEMPOUT.PROFILE;SP=4.687e+04
+Finished Fri Sep 18 13:56:02 2015

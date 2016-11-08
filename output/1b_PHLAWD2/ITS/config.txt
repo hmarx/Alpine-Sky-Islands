@@ -1,0 +1,12 @@
+clade = Spermatophyta 
+search = internal transcribed spacer, internal transcribed spacer 1
+gene = ITS
+mad =  0.005 #higher = less broken up
+coverage = 0.2
+identity = 0.2
+db = /Users/hannahmarx/Dropbox/Work/Programs/PHLAWD/pln170915.db
+knownfile = ITS_GB.keep.namesfixed_sperma
+numthreads = 4
+listfile = /Users/hannahmarx/Dropbox/Work/FranceLab/FranceProjects/AlpinePD_France/Alpine-Sky-Islands/output/0_IncludeFile/SpeciesPoolEcrinInclude
+#excludelistfile = exclude
+containswild

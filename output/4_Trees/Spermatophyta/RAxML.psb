@@ -1,0 +1,12 @@
+#!/bin/sh
+#PBS -l nodes=4:ppn=7
+#PBS -q long
+#PBS -N hannahSkyRAxML
+
+. /usr/modules/init/bash
+module load openmpi openmpi-apps/1.6.4/raxml/8.0.5
+
+cd $PBS_O_WORKDIR
+
+mpirun raxmlHPC-MPI -f a -s align.concat.EcrinSpPool.121115.phy -q concat.model.EcrinSpPool.sperma -x 23456 -p 12345 -# 1000 -m GTRCAT -n align.concat.EcrinSpPool.091115.phy.1000 
+

@@ -1,8 +1,0 @@
-starting log: 12/05/15 09:39
-concat
-in filename: atpB.unique.fasta.clean
-in filename: rbcL.unique.fasta.clean
-in filename: matK.unique.fasta.clean
-in filename: trnTLF.unique.fasta.clean
-in filename: ITS.unique.fasta.clean
-outfile: align.concat.EcrinSpPool.120515.nex

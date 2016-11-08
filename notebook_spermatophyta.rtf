@@ -1,0 +1,430 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fnil\fcharset0 LucidaGrande;
+\f3\fnil\fcharset0 Calibri;\f4\fswiss\fcharset0 ArialMT;\f5\froman\fcharset0 Times-Roman;
+\f6\fnil\fcharset0 Consolas;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red191\green191\blue191;\red14\green14\blue14;
+\red234\green234\blue234;}
+\margl1440\margr1440\vieww14560\viewh15620\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 \
+output/
+\f1\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 Each subfolder contains the output from the following pipeline. Sub folders are described in more detail below.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs24 \cf0 \
+\
+0_IncludeFile:\
+\pard\pardeftab720
+
+\f2\b0 \cf2 Combined 3 different species lists: \
+1) combined species lists from Cedric (relieves since 2009) to get a total species list of the Ecrins NP (N=1390)\
+2) matrix of species that occur on each summit (from Julien) (19 summits 363 species)\
+\pard\pardeftab720
+
+\f0 \cf0 3) LGM count lists (from Julien): underIce (N=165), persistant (N=261) 
+\b \
+\
+\pard\pardeftab720
+
+\f2\b0 \cf2 \
+For each list, matched species to \'93iPlant_TNRS\'94 database, and used this name instead for merging lists (TaxonomyHarmony.R)\
+e.g.:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2160
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx6480
+\clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f3 \cf0 Acinos alpinus (L.) Moench\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 Acinos alpinus (L.) Moench subsp. alpinus\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 Clinopodium_alpinum\cell 
+\pard\intbl\itap1\pardeftab720
+\cf0 Clinopodium alpinum subsp. alpinum \cell \lastrow\row
+\pard\pardeftab720
+
+\f2 \cf2 \
+*** WILL DO THIS FOR TRAIT DATA AS WELL, AND ALL LISTS SHOULD MATCH ***\
+\
+\
+\pard\pardeftab720
+\cf2 \ul \ulc2 Community matrix:\ulnone  1413 species,   22 \'93communities\'94 (persistent, under ice, ecrins NP, 19 summits)\
+file = comMerge.csv\
+\'97Removed the genera not resolved to species from community matrix (N=37) for PHLAWD search
+\f0\b \cf0 \
+
+\f2\b0 \cf2 \'97removed from includefile: Compl\'8ement flore\
+
+\f0\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 \ul \ulc0 PHLAWD species list: \ulnone  species names from comMerge.csv\ul \
+\pard\pardeftab720
+
+\f2 \cf2 \ulnone EcrinTotalSpeciesList.csv \'97> SpeciesPoolEcrinInclude (N=1376)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0 \cf0 \ul \ulc2 Traits\ulnone : emailed spListEcrins.csv to Julien
+\f2 \cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b \cf0 \
+\
+1_PHLAWD: 
+\f1\b0\fs28 \cf2 search GenBank for available sequence data for each gene region (release 209) 
+\f0\b\fs24 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f2\b0 \cf0 pln170915.db (plant database created 19 Sep. 2015)
+\f0\b \
+\pard\pardeftab720
+
+\f2\b0 \cf2 \
+\pard\pardeftab720
+\cf0 nohup PHLAWD assemble config.txt > log.txt &	\
+\pard\pardeftab720
+\cf2 \
+\pard\pardeftab720
+
+\f4\fs26 \cf2 use ParsePHLAWD.R to remove NCBI ID, and keep longest unique sequences
+\f2\fs24 \
+\
+\pard\pardeftab720
+
+\f5\b\fs28 \cf0 1c_Remove
+\b0 : incorrect / outlier sequences from *unique.GB.fasta\
+Look at each gene tree\'85\
+\pard\pardeftab720
+
+\f2\fs24 \cf2 atpB: \
+>ncbi|Fragaria_vesca_subsp__vesca|101020|402238841|114|1\
+>ncbi|Triticum_aestivum|4565|525290|48|1\
+>ncbi|Agrostis_stolonifera|63632|343459250|102|1\
+>ncbi|Saxifraga_retusa|85263|8452772|26|1\
+\
+\
+ITS: partial sequences, that are in other gene regions\
+>ncbi|Pinus_sylvestris|3349|401891212|1086|1\
+>ncbi|Festuca_valesiaca|98753|310007188|814|1\
+\
+trnTLF:\
+>ncbi|Stellaria_media|13274|340842660|830|1\
+>ncbi|Potamogeton_alpinus|246694|148771346|488|1\
+>ncbi|Malva_alcea|446150|148575654|486|1\
+>ncbi|Ribes_uva-crispa|135518|319659323|766|1\
+\
+The only seq\'85removed 09112015\
+>ncbi|Anemone_montana|387932|148373574|503|1\
+\
+rbcL:\
+>ncbi|Viola_canina|502511|379037048|685|1\
+\
+\
+matK:\
+>ncbi|Viola_canina|502511|406034548|497|1\
+\
+N= 12 species that were removed \
+\
+\
+\pard\pardeftab720
+
+\f5\fs28 \cf0 parseREMOVED("atpB.unique.GB.fasta.rem") #62
+\f2\fs24 \cf2 \
+\
+
+\f5\fs28 \cf0 \'97> renames files *.unique.rem.name.fasta\
+\pard\pardeftab720
+
+\f2\fs24 \cf2 \'97> re-clean: 
+\f5\fs28 \cf0 *.unique.rem.name.fasta.clean\
+\'97> save as .phy in se-al: *unique.rem.name.fasta.clean.phy
+\f2\fs24 \cf2 \
+\'97> re-run gene tree: /atpBrem\
+\
+\
+\pard\pardeftab720
+
+\b \cf0 2_Clean: 
+\f4\b0\fs26 \cf2 delete sites with gaps from 50% of each gene region alignment 
+\f2\b\fs24 \cf0 \
+\pard\pardeftab720
+
+\b0 \cf2 phyutility -clean 0.5 -in trnTLF.unique.rem.name.fasta -out trnTLF.unique.rem.name.fasta.clean\
+\pard\pardeftab720
+\cf0 \
+\
+\pard\pardeftab720
+
+\b \cf0 3_Concatenate (.fst -> .nex): \
+\pard\pardeftab720
+
+\b0 \cf2 phyutility -concat -in atpB.unique.rem.name.fasta.clean rbcL.unique.rem.name.fasta.clean matK.unique.rem.name.fasta.clean trnTLF.unique.rem.name.fasta.clean ITS.unique.rem.name.fasta.clean -out align.concat.EcrinSpPool.121115.nex\
+\
+\ul Tracheophyta: \
+\ulnone DIMENSIONS NTAX=1154 NCHAR=4600\
+[atpB.unique.fasta.clean_gene1 1-1444 rbcL.unique.fasta.clean_gene2 1445-2149 matK.unique.fasta.clean_gene3 2150-3067 trnTLF.unique.fasta.clean_gene4 3068-3928 ITS.unique.fasta.clean_gene5 3929-4600 ]\
+\
+\ul Speratophyta: \
+\ulnone DIMENSIONS NTAX=1086 NCHAR=5144\
+[atpB.unique.rem.name.fasta.clean_gene1 1-1452 rbcL.unique.fasta.clean_gene2 1453-2689 matK.unique.fasta.clean_gene3 2690-3617 trnTLF.unique.rem.name.fasta.clean_gene4 3618-4480 ITS.unique.rem.name.fasta.clean_gene5 4481-5144 ]\
+\
+\
+-Convert to .phy in TextWrangler\
+-save as .fst in Se-Al\'85to visualize in JalView \
+\
+\
+\pard\pardeftab720
+
+\b \cf2 4_Trees:\
+\pard\pardeftab720
+
+\b0 \cf2 -save *unique.fasta.clean as ..phy in Se-Al \
+\pard\pardeftab720
+
+\b \cf2 \
+/GeneTrees:\
+\pard\pardeftab720
+
+\b0 \cf2 Ford
+\b :\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf0 scp \cf2 trnTLF.unique.rem.name.fasta.clean.phy \cf0 hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/18092015/trnTLF/trnTLFrem\
+\pard\pardeftab720
+\cf2 screen -S matK\
+module load raxml
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\f4\b0\fs26 \cf2 raxmlHPC -f a -s 
+\f2\fs24 trnTLF.unique.rem.name.fasta.clean.phy
+\f4\fs26  -x 12345 -# 100 -m GTRCAT 
+\f5\fs28 \cf0 -p 12345 
+\f4\fs26 \cf2 -n trnTLFrem.100.210915.sperma \
+
+\f2\b\fs24 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf2 Pull off server:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\f0 \cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/18092015/ITS/ITSrem/RAxML* ~/.\
+\pard\pardeftab720
+
+\f2 \cf2 \
+\pard\pardeftab720
+
+\b \cf2 /Concatenated:\
+\pard\pardeftab720
+
+\b0 \cf2 Ford:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 scp \cf2 align.concat.EcrinSpPool.210915.phy\cf0  hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/18092015/concat\cf2 \
+\pard\pardeftab720
+\cf2 raxmlHPC-PTHREADS-SSE3 -T 8  -f a -s align.concat.EcrinSpPool.210915.phy \cf0 -q concat.model.EcrinSpPool.sperma \cf2 -x 23456 -p 12345 -# 1000 -m GTRCAT -n concat.\cf0 EcrinSpPool.sperma.21092015\cf2 .1000 \
+\
+-f a : full ml with GTR nucevol every 5 bs reps\
+\
+screen -S runEcrinsPhylo\
+\
+crtl + a +d \
+screen -ls\
+\pard\pardeftab720
+
+\f6\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+screen -r myprog\
+\pard\pardeftab720
+
+\f2\fs24 \cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\'91exit\'92 == KILL\
+\
+\
+fourtytwo:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 scp \cf2 align.concat.EcrinSpPool.121115.phy concat.model.EcrinSpPool.sperma\cf0  RAxML.psb hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/12112015/\cf2 \
+\pard\pardeftab720
+\cf2 \
+#!/bin/sh\
+#PBS -l nodes=4:ppn=7\
+#PBS -q long\
+#PBS -N hannahSkyRAxML\
+\
+. /usr/modules/init/bash\
+module load openmpi openmpi-apps/1.6.4/raxml/8.0.5\
+\
+cd $PBS_O_WORKDIR\
+\
+mpirun  -f a -s align.concat.EcrinSpPool.091115.phy \cf0 -q concat.model.EcrinSpPool.sperma \cf2 -x 23456 -p 12345 -# 1000 -m GTRCAT -n align.concat.EcrinSpPool.091115.phy.1000 \
+qsub RAxML.psb\
+qstat\
+showq\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\f0 \cf0 \'97> open in FigTree\
+\'97> root between gymno and angiosperms\
+\'97> export: as displayed, save as .nex \
+\
+\
+\pard\pardeftab720
+
+\f2\b \cf2 5_Scaling: 15 July 2015\
+\pard\pardeftab720
+
+\b0 \cf2 *** Done on rooted tree, rooted on node in R !!\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\f0 \cf0 scp RAxML* hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling
+\f5\fs28 \
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720\sa240
+
+\f1\fs32 \cf0 Run on fortytwo:
+\f2\fs24  module load treepl\
+\pard\pardeftab720\sa240
+
+\f5\fs28 \cf0 treePL 
+\f0\fs24 RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.intree
+\f5\fs28 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\f0\fs24 \cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre* ~/Dropbox/Work/FranceLab/FranceProjects/AlpinePD_France/Alpine-Sky-Islands/output/5_Scaling/Spermatophyta/\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b \cf0 6_Visualize Trees:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf0 \
+\'97add bootstrap support values back to taxied tree \
+\'97correct taxonomy of tree tips using taxize package, iPlant accepted taxonomy (14 Nov 2015)\
+\
+1081/1288 #0.8392857 % Ecrins Species pool: of the species that were retrieved from GenBank using the PHLAWD approach\
+215/298 # 0.7214765 % of summits retrieved\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b \cf0 7_Maps:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b \cf0 8_TraitDiveristy:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf0 \
+[4/27/15, 7:37:13 AM] S\'e9bastien Lavergne: Inferring community assembly mechanisms from\
+functional diversity patterns: the importance of\
+multiple assembly processes\
+[4/27/15, 7:37:20 AM] S\'e9bastien Lavergne: doi: 10.1111/j.1365-2745.2011.01945.x\
+[4/27/15, 7:37:30 AM] S\'e9bastien Lavergne: Spasojevic\
+\
+\
+[7/21/15, 9:45:23 AM] S\'e9bastien Lavergne: gower distance (daisy)\
+[7/21/15, 9:46:52 AM] S\'e9bastien Lavergne: A General Coefficient of Similarity and Some of Its Properties\
+J. C. Gower\
+Biometrics, Vol. 27, No. 4. (Dec., 1971), pp. 857-871.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b \cf0 9_PhyoDiversity: calculate on ML tree and across a random sampling of 100 bootstrap replicates \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+
+\b0 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ul static/ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ulnone \
+MaximumLikelihood/\
+ses.mpd, \
+\
+boostrap/\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ul dynamic/\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ulnone qsub -t 1-10 DAMOCLES.pbs\
+\
+1:10 params set initial\
+11:20 took out initatl param estimates\
+21:30 estimate_pars = FALSE\
+\
+cat \'85*.csv > com\
+\
+\
+/var/spool/mail/hmarx\
+\
+\
+## On just Asterales\
+screen -S phyDiv\
+\
+## 02Dec2015\
+# Bootstraps \
+qsub -t 1-100 DAMOCLESboots.pbs\
+\
+\'97> to_run.R \'97> alps.damocles.boots.R\
+\
+11_ Enviornmental Variables;\
+\pard\pardeftab720
+
+\f5\fs19 \cf0 collinearity, we conducted a principal components analysis (PCA) (Rafa 2013)
+\f0\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \
+\
+############################ Updated Names:\
+** for publication\
+** may be different in dataset \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ul Species pools\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ulnone Ecrins NP \'97> Regional\
+Persistent LGM \'97> LGM\
+Summits __> All Summits \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ul Summits\ulnone \
+\
+"Brevoort" = \'93Pointe Brevoort\'94,\
+"Pelvoux"= \'93Mont Pelvoux\'94,\
+"Choisy" = \'93Tour Choisy,\
+"Occidentale Ailefroide" = \'93Occidentale l\'92Ailefroide\'94,\
+"Plat de la Selle" = \'93Aiguille du plat de la Selle\'94,\
+"Burlan" = \'93Pointes de Burlan\'94,\
+"La Meije" = \'93la Meije\'94,\
+"Barre des Ecrins" = \'93Barre des Ecrins\'94,\
+"Rouies" = \'93les Rouies\'94,\
+"Muraillette" = \'93Muraillette\'94,\
+"Olan"  = \'93l\'92Olan\'94,\
+"Sirac" = \'93le Sirac\'94,\
+"Lauvitel" = \'93Signal du Lauvitel\'94,\
+"Rateau" = \'93le Rateau\'94,\
+"Rocher de la Selle" = \'93Rocher de la Selle\'94,\
+"Persistent" = \'93LGM\'94,\
+"Summits" = \'93All Summits\'94\
+\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\f2 \cf2 \
+}

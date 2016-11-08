@@ -1,7 +1,7 @@
 
 
 ################ Distrubution under different null models 
-plotDistributionSES <- function(outputSES, breaks, labels, mainTitle, values, colors){
+plotDistributionSES <- function(outputSES, breaks, labels, mainTitle, values, colors, max.y){
   pools <- outputSES
   pools.melt <- melt(pools, id=c(colnames(pools[[1]])))
   pools.melt <- na.omit(pools.melt)
@@ -13,7 +13,7 @@ plotDistributionSES <- function(outputSES, breaks, labels, mainTitle, values, co
     scale_linetype_manual(name="Source Pool", values=values,
                           breaks=c(as.character(breaks)), labels=c(as.character(labels))) +
     scale_x_continuous(limits=c(-5,5)) +
-    scale_y_continuous(limits=c(0,0.5)) +
+    scale_y_continuous(limits=c(0,max.y)) +
     ggtitle(label = mainTitle)
   
 }

@@ -1,0 +1,61 @@
+
+nseq =  9
+nlen = 
+distance =  sixtuples
+iterate =  0
+cycle =  2
+nthread = 0
+generating 200PAM scoring matrix for nucleotides ... done
+done
+done
+scoremtx = -1
+Gap Penalty = -1.53, +0.00, +0.00
+
+
+
+Making a distance matrix ..
+    1 / 9
+done.
+
+Constructing a UPGMA tree ... 
+    0 / 9
+done.
+
+Progressive alignment ... 
+STEP     1 / 8 fSTEP     2 / 8 fSTEP     3 / 8 fSTEP     4 / 8 fSTEP     5 / 8 f
+Reallocating..done. *alloclen = 3903
+STEP     6 / 8 fSTEP     7 / 8 dSTEP     8 / 8 d
+done.
+
+disttbfast (nuc) Version 6.864b alg=A, model=DNA200 (2),  1.530 ( 4.590), -0.000 (-0.000)
+0 thread(s)
+nthread = 0
+blosum 62 / kimura 200
+generating 200PAM scoring matrix for nucleotides ... done
+done
+done
+scoremtx = -1
+Gap Penalty = -1.53, +0.00, +0.00
+Making a distance matrix .. 
+    0 / 8
+done.
+
+Constructing a UPGMA tree ... 
+    0 / 9
+done.
+
+Progressive alignment ... 
+STEP     1 /8 fSTEP     2 /8 fSTEP     3 /8 fSTEP     4 /8 fSTEP     5 /8 fSTEP     6 /8 fSTEP     7 /8 fSTEP     8 /8 f
+done.
+tbfast (nuc) Version 6.864b alg=A, model=DNA200 (2),  1.530 ( 4.590), -0.000 (-0.000)
+0 thread(s)
+
+
+Strategy:
+ FFT-NS-2 (Fast but rough)
+ Progressive method (guide trees were built 2 times.)
+
+If unsure which option to use, try 'mafft --auto input > output'.
+If the possibility of long gaps can be excluded, add '--ep 0.123'.
+For more information, see 'mafft --help', 'mafft --man' and the mafft page.
+

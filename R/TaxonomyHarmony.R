@@ -72,6 +72,50 @@ add.taxized.column <- function(df, colnum, spliton, sepas, source){
   return(df.nex.tmp2) #30839
 }
 
+#phy=phy.tmp
+#spliton = "_"
+#sepas = " "
+#taxonomy.source = "iPlant_TNRS"
+### Get Just Genus_species...(remove infraspecific identifiers) 
+add.taxized.tips <- function(phy, spliton, sepas, taxonomy.source){
+  split <- strsplit(as.character(phy$tip.label), split=spliton, fixed=TRUE)
+  genus.name <- sapply(split, "[", 1L) #get just the genus_species_var...
+  species.name <- sapply(split, "[", 2L) #get just the species_var...
+  ### Remove punctuation 
+  combinedname <- paste(genus.name, species.name, sep=sepas) #get just genus_species
+  combinedname <- gsub(combinedname, pattern = "\\.", replacement = sepas) 
+  combinedname <- gsub(combinedname, pattern = "-", replacement = sepas)
+  combinedname <- gsub(combinedname, pattern = " L ,$", replacement = "") 
+  combinedname <- gsub(combinedname, pattern = " x$", replacement = "") 
+  combinedname <- gsub(combinedname, pattern = " F.H.$", replacement = "") 
+  combinedname <- gsub(combinedname, pattern = ",$", replacement = "") 
+  tab <- as.data.frame(cbind(tips = phy$tip.label, combinedname))
+  #head(tab)
+  ### Make sure taxonomic names are spelled correctly, and are up to date
+  ## Make a taxonomy lookup list using iPlant TNRS database
+  tmp <-  tnrs(query = tab[,2], source = taxonomy.source)[ , -c(5:7)] #accepted name, blank = no opinion
+  tmp.rm <- na.omit(tmp[tmp[2]!= "",]) #just those with accepted name not blank
+  tmp.rm$submittedname <- gsub(tmp.rm$submittedname, pattern = " ", replacement = "_") 
+  tmp.rm$acceptedname <- gsub(tmp.rm$acceptedname, pattern = " ", replacement = "_") 
+  tab$combinedname <- gsub(tab$combinedname, pattern = " ", replacement = "_") 
+  tmp.merge <- merge(tab, tmp.rm, by.x= 2, by.y=1)
+  #head(tmp.merge)
+  #dim(tmp.merge)
+  
+  for (i in 1:length(phy$tip.label)){
+    if (phy$tip.label[i] %in% tmp.merge$tips){
+      if (!phy$tip.label[i] %in% tmp.merge$acceptedname){
+        x <- tmp.merge[which(tmp.merge$tips==phy$tip.label[i]), "tips"]
+        y <- tmp.merge[which(tmp.merge$tips==phy$tip.label[i]), "acceptedname"]
+        print(paste(i, "input =", x, ", accepted =", y))
+        phy$tip.label[i] <- y
+        
+      }  
+    }
+  }
+
+  return(phy) 
+}
 
 
 

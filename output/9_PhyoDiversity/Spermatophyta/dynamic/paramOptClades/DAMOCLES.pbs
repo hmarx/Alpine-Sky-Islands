@@ -1,0 +1,10 @@
+#!/bin/sh
+#PBS -q reg
+#PBS -N hannahDAMOCLESparams
+
+. /usr/modules/init/bash
+module load R
+
+cd $PBS_O_WORKDIR
+
+Rscript to_run.R $PBS_ARRAYID
