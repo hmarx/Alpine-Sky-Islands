@@ -1,19 +1,14 @@
-########## TAXONOMY ORGANIZATION ###########
+#####################################################################################################################
+########################## TAXONOMY ORGANIZATION ####################################### 
+########################## Maintain consistent taxon names across species lists and various datasets
+############# Hannah E. Marx, 8 Nov 2016 ####################################### 
+#####################################################################################################################
 
-# Maintain consistent taxon names across species lists and various datasets
-# Rownames = species names 
-
-
-library(taxize)
-# Deal with French properly
-options(encoding="latin1")
-
-### Load dataset
-#head(releves) 
-#dim(releves)
-#colnames(releves)
-
-
+#### Get Just Genus_species...(remove infraspecific identifiers) 
+#df = the dataframe you would like to fix, species in rows, but names to change must also be in a column that is not 0
+#colnum = the number of the column in the dataframe with the taxonomy you want to fix
+#spliton = the punctuation separating names in taxonomy, e.g. "_" 
+#sepas = the separation used for the format in the taxonomic lookup, e.g. " "
 get.genus.species <- function(df, colnum, spliton, sepas){
   split <- strsplit(as.character(df[,colnum]), split=spliton, fixed=TRUE)
   genus.name <- sapply(split, "[", 1L) #get just the genus_species_var...
@@ -22,15 +17,12 @@ get.genus.species <- function(df, colnum, spliton, sepas){
   return(combinedname) #30839
 }
 
-
-
+#### Add column with taxonomy to use from specified reference source
 #df = the dataframe you would like to fix, species in rows, but names to change must also be in a column that is not 0
 #colnum = the number of the column in the dataframe with the taxonomy you want to fix
 #spliton = the punctuation separating names in taxonomy, e.g. "_" 
 #sepas = the separation used for the format in the taxonomic lookup, e.g. " "
 #source = source to match names against: iPlant_TNRS, NCBI, MSW3
-
-### Get Just Genus_species...(remove infraspecific identifiers) 
 add.taxized.column <- function(df, colnum, spliton, sepas, source){
   split <- strsplit(as.character(df[,colnum]), split=spliton, fixed=TRUE)
   genus.name <- sapply(split, "[", 1L) #get just the genus_species_var...
@@ -72,11 +64,11 @@ add.taxized.column <- function(df, colnum, spliton, sepas, source){
   return(df.nex.tmp2) #30839
 }
 
+#### Resolve taxonomy on tips of phylogeny from specified reference source
 #phy=phy.tmp
 #spliton = "_"
 #sepas = " "
 #taxonomy.source = "iPlant_TNRS"
-### Get Just Genus_species...(remove infraspecific identifiers) 
 add.taxized.tips <- function(phy, spliton, sepas, taxonomy.source){
   split <- strsplit(as.character(phy$tip.label), split=spliton, fixed=TRUE)
   genus.name <- sapply(split, "[", 1L) #get just the genus_species_var...

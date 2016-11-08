@@ -1,0 +1,15 @@
+Main columns of interest for you :
+
+-Id_station = unique Id for a relevé
+
+-Taxon_reference = official plant names
+
+-Strata :
+Herb = cover of any plant that is a not a tree, a shrub or a bush
+inf_1m = cover of any ligneous plant smaller than 1 m
+1a4m = cover of any ligneous plant between 1 and 4 m high
+Sup_4m = cover of any ligneous plant taller than 4 m
+
+-Programme = serveral relevés have been tagged because of specific programs. The relevés from Seb and me in high altitude are tagged "Ecologie verticale".
+
+-L93X, L93Y: coordinates in Lambert 93 (EPSG : 2154) 

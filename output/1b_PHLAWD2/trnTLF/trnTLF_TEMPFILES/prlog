@@ -1,4 +1,0 @@
-Started Fri Sep 18 15:51:33 2015
-muscle -maxmb 5000 -spscore trnTLF_TEMPFILES/TEMPOUT.PROFILE -log trnTLF_TEMPFILES/prlog 
-File=trnTLF_TEMPFILES/TEMPOUT.PROFILE;SP=3.119e+04
-Finished Fri Sep 18 15:51:33 2015

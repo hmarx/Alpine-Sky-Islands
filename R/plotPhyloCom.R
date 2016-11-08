@@ -1,8 +1,10 @@
+#####################################################################################################################
+############# Functions to plot and visualize megaphylogenies ####################################### 
+############# Hannah E. Marx, 8 Nov 2016 ####################################### 
+#####################################################################################################################
 
 source("R/treeFunctions.R")
-source("R/trait.plot.colorTips.R")
-source("R/trait.plot.colorCom.R")
-
+source("R/treeVisFunctions.R")
 
 ########################### Plot Tree ###########################################
 ###### Color taxa on summit: Code modified from picante color.plot.phylo
@@ -12,7 +14,7 @@ source("R/trait.plot.colorCom.R")
 #### Need to re-run Congruifier to get cal object (calibrated nodes)
 genetree=pezAlpes$phy
 
-tax=read.csv(file="output/5_Scaling/Congruify/fleshed_genera.csv", as.is=TRUE, row=1) 
+tax=read.csv(file="data/Congruify/fleshed_genera.csv", as.is=TRUE, row=1) 
 head(tax)
 tips=sapply(genetree$tip.label, function(x){
   unlist(strsplit(x,"_",fixed=TRUE))[1]
@@ -23,7 +25,7 @@ head(SJ_tax)
 rownames(SJ_tax)=names(tips)
 SJ_tax=as.matrix(SJ_tax)
 SJ_tax[is.na(SJ_tax)]=""
-atol=read.tree("output/5_Scaling/Congruify/out_dates.tre") #dataed reference tree, Soltis et al. 2011
+atol=read.tree("data/Congruify/out_dates.tre") #dataed reference tree, Soltis et al. 2011
 ftax=tax[match(atol$tip.label, rownames(tax)),]
 head(ftax)
 ftax[,2]="Spermatophyta"
@@ -64,20 +66,20 @@ dat.plot[dat.plot > 0] <- 1
 dat.plot <- as.data.frame(dat.plot)
 head(dat.plot)
 
-#pdf(file="output/6_Visualize Tree/Spermatophyta/FloraEcrin.pdf") 
+#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.pdf") 
 color.plot.phylo3NoTrait(pezAlpes$phy, as.data.frame(cbind("tiplabels" = rownames(dat.plot), "summitsPA" = dat.plot[,1])), 
                          taxa.names = "tiplabels", trait = "summitsPA", col.names = colorsIsl, label.offset=5.2, phy.cex=.05, 
                          cut.labs =c("Ecrin NP", "Alpine Summits"), leg.cex=.8, main="Flora of the Le Parc national des Ecrins")
 #dev.off()
 
 
-#pdf(file="output/6_Visualize Tree/Spermatophyta/FloraEcrin.dots.pdf")
+#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.dots.pdf")
 plot(pezAlpes$phy, show.tip.label = FALSE, type="fan")
 tiplabels(tip = which(pezAlpes$comm["Summits",] > 0), pch = 8, cex = .5, col = "darkorange2")
 #dev.off()
 
 
-#pdf(file="output/6_Visualize Tree/Spermatophyta/FloraEcrin.dots.v2.pdf")
+#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.dots.v2.pdf")
 trait.plot(pezAlpes$phy, dat.plot, cols = list(dat.plot = c("white", "darkorange2")), font = 0, cex.lab = .2) #.0001
 nodelabels(text=NULL, cex=ifelse(vec==0, NA, 1), frame="n", col="black", pch=21, bg="white") # Plot congruified nodes
 nodelabels(pch = 21, cex = 0.3, col=p2, bg = p2) # Plot bootstrap support
@@ -144,7 +146,7 @@ com.data.plot <- com.data.plot[,c("species", "Brevoort",
                                   "Endemic")]
 
 # plot
-pdf("output/6_Visualize Tree/Spermatophyta/EcrinsCommunitiesPhyloEndemic.pdf", 10,10)
+pdf("output/6_VisualizeTree/Spermatophyta/EcrinsCommunitiesPhyloEndemic.pdf", 10,10)
 trait.plot.colorCom(tree = pezAlpes$phy,
                     dat = com.data.plot,
                     shape = "Endemic",
@@ -177,7 +179,7 @@ trait.plot.colorCom(tree = pezAlpes$phy,
 dev.off()
 
 # plot
-pdf("figs/EcrinsCommunitiesPhylo.pdf", 10,10)
+pdf("output/6_VisualizeTree/Spermatophyta/EcrinsCommunitiesPhylo.pdf", 10,10)
 trait.plot.colorCom(tree = pezAlpes$phy,
                     dat = com.data.plot,
                     shape = "Endemic",

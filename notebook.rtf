@@ -74,12 +74,18 @@ file = comMerge.csv\
 \pard\pardeftab720
 
 \f1\b0 \cf2 \
+\pard\pardeftab720
 \cf0 nohup PHLAWD assemble config.txt > log.txt &	\
+\pard\pardeftab720
 \cf2 \
 removed from include file: Compl\'8ement flore\
 \
 N= 1375\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b \cf0 1b_PHLAWD2: 
+\f1\b0 spermatophyta \cf2 \
 \pard\pardeftab720
 
 \b \cf0 2_Clean: \
@@ -98,7 +104,19 @@ N= 1375\
 \
 \pard\pardeftab720
 
-\b \cf0 3_Concatenate: \
+\b \cf0 3_Concatenate: **just used 
+\b0 \cf2 \ul Speratophyta\ulnone  for publication
+\b \cf0 \
+\
+\pard\pardeftab720
+
+\b0 \cf2 \ul Tracheophyta: \
+\ulnone DIMENSIONS NTAX=1154 NCHAR=4600\
+[atpB.unique.fasta.clean_gene1 1-1444 rbcL.unique.fasta.clean_gene2 1445-2149 matK.unique.fasta.clean_gene3 2150-3067 trnTLF.unique.fasta.clean_gene4 3068-3928 ITS.unique.fasta.clean_gene5 3929-4600 ]\
+\pard\pardeftab720
+
+\b \cf0 \
+\
 \pard\pardeftab720
 
 \b0 \cf2 phyutility -concat -in atpB.unique.fasta.clean rbcL.unique.fasta.clean matK.unique.fasta.clean trnTLF.unique.fasta.clean ITS.unique.fasta.clean -out align.concat.EcrinSpPool.120515.nex\
@@ -110,10 +128,8 @@ DIMENSIONS NTAX=1154 NCHAR=4600\
 -Convert to .phy in TextWrangler\
 -save as .fst in Se-Al\'85to visualize in JalView \
 \
-\pard\pardeftab720
-\cf2 \ul clean75:\
-\pard\pardeftab720
-\cf2 \ulnone [atpB.unique.fasta.clean75_gene1 1-1331 rbcL.unique.fasta.clean75_gene2 1332-1869 matK.unique.fasta.clean75_gene3 1870-2644 trnTLF.unique.fasta.clean75_gene4 2645-2989 ITS.unique.fasta.clean75_gene5 2990-3509 ]\
+\ul clean75:\
+\ulnone [atpB.unique.fasta.clean75_gene1 1-1331 rbcL.unique.fasta.clean75_gene2 1332-1869 matK.unique.fasta.clean75_gene3 1870-2644 trnTLF.unique.fasta.clean75_gene4 2645-2989 ITS.unique.fasta.clean75_gene5 2990-3509 ]\
 DIMENSIONS NTAX=1150 NCHAR=3509\
 \
 Had to remove the following taxa with no seq left after cleaning:\
@@ -125,14 +141,16 @@ Potentilla_inclinata\
 \pard\pardeftab720
 
 \b \cf2 4_Trees:
-\b0 \cf2 \
+\b0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 scp \cf2 align.concat.EcrinSpPool.120515.phy\cf0  hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/12052015 \
 \pard\pardeftab720
 \cf2 \
 raxmlHPC-PTHREADS-SSE3 -T 8  -f a -s align.concat.EcrinSpPool.120515.phy \cf0 -q concat.model.EcrinSpPool \cf2 -x 23456 -p 12345 -# 1000 -m GTRCAT -n concat.\cf0 EcrinSpPool.12052015\cf2 .1000 \
 \
+\pard\pardeftab720
 \cf0 tesla:\
+\pard\pardeftab720
 \cf2 screen -S runEcrinsPhylo\
 \
 crtl + a +d \
@@ -153,7 +171,7 @@ export: as displayed, save as .nex \
 \
 \pard\pardeftab720
 
-\f1 \cf2 \ul \ulc2 clean75: \cf0 \ulnone tesla\cf2 \ul \ulc0 \
+\f1 \cf2 \ul clean75: \cf0 \ulnone tesla\cf2 \ul \ulc0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 \ulnone scp \cf2 align.concat.EcrinSpPool.clean75.16072015.phy\cf0  hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/16072015\cf2 \
 \pard\pardeftab720
@@ -202,7 +220,7 @@ raxmlHPC-PTHREADS-SSE3 -T 10  -f a -s align.concat.EcrinSpPool.clean75.16072015.
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\b \cf0 Functional Diversity
+\b \cf0 8_TraitDiveristy: Functional Diversity\'85not enough data
 \b0 \
 \
 [4/27/15, 7:37:13 AM] S\'e9bastien Lavergne: Inferring community assembly mechanisms from\
@@ -220,4 +238,6 @@ Biometrics, Vol. 27, No. 4. (Dec., 1971), pp. 857-871.\
 \pard\pardeftab720
 
 \f1 \cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf2 \
 }

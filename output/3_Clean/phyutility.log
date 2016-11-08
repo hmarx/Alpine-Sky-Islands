@@ -1,0 +1,115 @@
+starting log: 18/09/15 02:11
+clean
+cleannum: 0.5
+in filename: atpB.unique.fasta
+outfile: atpB.unique.fasta.clean
+starting log: 18/09/15 02:14
+clean
+cleannum: 0.5
+in filename: matK.unique.fasta
+outfile: matK.unique.fasta.clean
+starting log: 18/09/15 03:39
+clean
+cleannum: 0.5
+in filename: rbcLB.unique.fasta
+outfile: rbcL.unique.fasta.clean
+starting log: 18/09/15 03:39
+clean
+cleannum: 0.5
+in filename: rbcL.unique.fasta
+outfile: rbcL.unique.fasta.clean
+starting log: 18/09/15 03:57
+clean
+cleannum: 0.5
+in filename: ITS.unique.fasta
+outfile: ITS.unique.fasta.clean
+starting log: 18/09/15 03:57
+clean
+cleannum: 0.5
+in filename: trnTLF.unique.fasta
+outfile: trnTLF.unique.fasta.clean
+starting log: 18/09/15 04:24
+clean
+cleannum: 0.5
+in filename: atpB.unique.rem.name.fasta
+outfile: atpB.unique.rem.name.fasta.clean
+starting log: 21/09/15 11:23
+clean
+cleannum: 0.5
+in filename: atpB.unique.rem.name.fasta
+outfile: atpB.unique.rem.name.fasta.clean
+starting log: 21/09/15 11:24
+clean
+cleannum: 0.5
+in filename: ITS.unique.rem.name.fasta
+outfile: ITS.unique.rem.name.fasta.clean
+starting log: 21/09/15 11:24
+clean
+cleannum: 0.5
+in filename: trnTLF.unique.rem.name.fasta
+outfile: trnTLF.unique.rem.name.fasta.clean
+starting log: 09/11/15 03:42
+concat
+in filename: atpB.unique.rem.name.fasta.clean
+in filename: rbcL.unique.fasta.clean
+in filename: matK.unique.fasta.clean
+in filename: trnTLF.unique.rem.name.fasta.clean
+in filename: ITS.unique.rem.name.fasta.clean
+outfile: align.concat.EcrinSpPool.091115.nex
+starting log: 09/11/15 03:45
+clean
+cleannum: 0.5
+in filename: trnTLF.unique.GB.fasta.rem
+outfile: trnTLF.unique.GB.fasta.rem.clean
+starting log: 09/11/15 03:46
+concat
+in filename: atpB.unique.rem.name.fasta.clean
+in filename: rbcL.unique.fasta.clean
+in filename: matK.unique.fasta.clean
+in filename: trnTLF.unique.GB.fasta.rem.clean
+in filename: ITS.unique.rem.name.fasta.clean
+outfile: align.concat.EcrinSpPool.091115.nex
+starting log: 09/11/15 03:50
+concat
+in filename: atpB.unique.rem.name.fasta.clean
+in filename: rbcL.unique.fasta.clean
+in filename: matK.unique.fasta.clean
+in filename: trnTLF.unique.GB.fasta.rem.clean
+in filename: ITS.unique.rem.name.fasta.clean
+outfile: align.concat.EcrinSpPool.091115.nex
+starting log: 09/11/15 03:52
+clean
+cleannum: 0.5
+in filename: trnTLF.unique.rem.name.fasta
+outfile: trnTLF.unique.rem.name.fasta.clean
+starting log: 09/11/15 03:52
+concat
+in filename: atpB.unique.rem.name.fasta.clean
+in filename: rbcL.unique.fasta.clean
+in filename: matK.unique.fasta.clean
+in filename: trnTLF.unique.rem.name.fasta.clean
+in filename: ITS.unique.rem.name.fasta.clean
+outfile: align.concat.EcrinSpPool.091115.nex
+starting log: 12/11/15 12:07
+clean
+cleannum: 0.5
+in filename: atpB.unique.rem.name.fasta
+outfile: atpB.unique.rem.name.fasta.clean
+starting log: 12/11/15 12:07
+clean
+cleannum: 0.5
+in filename: matK.unique.rem.name.fasta
+outfile: matK.unique.rem.name.fasta.clean
+starting log: 12/11/15 12:07
+clean
+cleannum: 0.5
+in filename: rbcL.unique.rem.name.fasta
+outfile: rbcL.unique.rem.name.fasta.clean
+starting log: 12/11/15 12:09
+concat
+in filename: atpB.unique.rem.name.fasta.clean
+in filename: rbcL.unique.rem.name.fasta.clean
+in filename: matK.unique.rem.name.fasta.clean
+in filename: trnTLF.unique.rem.name.fasta.clean
+in filename: ITS.unique.rem.name.fasta.clean
+outfile: align.concat.EcrinSpPool.121115.nex
