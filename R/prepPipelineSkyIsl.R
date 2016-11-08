@@ -1,6 +1,6 @@
 #####################################################################################################################
-############# Prep datasets for phylogenetic diveristy of alpine summits in the Ecrins National Park, France ####################################### 
-############# Hannah E. Marx, 1 June 2016 ####################################### 
+############# Prep datasets for phylogenetic diveristy of alpine summits in the Ecrins National Park, France ########
+############# Hannah E. Marx, 1 June 2016 ###########################################################################
 #####################################################################################################################
 
 source("R/treeFunctions.R")

@@ -1,19 +1,17 @@
 #####################################################################################################################
-############# Functions to manipulate megaphylogenies ####################################### 
-############# Hannah E. Marx, 16 Feb 2016 ####################################### 
+############# Phylogenetic diversity within alpine summits (alpha) ################################################## 
+############# Static Null Model ##################################################################################### 
+############# Hannah E. Marx, 16 Feb 2016 ########################################################################### 
 #####################################################################################################################
-
-############################################## ECRINS ALPINE COMMUNITIIES ################################
 
 source("analysisSkyIsl.R")
 source("R/randomizeSourcePoolNull_v1.5.R")
 source("R/alps.damocles.chooseClade.R")
 source("R/pruneSpeciesPoolsPez.R")
 
-########################################### Basic Phylo Diversity ########################################### 
-
 ###################################################################################### 
-############################### Contemporary Source Pool : Ecrins NP ##################################### 
+############################### All Spermatophyta ####################################
+############################### Species Pool: Regional Ecrins NP ##################### 
 ###################################################################################### 
 
 ## Random resample from phylogeny pool (==Ecrins NP), equal probability random draw from phylogeny pool
@@ -26,7 +24,8 @@ write.csv(ecrins.sesmntd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/s
 
 
 ###################################################################################### 
-############################### Contemporary Pool: Summits ###########################
+############################### All Spermatophyta ####################################
+############################### Species Pool: All Summits ############################
 ###################################################################################### 
 
 ## Source pool = summits, equal probability random draw from phylogeny (pruned to summits)
@@ -49,7 +48,8 @@ write.csv(summits.sesmntd.sourceSummits, file="output/9_PhyoDiversity/Spermatoph
 
 
 ###################################################################################### 
-############################### Contemporary Pool : Persistent ############################ 
+############################### All Spermatophyta ####################################
+############################### Species Pool : Persistent through LGM ################
 ###################################################################################### 
 
 ## Source pool = Persistent, equal probability random draw from phylogeny (pruned to persistent species)
@@ -79,7 +79,7 @@ write.csv(persistent.sesmntd.sourceSummits, file="output/9_PhyoDiversity/Spermat
 
 ###################################################################################### 
 ############################### Five Clades Separately ###############################
-############################### Contemporary Source Pool : Ecrins NP #################
+############################### Species Pool: Regional Ecrins NP #####################
 ###################################################################################### 
 
 # Convert to pres/abs
@@ -144,7 +144,7 @@ write.csv(phylogeny.poolSES, file="output/9_PhyoDiversity/Spermatophyta/static/M
 
 ###################################################################################### 
 ############################### Five Clades Separately ###############################
-############################### Contemporary Source Pool : Summits #################
+############################### Species Pool: All Summits ############################
 ###################################################################################### 
 
 # Pres/abs for summits pool
@@ -198,7 +198,7 @@ write.csv(summit.poolSES, file="output/9_PhyoDiversity/Spermatophyta/static/MaxL
 
 ###################################################################################### 
 ############################### Five Clades Separately ###############################
-############################### Contemporary Source Pool : Persistent #################
+############################### Species Pool: Persistent through LGM #################
 ###################################################################################### 
 
 # Pres/abs for persistent pool
