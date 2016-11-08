@@ -20,8 +20,9 @@ output/
 0_IncludeFile: 
 \b0 prepare list of species to retrieve available sequence data from GenBank using PHLAWD pipeline
 \b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\i\b0 EcrinTotalSpeciesList.csv 
+\i\b0 \cf0 EcrinTotalSpeciesList.csv 
 \b \
 
 \i0\b0 species names from comMerge.csv (merged releve lists) \'97> SpeciesPoolEcrinInclude
@@ -76,21 +77,19 @@ e.g.:\
 Extracted names and IDs == match taxonomy of PHLAWD output with includefile \
  ./extract_names_and_ids_from_phlawd_db.py -d /Users/hannahmarx/Dropbox/Work/Programs/PHLAWD/pln170915.db -n SpeciesPoolEcrinInclude > alpesincludefile.out14Nov2015.txt\
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\i \cf0 alpesincludefile.out14Nov2015.txt\
+\i alpesincludefile.out14Nov2015.txt\
 
 \i0 output from extract_names_and_ids_from_phlawd_db.py
 \i \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\i0 \cf0 input_name,accepted_name,name_class,ncbi_id\
+\i0 input_name,accepted_name,name_class,ncbi_id\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \b \cf0 \
 1_PHLAWD: 
-\f1\b0\fs28 \cf2 search GenBank \cf2 (release 209) \cf2 for available sequence data for each gene region (
+\f1\b0\fs28 \cf2 search GenBank (release 209) for available sequence data for each gene region (
 \i atpB
 \i0 , ITS, 
 \i matK
@@ -114,8 +113,8 @@ Extracted names and IDs == match taxonomy of PHLAWD output with includefile \
 \cf2 \
 \pard\pardeftab720
 
-\f4\fs26 \cf2 use ParsePHLAWD.R to remove NCBI ID from PHLAWD output alignment \cf2 (*.FINAL.aln.full)\cf2 , and keep longest unique sequences (*.unique.fasta)
-\f2\fs24 \
+\f4\fs26 \cf2 use ParsePHLAWD.R to remove NCBI ID from PHLAWD output alignment (*.FINAL.aln.full), and keep longest unique sequences (*.unique.fasta)
+\f2\fs24 \cf2 \
 \
 \
 \pard\pardeftab720
@@ -191,11 +190,12 @@ After removal from
 \b0 \cf2 Speratophyta/
 \b \cf0 \
 \
-\pard\pardeftab720
 
 \b0 \cf2 phyutility -concat -in atpB.unique.rem.name.fasta.clean rbcL.unique.rem.name.fasta.clean matK.unique.rem.name.fasta.clean trnTLF.unique.rem.name.fasta.clean ITS.unique.rem.name.fasta.clean -out align.concat.EcrinSpPool.121115.nex\
-\ul \
-\ulnone DIMENSIONS NTAX=1086 NCHAR=5144\
+\pard\pardeftab720
+\cf2 \ul \ulc2 \
+\pard\pardeftab720
+\cf2 \ulnone DIMENSIONS NTAX=1086 NCHAR=5144\
 [atpB.unique.rem.name.fasta.clean_gene1 1-1452 rbcL.unique.fasta.clean_gene2 1453-2689 matK.unique.fasta.clean_gene3 2690-3617 trnTLF.unique.rem.name.fasta.clean_gene4 3618-4480 ITS.unique.rem.name.fasta.clean_gene5 4481-5144 ]\
 \
 -Convert to .phy in TextWrangler\
@@ -208,8 +208,7 @@ After removal from
 \pard\pardeftab720
 
 \b0 \cf2 first/ and second/ are previous iterations after which some taxa were removed from certain gene regions)
-\b \
-\pard\pardeftab720
+\b \cf2 \
 
 \b0 \cf2 -save *unique.fasta.clean as ..phy in Se-Al \
 \pard\pardeftab720
@@ -218,17 +217,17 @@ After removal from
 \pard\pardeftab720
 
 \b0 \cf2 GeneTrees/
-\b \
+\b \cf2 \
 
-\b0 Ford
-\b :\
+\b0 \cf2 Ford
+\b \cf2 :\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
 \b0 \cf0 scp \cf2 trnTLF.unique.rem.name.fasta.clean.phy \cf0 hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/18092015/trnTLF/trnTLFrem\
 \pard\pardeftab720
 \cf2 screen -S matK\
 module load raxml
-\b \
+\b \cf2 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
 \f4\b0\fs26 \cf2 raxmlHPC -f a -s 
@@ -249,9 +248,9 @@ module load raxml
 \f2 \cf2 \
 \
 Concatenated/ 
-\b \
+\b \cf2 \
 
-\b0 Ford:\
+\b0 \cf2 Ford:\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 scp \cf2 align.concat.EcrinSpPool.210915.phy\cf0  hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/18092015/concat\cf2 \
 \pard\pardeftab720
@@ -341,12 +340,12 @@ Spermatophyta/\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\b \cf0 8_PhyoDiversity: calculate on ML tree and across a random sampling of 100 bootstrap replicates \
+\b \cf0 8_PhyoDiversity: calculated from ML estimate of phylogeny  \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
 \b0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-\cf0 \ul static/ \
+\cf0 \ul \ulc0 static/ \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 \ulnone \
 MaximumLikelihood/\
@@ -356,7 +355,7 @@ boostrap/\
 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-\cf0 \ul dynamic/\
+\cf0 \ul \ulc0 dynamic/\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 \ulnone qsub -t 1-10 DAMOCLES.pbs\
 \
@@ -392,14 +391,14 @@ qsub -t 1-100 DAMOCLESboots.pbs\
 ** may be different in dataset \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-\cf0 \ul Species pools\
+\cf0 \ul \ulc0 Species pools\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 \cf0 \ulnone Ecrins NP \'97> Regional\
 Persistent LGM \'97> LGM\
 Summits \'97> All Summits \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-\cf0 \ul Summits\ulnone \
+\cf0 \ul \ulc0 Summits\ulnone \
 \
 "Brevoort" = \'93Pointe Brevoort\'94,\
 "Pelvoux"= \'93Mont Pelvoux\'94,\

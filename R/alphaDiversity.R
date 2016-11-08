@@ -5,8 +5,7 @@
 #####################################################################################################################
 
 source("analysisSkyIsl.R")
-source("R/randomizeSourcePoolNull_v1.5.R")
-source("R/alps.damocles.chooseClade.R")
+source("R/alps.damocles.chooseClade.ecrins.R")
 source("R/pruneSpeciesPoolsPez.R")
 
 ###################################################################################### 
@@ -16,11 +15,9 @@ source("R/pruneSpeciesPoolsPez.R")
 
 ## Random resample from phylogeny pool (==Ecrins NP), equal probability random draw from phylogeny pool
 ecrins.sesmpd.phylonull <- ses.mpd(pezAlpes$comm, cophenetic.phylo(pezAlpes$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-#comm.sesmpd.samplenull <- ses.mpd(pezAlpes$comm, cophenetic.phylo(pezAlpes$phy), null.model = "sample.pool", abundance.weighted = FALSE, runs = 999)
-write.csv(ecrins.sesmpd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/ecrins.sesmpd.phylonull.csv")
-
 ecrins.sesmntd.phylonull <- ses.mntd(pezAlpes$comm, cophenetic.phylo(pezAlpes$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-write.csv(ecrins.sesmntd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/ecrins.sesmntd.phylonull.csv")
+#write.csv(ecrins.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/ecrins.sesmpd.phylonull.csv")
+#write.csv(ecrins.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/ecrins.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -28,23 +25,11 @@ write.csv(ecrins.sesmntd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/s
 ############################### Species Pool: All Summits ############################
 ###################################################################################### 
 
-## Source pool = summits, equal probability random draw from phylogeny (pruned to summits)
+## Source pool = all summits, equal probability random draw from phylogeny (pruned to summits)
 summits.sesmpd.phylonull <- ses.mpd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
 summits.sesmntd.phylonull <- ses.mntd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-write.csv(summits.sesmpd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmpd.phylonull.csv")
-write.csv(summits.sesmntd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmntd.phylonull.csv")
-
-## Source pool = summits, "abundance" weighted random draw from phylogeny (pruned to summits)
-summits.sesmpd.phylonull.abun <- ses.mpd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = TRUE, runs = 999)
-summits.sesmntd.phylonull.abun <- ses.mntd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = TRUE, runs = 999)
-write.csv(summits.sesmpd.phylonull.abun, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmpd.phylonull.abun.csv")
-write.csv(summits.sesmntd.phylonull.abun, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmntd.phylonull.abun.csv")
-
-## source pool = summits (persistent + under ice?), weighted for abundance in summits
-summits.sesmpd.sourceSummits <- ses.mpd.sourcePool(dist=cophenetic.phylo(pezAlpes.summits$phy), com = pezAlpes.summits$comm, sourcePool = "Summits", N =999)
-summits.sesmntd.sourceSummits <- ses.mntd.sourcePool(dist=cophenetic.phylo(pezAlpes.summits$phy), com = pezAlpes.summits$comm, sourcePool = "Summits", N =999)
-write.csv(summits.sesmpd.sourceSummits, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmpd.sourceSummits.csv")
-write.csv(summits.sesmntd.sourceSummits, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/summits.sesmntd.sourceSummits.csv")
+#write.csv(summits.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/summits.sesmpd.phylonull.csv")
+#write.csv(summits.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/summits.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -55,26 +40,8 @@ write.csv(summits.sesmntd.sourceSummits, file="output/9_PhyoDiversity/Spermatoph
 ## Source pool = Persistent, equal probability random draw from phylogeny (pruned to persistent species)
 persistent.sesmpd.phylonull <- ses.mpd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
 persistent.sesmntd.phylonull <- ses.mntd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-write.csv(persistent.sesmpd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmpd.phylonull.csv")
-write.csv(persistent.sesmntd.phylonull, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmntd.phylonull.csv")
-
-## Source pool = Persistent, "abundance" weighted draw from phylogeny (pruned to persistent species)
-persistent.sesmpd.phylonull.abun <- ses.mpd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = TRUE, runs = 999)
-persistent.sesmntd.phylonull.abun <- ses.mntd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = TRUE, runs = 999)
-write.csv(persistent.sesmpd.phylonull.abun, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmpd.phylonull.abun.csv")
-write.csv(persistent.sesmntd.phylonull.abun, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmntd.phylonull.abun.csv")
-
-## source pool = persistent above glacier through LGM, weighted for abundance in persistent pool
-persistent.sesmpd.sourcePersis <- ses.mpd.sourcePool(dist=cophenetic.phylo(pezAlpes.persistent$phy), com = pezAlpes.persistent$comm, sourcePool = "Persistent", N =999)
-persistent.sesmntd.sourcePersis <- ses.mntd.sourcePool(dist=cophenetic.phylo(pezAlpes.persistent$phy), com = pezAlpes.persistent$comm, sourcePool = "Persistent", N =999)
-write.csv(persistent.sesmpd.sourcePersis, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmpd.sourcePersis.csv")
-write.csv(persistent.sesmntd.sourcePersis, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmntd.sourcePersis.csv")
-  
-## source pool = summits (persistent + under ice?), weighted for abundance in summits
-persistent.sesmpd.sourceSummits <- ses.mpd.sourcePool(dist=cophenetic.phylo(pezAlpes.persistent$phy), com = pezAlpes.persistent$comm, sourcePool = "Summits", N =999)
-persistent.sesmntd.sourceSummits <- ses.mntd.sourcePool(dist=cophenetic.phylo(pezAlpes.persistent$phy), com = pezAlpes.persistent$comm, sourcePool = "Summits", N =999)
-write.csv(persistent.sesmpd.sourceSummits, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmpd.sourceSummits.csv")
-write.csv(persistent.sesmntd.sourceSummits, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/sourcePools/persistent.sesmntd.sourceSummits.csv")
+#write.csv(persistent.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.sesmpd.phylonull.csv")
+#write.csv(persistent.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -139,7 +106,7 @@ head(phylogeny.poolSES)
 phylogeny.poolSES <- phylogeny.poolSES[!phylogeny.poolSES$summits == "Ecrins NP",]
 phylogeny.poolSES$clade <- factor(phylogeny.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 phylogeny.poolSES <- cbind(phylogeny.poolSES, pool = rep(x = "Ecrins NP", times = nrow(phylogeny.poolSES)))
-write.csv(phylogeny.poolSES, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/phylogeny.pool.SES.csv")
+#write.csv(phylogeny.poolSES, file="output/8_PhyoDiversity/alpha/static/phylogeny.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -193,7 +160,7 @@ head(summit.poolSES)
 summit.poolSES <- summit.poolSES[!summit.poolSES$summits == "Ecrins NP",]
 summit.poolSES$clade <- factor(summit.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 summit.poolSES <- cbind(summit.poolSES, pool = rep(x = "Summits", times = nrow(summit.poolSES)))
-write.csv(summit.poolSES, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/summit.pool.SES.csv")
+#write.csv(summit.poolSES, file="output/8_PhyoDiversity/alpha/static/summit.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -247,11 +214,11 @@ head(persistent.poolSES)
 persistent.poolSES <- persistent.poolSES[!persistent.poolSES$summits == "Ecrins NP",]
 persistent.poolSES$clade <- factor(persistent.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 persistent.poolSES <- cbind(persistent.poolSES, pool = rep(x = "Persistent LGM", times = nrow(persistent.poolSES)))
-write.csv(persistent.poolSES, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/persistent.pool.SES.csv")
+#write.csv(persistent.poolSES, file="output/8_PhyoDiversity/alpha/static/persistent.pool.SES.csv")
 
 
 master.ses.alpha <- rbind(phylogeny.poolSES, summit.poolSES, persistent.poolSES)
 head(master.ses.alpha)
-write.csv(master.ses.alpha, file="output/9_PhyoDiversity/Spermatophyta/static/MaxLikelihood/master.ses.static.alpha.csv")
+#write.csv(master.ses.alpha, file="output/8_PhyoDiversity/alpha/static/Dryad_master.ses.static.alpha.csv")
 
 
