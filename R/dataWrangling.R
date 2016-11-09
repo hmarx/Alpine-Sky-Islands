@@ -1,7 +1,8 @@
-
-##################################################################################################  
-##### Pre processesing of RAW datasets, and post-processing of prepPipeline output
-################################################################################################## 
+#####################################################################################################################
+############# Pre processesing of RAW datasets, and post-processing of prepPipelineSkyIsl output ####################
+############# Both Static & Dynamic Null Models #####################################################################
+############# Hannah E. Marx, 1 June 2016 ###########################################################################
+#####################################################################################################################
 
 ################################################# Community ################################################# 
 
@@ -78,7 +79,6 @@ summits$NOM %in% rownames(com.Alpes2)
 rownames(com.Alpes2) %in% summits$NOM 
 
 envAlps <- summits
-
 
 ## rename to match community matrix
 #summits$NOM[4] <- "brèche.du.râteau"
@@ -178,7 +178,7 @@ head(tdf)
 lith <- as.data.frame(tdf %>% group_by(sommet.C.50) %>% mutate(freq.lith = area.lith  / sum(area.lith )))
 colnames(lith) <- c("summit", "lithology", "area.lith", "frequency")
 
-lith <- merge(lith, alps.env.sprich.summits[2], by.x=1, by.y=0)
+lith <- merge(lith, alps.env.sprich.summits[2], by.x=1, by.y=0, all.x=T)
 
 lith_plot <- ggplot(lith[order(lith$lithology), ], aes(x=reorder(factor(summit), as.numeric(as.character(ntax))), y= frequency, fill=lithology)) +
   geom_bar(stat="identity") +
@@ -189,7 +189,7 @@ lith_plot <- ggplot(lith[order(lith$lithology), ], aes(x=reorder(factor(summit),
     panel.background = element_blank(),
     axis.ticks = element_blank(),
     axis.text.x = element_text(size = base_size *1.5, angle = -45, hjust=0, colour = "black"))
-pdf(file="figs/env_lith.pdf")
+pdf(file="output/10_Environment/env_lith.pdf")
 lith_plot
 dev.off()
 
@@ -200,7 +200,7 @@ rownames(lith.sum.df) <- lith.sum.df[,1]
 
 lith.sum.df.com <- cbind(lith.sum.df[,-1], simpson.d.geol = vegan::diversity((lith.sum.df)[-1], index = "simpson"), sum.geol.type = rowSums(lith.sum.df[,-1] != 0))
 
-alps.env.4 <- merge(alps.env, lith.sum.df.com, by=0)
+alps.env.4 <- merge(alps.env, lith.sum.df.com, by=0, all.x=T)
 rownames(alps.env.4) <- alps.env.4[,1]
 alps.env.4 <- alps.env.4[,-1]
 #write.csv(alps.env.4, file="data/AnalysesDatasets/alps.env.csv")
@@ -214,125 +214,5 @@ head(endemics)
 head(endemics.taxize)
 endemics.taxize.df <- endemics.taxize %>% group_by(taxized) %>% summarise_each(funs(first))
 #write.csv(endemics.taxize.df, file="data/OutputDatasets/endemics.taxize.csv")
-
-
-################################################# Traits ################################################# 
-traitnames <- read.csv(file="data/RAW/Traits/sp_list.csv", sep=";")
-head(traitnames)
-str(traitnames)
-
-traits <- read.csv(file="data/RAW/Traits/traits.csv")
-head(traits)
-colnames(traits)
-unique(traits$code)
-str(traits)
-
-traits.data <- as.data.frame(traits[1:3], strings.as.factors=F) #get just the species code, trait name, and value
-head(traits.data) 
-traits.data[traits.data == "NULL"] <- "NA"
-dim(traits.data) #168,942      
-traits.data$valeur <- as.numeric(as.character(traits.data$valeur))
-str(traits.data)
-
-# Take mean of traits with multiple values for a species:
-traits.data.avg <- traits.data %>% group_by(code_cbna, code) %>% select(valeur) %>% 
-  summarise(avgVal = mean(valeur, na.rm=T))
-traits.data.avg
-
-# Reshape dataset to have species in rows, traits$code in columns 
-traits.data.melt <- dcast(traits.data.avg, code_cbna ~ code)
-head(traits.data.melt)
-dim(traits.data.melt) #1421 species, 130 traits
-
-# Match cbna code to species name
-all.traits.alps <- right_join(traitnames, traits.data.melt, by="code_cbna")
-head(all.traits.alps)
-
-# taxize to match species occurence data, phylogeny
-all.traits.alps.taxize <- add.taxized.column(df = as.data.frame(all.traits.alps), colnum = 2, spliton = " ", sepas = " ", source="iPlant_TNRS")
-head(all.traits.alps.taxize) 
-head(all.traits.alps.taxize[duplicated(all.traits.alps.taxize$taxized),])
-
-# reduce down to traits of interest
-colnames(all.traits.alps.taxize)
-
-cont.traits <- as.data.frame(all.traits.alps.taxize[c("taxized", "L_AREA", "L_DRYM", "PL_H_flora_MAX", "PLOIDY (VALUE)", "SEEDM", "SLA")], strings.as.factors=F)
-head(cont.traits)
-cols.num <- c(colnames(cont.traits))
-cont.traits[2:7]  <- sapply(cont.traits[2:7], as.numeric)
-sapply(cont.traits, class)
-
-# Take mean of traits with multiple values for a species again:
-all.traits.alps.taxize.avg <- cont.traits %>% group_by(taxized) %>% summarise_each(funs(mean))
-head(all.traits.alps.taxize.avg)
-
-cont.traits <- as.data.frame(all.traits.alps.taxize.avg[2:length(all.traits.alps.taxize.avg)])
-rownames(cont.traits) <- all.traits.alps.taxize.avg$taxized
-head(cont.traits)
-dim(cont.traits) # 1400 species 
-
-######################### get discrete traits 
-disc.traits.tmp <- traits[c(1:2,4)]
-
-# take first of duplicated values
-traits.data.first <- disc.traits.tmp %>% group_by(code_cbna, code) %>% 
-  summarise(first(nom))
-traits.data.first
-
-# reshape the data to have single species in row
-traits.data.melt.disc <- dcast(traits.data.first, code_cbna ~ code)
-head(traits.data.melt.disc)
-dim(traits.data.melt.disc) #1421 species, 130 traits
-
-# Match cbna code to species name
-traits.data.melt.disc <- right_join(traitnames, traits.data.melt.disc, by="code_cbna")
-head(traits.data.melt.disc)
-
-# taxize to match species occurence data, phylogeny
-disc.traits.alps.taxize <- add.taxized.column(df = as.data.frame(traits.data.melt.disc), colnum = 2, spliton = " ", sepas = " ", source="iPlant_TNRS")
-head(disc.traits.alps.taxize) 
-
-# reduce down to traits of interest
-disc.traits <- disc.traits.alps.taxize[c("taxized", "PLOIDY", "TAPROOT", "VEG_DISP", "WOODY", "LIFESPAN", "GROWTHF")]
-dim(disc.traits)
-duplicated(disc.traits$taxized)
-
-# Take first of traits with multiple values for a species again:
-disc.traits.alps.taxize.avg <- disc.traits %>% group_by(taxized) %>% summarise_each(funs(first))
-head(disc.traits.alps.taxize.avg)
-
-disc.traits <- as.data.frame(disc.traits.alps.taxize.avg[2:ncol(disc.traits.alps.taxize.avg)])
-rownames(disc.traits) <- disc.traits.alps.taxize.avg$taxized
-
-summary(disc.traits)
-head(disc.traits)
-disc.traits.dummy <- disc.traits  %>% mutate(diploid = PLOIDY == "diploid") %>% mutate(woody = WOODY == "suffrutescent") %>% mutate(annual = LIFESPAN == "annual") %>% mutate(cushions = VEG_DISP == "cushions")
-head(disc.traits.dummy)
-
-disc.traits.dummy[disc.traits.dummy == FALSE] <- 0
-disc.traits.dummy[disc.traits.dummy == TRUE] <- 1
-rownames(disc.traits.dummy) <- rownames(disc.traits)
-
-## Merge the two 
-trait.Alps.tmp <- merge(cont.traits, disc.traits, by=0)
-trait.Alps<- trait.Alps.tmp[2:ncol(trait.Alps.tmp)]
-rownames(trait.Alps) <- sub(trait.Alps.tmp$Row.names, pattern =" ", replacement="_")
-head(trait.Alps)
-dim(trait.Alps) #1400 12
-alps.traits <- trait.Alps
-
-#write.csv(alps.traits, file="data/AnalysesDatasets/alps.traits.csv")
-
-
-## Merge the two 
-trait.Alps.tmp <- merge(cont.traits, disc.traits.dummy, by=0)
-trait.Alps<- trait.Alps.tmp[2:ncol(trait.Alps.tmp)]
-rownames(trait.Alps) <- sub(trait.Alps.tmp$Row.names, pattern =" ", replacement="_")
-head(trait.Alps)
-dim(trait.Alps) #1400 12
-alps.traits.dummy <- trait.Alps
-
-#write.csv(alps.traits.dummy, file="data/AnalysesDatasets/alps.traits.dummy.csv")
-
 
 

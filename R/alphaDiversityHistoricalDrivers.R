@@ -1,9 +1,14 @@
+#####################################################################################################################
+############# Historical drivers of phylogenetic diversity patterns ################################################# 
+############# Both Static & Dynamic Null Models #####################################################################
+############# Hannah E. Marx, 6 June 2016 ###########################################################################
+#####################################################################################################################
 
-source("R/alps.damocles.chooseClade.R")
-source("R/pruneSpeciesPoolsPez.R")
+source("R/alps.damocles.chooseClade.ecrins.R")
 
-############################################ Priority Effects among clades ############################################ 
-## Alpha diveristy at time intervals
+############################################ Priority Effects among clades ##########################################
+############################################ Alpha diveristy at time intervals ######################################
+
 max(branching.times(pezAlpes$phy)) ##352.2347
 350 / 50 # 7    
 
@@ -78,16 +83,16 @@ max(branching.times(trees.slice17))
 trees.slice18 <- timeSliceTree(ttree = pezAlpes$phy, sliceTime = 0)
 
 multi.tree.slices <- c(trees.slice1, trees.slice2, trees.slice3, trees.slice4, trees.slice5, trees.slice6, trees.slice7, trees.slice8,
-       trees.slice9, trees.slice10, trees.slice11, trees.slice12, trees.slice13, trees.slice14, trees.slice15, trees.slice16,
-       trees.slice17, trees.slice18)
+                       trees.slice9, trees.slice10, trees.slice11, trees.slice12, trees.slice13, trees.slice14, trees.slice15, trees.slice16,
+                       trees.slice17, trees.slice18)
 
 multi.tree.slices.mpd <- lapply(1:18, function(x) ses.mpd(samp = comparative.comm(phy = multi.tree.slices[[x]], 
-           com = pezAlpes$comm)$comm, dis = cophenetic(multi.tree.slices[[x]]), 
-           null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999))
+                                                                                  com = pezAlpes$comm)$comm, dis = cophenetic(multi.tree.slices[[x]]), 
+                                                          null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999))
 
 multi.tree.slices.mntd <- lapply(1:18, function(x) ses.mntd(samp = comparative.comm(phy = multi.tree.slices[[x]], 
-            com = pezAlpes$comm)$comm, dis = cophenetic(multi.tree.slices[[x]]), 
-            null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999))
+                                                                                    com = pezAlpes$comm)$comm, dis = cophenetic(multi.tree.slices[[x]]), 
+                                                            null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999))
 
 time.list <- (c(200, 150, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 5, 4, 3, 2, 1, 0))
 
@@ -114,12 +119,14 @@ colnames(multi.tree.slices.mntd.all) <- c("summit", "ntaxa",  "obs", "rand.mean"
 
 multi.tree.slices.alpha <- rbind(multi.tree.slices.mntd.all, multi.tree.slices.mpd.all)
 head(multi.tree.slices.alpha)
-write.csv(multi.tree.slices.alpha, "output/9_PhyoDiversity/Spermatophyta/Time/multi.tree.slices.alpha.csv")
+#write.csv(multi.tree.slices.alpha, "output/8_PhyoDiversity/alpha/static/Time/multi.tree.slices.alpha.csv")
 
-############################################ Recent and rapid radiations ############################################ 
-## Alpha diveristy without endemics
 
-############################### Contemporary Source Pool : Ecrins NP #################
+
+############################################ Recent and rapid diversification #######################################
+############################################ Alpha diveristy without endemics #######################################
+
+############################### Contemporary Source Pool : Regional Ecrins NP #################
 ###################################################################################### 
 # Convert to pres/abs
 tmp <- pezAlpes.NOendmics$comm
@@ -186,11 +193,11 @@ head(phylogeny.pool.NOendemic.SES)
 phylogeny.pool.NOendemic.SES <- phylogeny.pool.NOendemic.SES[!phylogeny.pool.NOendemic.SES$summits == "Ecrins NP",]
 phylogeny.pool.NOendemic.SES$clade <- factor(phylogeny.pool.NOendemic.SES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 phylogeny.pool.NOendemic.SES <- cbind(phylogeny.pool.NOendemic.SES, pool = rep(x = "Ecrins NP", times = nrow(phylogeny.pool.NOendemic.SES)))
-write.csv(phylogeny.pool.NOendemic.SES, file="output/9_PhyoDiversity/Spermatophyta/Endemics/phylogeny.pool.NO.endemic.SES.csv")
+#write.csv(phylogeny.pool.NOendemic.SES, file="output/8_PhyoDiversity/alpha/static/Endemics/phylogeny.pool.NO.endemic.SES.csv")
 
 
 
-############################### Contemporary Source Pool : Summits #################
+############################### Contemporary Source Pool : All Summits #################
 ######################################################################################
 # Pres/abs for summits pool
 tmp2 <- pezAlpes.NOendmics.summits$comm
@@ -261,7 +268,7 @@ write.csv(summit.pool.NOendemic.SES, file="output/9_PhyoDiversity/Spermatophyta/
 
 
 
-############################### Contemporary Source Pool : Persistent #################
+############################### Contemporary Source Pool : LGM #################
 ######################################################################################
 # Pres/abs for Persistent pool
 tmp2 <- pezAlpes.persistent.NOendemics$comm
@@ -330,11 +337,172 @@ persistent.pool.NOendemic.SES <- cbind(persistent.pool.NOendemic.SES, pool = rep
 write.csv(persistent.pool.NOendemic.SES, file="output/9_PhyoDiversity/Spermatophyta/Endemics/persistent.pool.NO.endemic.SES.csv")
 
 master.SES.NOendemic <- rbind(phylogeny.pool.NOendemic.SES, summit.pool.NOendemic.SES, persistent.pool.NOendemic.SES)
-write.csv(master.SES.NOendemic, file="output/9_PhyoDiversity/Spermatophyta/Endemics/master.SES.NOendemic.csv")
+#write.csv(master.SES.NOendemic, file="output/8_PhyoDiversity/alpha/static/Endemics/master.SES.NOendemic.csv")
 
 
 
+##################################  Statistical comparison of SES alpha diveristy with and without endemics ##################################  
+#Paired t-test (use shapiro to test normal distribution of residuals)
+
+master.ses.static.NOendemics <- read.csv(file="output/8_PhyoDiversity/alpha/static/Endemics/master.SES.NOendemic.csv", row.names=1)
+head(master.ses.static.NOendemics)
+
+master.ses.static.NOendemics <- master.ses.static.NOendemics[master.ses.static.NOendemics$summits %in% rownames(alps.env.sprich.summits),]
+unique(master.ses.static.NOendemics$summits)
+unique(master.ses.static.summtis$summits)
+
+## All spermatophyta
+
+t.test.sperm.endemic.no.ecrins.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                               master.ses.static.summtis$pool == "Ecrins NP" & 
+                                                               master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                   master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                  master.ses.static.NOendemics$pool == "Ecrins NP" &
+                                                                  master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.ecrins.mntd.out <- cbind(test = "Endemics_No", pool = "Ecrins", clade = "Spermatophyta", metric="mntd", mean.of.diff = t.test.sperm.endemic.no.ecrins.mntd$estimate, t.value = t.test.sperm.endemic.no.ecrins.mntd$statistic, df = t.test.sperm.endemic.no.ecrins.mntd$parameter,
+                                      p.value= t.test.sperm.endemic.no.ecrins.mntd$p.value, conf.low = t.test.sperm.endemic.no.ecrins.mntd$conf.int[1], conf.high =t.test.sperm.endemic.no.ecrins.mntd$conf.int[2])
 
 
+t.test.sperm.endemic.no.ecrins.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                                          master.ses.static.summtis$pool == "Ecrins NP" & 
+                                                                          master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                              master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                             master.ses.static.NOendemics$pool == "Ecrins NP" &
+                                                                             master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.ecrins.mpd.out <- cbind(test = "Endemics_No", pool = "Ecrins", clade = "Spermatophyta", metric="mpd", mean.of.diff = t.test.sperm.endemic.no.ecrins.mpd$estimate, t.value = t.test.sperm.endemic.no.ecrins.mpd$statistic, df = t.test.sperm.endemic.no.ecrins.mpd$parameter,
+                                                 p.value= t.test.sperm.endemic.no.ecrins.mpd$p.value, conf.low = t.test.sperm.endemic.no.ecrins.mpd$conf.int[1], conf.high =t.test.sperm.endemic.no.ecrins.mpd$conf.int[2])
+
+
+t.test.sperm.endemic.no.summit.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                                          master.ses.static.summtis$pool == "Summits" & 
+                                                                          master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                              master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                             master.ses.static.NOendemics$pool == "Summits" &
+                                                                             master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.summit.mntd.out <- cbind(test = "Endemics_No", pool = "summit", clade = "Spermatophyta", metric="mntd", mean.of.diff = t.test.sperm.endemic.no.summit.mntd$estimate, t.value = t.test.sperm.endemic.no.summit.mntd$statistic, df = t.test.sperm.endemic.no.summit.mntd$parameter,
+                                                 p.value= t.test.sperm.endemic.no.summit.mntd$p.value, conf.low = t.test.sperm.endemic.no.summit.mntd$conf.int[1], conf.high =t.test.sperm.endemic.no.summit.mntd$conf.int[2])
+
+
+t.test.sperm.endemic.no.summit.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                                         master.ses.static.summtis$pool == "Summits" & 
+                                                                         master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                             master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                            master.ses.static.NOendemics$pool == "Summits" &
+                                                                            master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.summit.mpd.out <- cbind(test = "Endemics_No", pool = "summit", clade = "Spermatophyta", metric="mpd", mean.of.diff = t.test.sperm.endemic.no.summit.mpd$estimate, t.value = t.test.sperm.endemic.no.summit.mpd$statistic, df = t.test.sperm.endemic.no.summit.mpd$parameter,
+                                                p.value= t.test.sperm.endemic.no.summit.mpd$p.value, conf.low = t.test.sperm.endemic.no.summit.mpd$conf.int[1], conf.high =t.test.sperm.endemic.no.summit.mpd$conf.int[2])
+
+
+t.test.sperm.endemic.no.persistent.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                                          master.ses.static.summtis$pool == "Persistent LGM" & 
+                                                                          master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                              master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                             master.ses.static.NOendemics$pool == "Persistent LGM" &
+                                                                             master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.persistent.mntd.out <- cbind(test = "Endemics_No", pool = "Persistent LGM", clade = "Spermatophyta", metric="mntd", mean.of.diff = t.test.sperm.endemic.no.persistent.mntd$estimate, t.value = t.test.sperm.endemic.no.persistent.mntd$statistic, df = t.test.sperm.endemic.no.persistent.mntd$parameter,
+                                                 p.value= t.test.sperm.endemic.no.persistent.mntd$p.value, conf.low = t.test.sperm.endemic.no.persistent.mntd$conf.int[1], conf.high =t.test.sperm.endemic.no.persistent.mntd$conf.int[2])
+
+
+t.test.sperm.endemic.no.persistent.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade == "Spermatophyta" & 
+                                                                         master.ses.static.summtis$pool == "Persistent LGM" & 
+                                                                         master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                             master.ses.static.NOendemics[master.ses.static.NOendemics$clade == "Spermatophyta" & 
+                                                                            master.ses.static.NOendemics$pool == "Persistent LGM" &
+                                                                            master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.sperm.endemic.no.persistent.mpd.out <- cbind(test = "Endemics_No", pool = "Persistent LGM", clade = "Spermatophyta", metric="mpd", mean.of.diff = t.test.sperm.endemic.no.persistent.mpd$estimate, t.value = t.test.sperm.endemic.no.persistent.mpd$statistic, df = t.test.sperm.endemic.no.persistent.mpd$parameter,
+                                                p.value= t.test.sperm.endemic.no.persistent.mpd$p.value, conf.low = t.test.sperm.endemic.no.persistent.mpd$conf.int[1], conf.high =t.test.sperm.endemic.no.persistent.mpd$conf.int[2])
+
+
+### Each major clade separately
+
+t.test.clades.endemic.no.ecrins.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                            master.ses.static.summtis$pool == "Ecrins NP" & 
+                                                                            master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                                master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                               master.ses.static.NOendemics$pool == "Ecrins NP" &
+                                                                               master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.ecrins.mntd.out <- cbind(test = "Endemics_No", pool = "Ecrins NP", clade = "Clades", metric="mntd", mean.of.diff = t.test.clades.endemic.no.ecrins.mntd$estimate, t.value = t.test.clades.endemic.no.ecrins.mntd$statistic, df = t.test.clades.endemic.no.ecrins.mntd$parameter,
+                                                   p.value= t.test.clades.endemic.no.ecrins.mntd$p.value, conf.low = t.test.clades.endemic.no.ecrins.mntd$conf.int[1], conf.high =t.test.clades.endemic.no.ecrins.mntd$conf.int[2])
+
+
+t.test.clades.endemic.no.ecrins.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                           master.ses.static.summtis$pool == "Ecrins NP" & 
+                                                                           master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                               master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                              master.ses.static.NOendemics$pool == "Ecrins NP" &
+                                                                              master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.ecrins.mpd.out <- cbind(test = "Endemics_No", pool = "Ecrins NP", clade = "Clades", metric="mpd", mean.of.diff = t.test.clades.endemic.no.ecrins.mpd$estimate, t.value = t.test.clades.endemic.no.ecrins.mpd$statistic, df = t.test.clades.endemic.no.ecrins.mpd$parameter,
+                                                  p.value= t.test.clades.endemic.no.ecrins.mpd$p.value, conf.low = t.test.clades.endemic.no.ecrins.mpd$conf.int[1], conf.high =t.test.clades.endemic.no.ecrins.mpd$conf.int[2])
+
+
+t.test.clades.endemic.no.summits.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                               master.ses.static.summtis$pool == "Summits" & 
+                                                                               master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                                   master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                                  master.ses.static.NOendemics$pool == "Summits" &
+                                                                                  master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.summits.mntd.out <- cbind(test = "Endemics_No", pool = "Summits", clade = "Clades", metric="mntd", mean.of.diff = t.test.clades.endemic.no.summits.mntd$estimate, t.value = t.test.clades.endemic.no.summits.mntd$statistic, df = t.test.clades.endemic.no.summits.mntd$parameter,
+                                                      p.value= t.test.clades.endemic.no.summits.mntd$p.value, conf.low = t.test.clades.endemic.no.summits.mntd$conf.int[1], conf.high =t.test.clades.endemic.no.summits.mntd$conf.int[2])
+
+
+t.test.clades.endemic.no.summits.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                              master.ses.static.summtis$pool == "Summits" & 
+                                                                              master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                                  master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                                 master.ses.static.NOendemics$pool == "Summits" &
+                                                                                 master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.summits.mpd.out <- cbind(test = "Endemics_No", pool = "Summits", clade = "Clades", metric="mpd", mean.of.diff = t.test.clades.endemic.no.summits.mpd$estimate, t.value = t.test.clades.endemic.no.summits.mpd$statistic, df = t.test.clades.endemic.no.summits.mpd$parameter,
+                                                     p.value= t.test.clades.endemic.no.summits.mpd$p.value, conf.low = t.test.clades.endemic.no.summits.mpd$conf.int[1], conf.high =t.test.clades.endemic.no.summits.mpd$conf.int[2])
+
+
+t.test.clades.endemic.no.persistent.mntd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                              master.ses.static.summtis$pool == "Persistent LGM" & 
+                                                                              master.ses.static.summtis$metric == "mntd", "obs.z"],
+                                                  master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                                 master.ses.static.NOendemics$pool == "Persistent LGM" &
+                                                                                 master.ses.static.NOendemics$metric == "mntd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.persistent.mntd.out <- cbind(test = "Endemics_No", pool = "Persistent LGM", clade = "Clades", metric="mntd", mean.of.diff = t.test.clades.endemic.no.persistent.mntd$estimate, t.value = t.test.clades.endemic.no.persistent.mntd$statistic, df = t.test.clades.endemic.no.persistent.mntd$parameter,
+                                                     p.value= t.test.clades.endemic.no.persistent.mntd$p.value, conf.low = t.test.clades.endemic.no.persistent.mntd$conf.int[1], conf.high =t.test.clades.endemic.no.persistent.mntd$conf.int[2])
+
+
+t.test.clades.endemic.no.persistent.mpd <- t.test(master.ses.static.summtis[master.ses.static.summtis$clade != "Spermatophyta" & 
+                                                                             master.ses.static.summtis$pool == "Persistent LGM" & 
+                                                                             master.ses.static.summtis$metric == "mpd", "obs.z"],
+                                                 master.ses.static.NOendemics[master.ses.static.NOendemics$clade != "Spermatophyta" & 
+                                                                                master.ses.static.NOendemics$pool == "Persistent LGM" &
+                                                                                master.ses.static.NOendemics$metric == "mpd", "obs.z"], paired = T)
+
+t.test.clades.endemic.no.persistent.mpd.out <- cbind(test = "Endemics_No", pool = "Persistent LGM", clade = "Clades", metric="mpd", mean.of.diff = t.test.clades.endemic.no.persistent.mpd$estimate, t.value = t.test.clades.endemic.no.persistent.mpd$statistic, df = t.test.clades.endemic.no.persistent.mpd$parameter,
+                                                    p.value= t.test.clades.endemic.no.persistent.mpd$p.value, conf.low = t.test.clades.endemic.no.persistent.mpd$conf.int[1], conf.high =t.test.clades.endemic.no.persistent.mpd$conf.int[2])
+
+
+################
+#The sign of a t-value tells us the direction of the difference in sample means
+
+endemic.stats <- as.data.frame(rbind(t.test.sperm.endemic.no.ecrins.mntd.out, t.test.sperm.endemic.no.ecrins.mpd.out, t.test.sperm.endemic.no.summit.mntd.out,
+      t.test.sperm.endemic.no.summit.mpd.out, t.test.sperm.endemic.no.persistent.mntd.out, t.test.sperm.endemic.no.persistent.mpd.out,
+      t.test.clades.endemic.no.ecrins.mntd.out, t.test.clades.endemic.no.ecrins.mpd.out, t.test.clades.endemic.no.summits.mntd.out,
+      t.test.clades.endemic.no.summits.mpd.out, t.test.clades.endemic.no.persistent.mntd.out, t.test.clades.endemic.no.persistent.mpd.out))
+rownames(endemic.stats) <- NULL
+head(endemic.stats)
+str(biotic.corr.stats)
+
+endemic.stats[5:9] <- apply(endemic.stats[5:9], 2, as.character)
+endemic.stats[5:9] <- apply(endemic.stats[5:9], 2, as.numeric)
+
+endemic.stats$p.value <- round(endemic.stats$p.value, 9)
+
+#write.csv(endemic.stats, file="output/8_PhyoDiversity/alpha/static/Endemics/diff.SES.endemics.csv")
 
 
