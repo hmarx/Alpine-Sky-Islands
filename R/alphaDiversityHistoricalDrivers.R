@@ -264,7 +264,7 @@ head(summit.pool.NOendemic.SES)
 summit.pool.NOendemic.SES <- summit.pool.NOendemic.SES[!summit.pool.NOendemic.SES$summits == "Ecrins NP",]
 summit.pool.NOendemic.SES$clade <- factor(summit.pool.NOendemic.SES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 summit.pool.NOendemic.SES <- cbind(summit.pool.NOendemic.SES, pool = rep(x = "Summits", times = nrow(summit.pool.NOendemic.SES)))
-write.csv(summit.pool.NOendemic.SES, file="output/9_PhyoDiversity/Spermatophyta/Endemics/summit.pool.NO.endemic.SES.csv")
+write.csv(summit.pool.NOendemic.SES, file="output/9_PhyoDiversity/Endemics/summit.pool.NO.endemic.SES.csv")
 
 
 
@@ -334,7 +334,7 @@ persistent.pool.NOendemic.SES <- rbind(persistent.pool.NOendemic.SESmntd, persis
 head(persistent.pool.NOendemic.SES)     
 persistent.pool.NOendemic.SES$clade <- factor(persistent.pool.NOendemic.SES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 persistent.pool.NOendemic.SES <- cbind(persistent.pool.NOendemic.SES, pool = rep(x = "Persistent LGM", times = nrow(persistent.pool.NOendemic.SES)))
-write.csv(persistent.pool.NOendemic.SES, file="output/9_PhyoDiversity/Spermatophyta/Endemics/persistent.pool.NO.endemic.SES.csv")
+write.csv(persistent.pool.NOendemic.SES, file="output/9_PhyoDiversity/Endemics/persistent.pool.NO.endemic.SES.csv")
 
 master.SES.NOendemic <- rbind(phylogeny.pool.NOendemic.SES, summit.pool.NOendemic.SES, persistent.pool.NOendemic.SES)
 #write.csv(master.SES.NOendemic, file="output/8_PhyoDiversity/alpha/static/Endemics/master.SES.NOendemic.csv")

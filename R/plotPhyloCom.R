@@ -66,20 +66,20 @@ dat.plot[dat.plot > 0] <- 1
 dat.plot <- as.data.frame(dat.plot)
 head(dat.plot)
 
-#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.pdf") 
+#pdf(file="output/6_VisualizeTree/FloraEcrin.pdf") 
 color.plot.phylo3NoTrait(pezAlpes$phy, as.data.frame(cbind("tiplabels" = rownames(dat.plot), "summitsPA" = dat.plot[,1])), 
                          taxa.names = "tiplabels", trait = "summitsPA", col.names = colorsIsl, label.offset=5.2, phy.cex=.05, 
                          cut.labs =c("Ecrin NP", "Alpine Summits"), leg.cex=.8, main="Flora of the Le Parc national des Ecrins")
 #dev.off()
 
 
-#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.dots.pdf")
+#pdf(file="output/6_VisualizeTree/FloraEcrin.dots.pdf")
 plot(pezAlpes$phy, show.tip.label = FALSE, type="fan")
 tiplabels(tip = which(pezAlpes$comm["Summits",] > 0), pch = 8, cex = .5, col = "darkorange2")
 #dev.off()
 
 
-#pdf(file="output/6_VisualizeTree/Spermatophyta/FloraEcrin.dots.v2.pdf")
+#pdf(file="output/6_VisualizeTree/FloraEcrin.dots.v2.pdf")
 trait.plot(pezAlpes$phy, dat.plot, cols = list(dat.plot = c("white", "darkorange2")), font = 0, cex.lab = .2) #.0001
 nodelabels(text=NULL, cex=ifelse(vec==0, NA, 1), frame="n", col="black", pch=21, bg="white") # Plot congruified nodes
 nodelabels(pch = 21, cex = 0.3, col=p2, bg = p2) # Plot bootstrap support
@@ -146,7 +146,7 @@ com.data.plot <- com.data.plot[,c("species", "Brevoort",
                                   "Endemic")]
 
 # plot
-pdf("output/6_VisualizeTree/Spermatophyta/EcrinsCommunitiesPhyloEndemic.pdf", 10,10)
+pdf("output/6_VisualizeTree/EcrinsCommunitiesPhyloEndemic.pdf", 10,10)
 trait.plot.colorCom(tree = pezAlpes$phy,
                     dat = com.data.plot,
                     shape = "Endemic",
@@ -179,7 +179,7 @@ trait.plot.colorCom(tree = pezAlpes$phy,
 dev.off()
 
 # plot
-pdf("output/6_VisualizeTree/Spermatophyta/EcrinsCommunitiesPhylo.pdf", 10,10)
+pdf("output/6_VisualizeTree/EcrinsCommunitiesPhylo.pdf", 10,10)
 trait.plot.colorCom(tree = pezAlpes$phy,
                     dat = com.data.plot,
                     shape = "Endemic",

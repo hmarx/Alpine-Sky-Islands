@@ -264,7 +264,7 @@ res1=congruify.phylo(fatol, phy, tax, tol=0, scale="NA")
 
 ## WRITE OUT TREEPL FILE -- you'll need to do more than just run the exported file, but this gives you a start
 nsites=5144 #SHOULD be number of nucleotides in alignment 
-write.treePL(res1$target, res1$calibrations, nsites, base="output/6_Scaling/Spermatophyta/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL", opts=list(prime=TRUE))
+write.treePL(res1$target, res1$calibrations, nsites, base="output/6_Scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL", opts=list(prime=TRUE))
 ## modify .infile to adjust location of .intree and outfile (local)
 ## Run on fortytwo: treePL EcrinSpPool.120515.1000.treePL.infile
 
@@ -276,11 +276,11 @@ write.treePL(res1$target, res1$calibrations, nsites, base="output/6_Scaling/Sper
 #moredetailcvad
 
 ### Read in treePL output to change tip labels back
-treePL <- read.tree("output/6_Scaling/Spermatophyta/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre")
+treePL <- read.tree("output/6_Scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre")
 treePL$tip.label=genetree$tip.label[match(swaptips, res1$target$tip.label)] ### CHANGE tip labels back
 
 #Write .tre file
-#write.tree(treePL, file="output/6_Scaling/Spermatophyta/EcrinSpPool.121115.1000.treePL.dated.rename.tre")
+#write.tree(treePL, file="output/6_Scaling/EcrinSpPool.121115.1000.treePL.dated.rename.tre")
 
 
 ########### Match bootstrap node labels from ML tree to treePL scaled tree: Save as final Tree ###############
@@ -288,7 +288,7 @@ treePL$tip.label=genetree$tip.label[match(swaptips, res1$target$tip.label)] ### 
 #library(ape)
 
 treeBSroot #<- read.tree(file="output/5_Trees/Concatenated/EcrinSpPool.121115.1000.unscaled.root.tre") 
-treePL #<- read.tree("output/6_Scaling/Spermatophyta/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre")
+treePL #<- read.tree("output/6_Scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre")
 treePL #1084
 
 ltt(treePL)
@@ -296,12 +296,12 @@ max(treePL$edge.length) #227.2309
      
 ##### Match bootstrap node labels from ML tree to treePL scaled tree ####
 ## Takes a while for large trees...
-plotTreePLBoot(treePL=treePL, bootTree=treeBSroot, file="output/6_Scaling/Spermatophyta/EcrinSpPool.12112015.dated.bootstrap.tre") 
+plotTreePLBoot(treePL=treePL, bootTree=treeBSroot, file="output/6_Scaling/EcrinSpPool.12112015.dated.bootstrap.tre") 
 ## Deleted "Root" label from nexus in TextWrangler 
 
 ########################################################### 6_VisualizeTree ######################################################### 
 
-AlpineFinalTree <- read.tree(file="output/6_Scaling/Spermatophyta/EcrinSpPool.12112015.dated.bootstrap.tre")
+AlpineFinalTree <- read.tree(file="output/6_Scaling/EcrinSpPool.12112015.dated.bootstrap.tre")
 AlpineFinalTree$tip.label #note: no hyphens
 #1084 tips
 
@@ -412,7 +412,7 @@ phy.tmp #1084
 #actually don't do this -- just use code above b/c taxonomy was changes to iPlant in community matrix first
 
 # Output saved as: output/6_Visualize Tree/TipLabelsChanged.rtf N =32
-#write.tree(phy.tmp, file="output/6_VisualizeTree/Spermatophyta/phy.Alpes.taxized.tre")
+#write.tree(phy.tmp, file="output/6_VisualizeTree/phy.Alpes.taxized.tre")
 #write.tree(phy.tmp, file="data/AnalysesDatasets/phy.Alpes.taxized.tre")
 
 ### Prune tree to include just species in community data: don't actually need to do this (pez)
