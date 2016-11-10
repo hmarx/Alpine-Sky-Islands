@@ -1,52 +1,53 @@
+#####################################################################################################################
+############# Plot most species rich orders of plants within each species pool ######################################
+############# Both Static & Dynamic Null Models #####################################################################
+############# Hannah E. Marx, 22 March 2016 #########################################################################
+#####################################################################################################################
 
+source("R/chooseClade.R")
 
-alps.phy
-
-## ECRINS pool: Prune to specific clades for DAMOCLES analyses
-tax=read.csv(file="output/5_Scaling/Congruify/fleshed_genera.csv", as.is=TRUE, row=1) ##"linkage table", From Jon (NESCent working group on plant rates and traits)
-
-tip.labels = alps.phy$tip.label
-level = "Angiospermae"
-taxonomy = "Angiospermae"
-
-pruneCladeTaxonomyLookup <- function(tip.labels, tax, level, taxonomy){
-  tips.ecrins=sapply(tip.labels, function(x){
-    unlist(strsplit(x,"_",fixed=TRUE))[1]
-  })
-  ll=match(tips.ecrins, rownames(tax))
-  ecrins_tax=tax[ll,]
-  rownames(ecrins_tax)=names(tips.ecrins)
-  ecrins_tax=as.matrix(ecrins_tax)
-  ecrins_tax[is.na(ecrins_tax)]=""
-  head(ecrins_tax)
-  #length(which(ecrins_tax[,"Angiospermae"] == "Angiospermae")) # 1064 species are in Spermatophyta
-  ecrins.clade <- names(which(ecrins_tax[,level] == taxonomy))
-  #return(as.data.frame(ecrins_tax))
-  return(ecrins.clade)
-}
-
-ecrins_angio <- pruneCladeTaxonomyLookup(tip.labels = alps.phy$tip.label, tax, level = "Angiospermae", taxonomy = "Angiospermae")
-
+## ECRINS pool: 
+ecrins_tax <- lookupTabPool(pool = "Ecrins", tip.labels = alps.phy$tip.label, tax = tax, level = "Angiospermae", taxonomy = "Angiospermae")
 ecrins_tax.df <- as.data.frame(ecrins_tax)
-p <- qplot(family, data=ecrins_tax.df, stat="bin")
-p
+head(ecrins_tax.df)
 
-theTable.fam <- within(ecrins_tax.df, 
-                   family <- factor(family, 
-                                      levels=names(sort(table(family), 
-                                                        increasing=TRUE))))
-theTable.ord <- within(ecrins_tax.df, 
-                   order <- factor(order, 
-                                    levels=names(sort(table(order), 
-                                                      increasing=TRUE))))
+## SUMMIT pool: 
+summits_tax <- as.data.frame(lookupTabPool(pool = "All Summits", tip.labels = pezAlpes.summits$phy$tip.label, tax = tax, level = "Angiospermae", taxonomy = "Angiospermae"))
+dim(summits_tax)
+
+## PERSISTENT pool: 
+lgm_tax <- as.data.frame(lookupTabPool(pool = "LGM", tip.labels = pezAlpes.persistent$phy$tip.label, tax = tax, level = "Angiospermae", taxonomy = "Angiospermae"))
+dim(lgm_tax)
+
+lookup_sum <- rbind(ecrins_tax.df, summits_tax, lgm_tax)
+str(lookup_sum)
+
+newOrder <- rev(names(sort(summary(lookup_sum$order))))
+
+lookup_sum$order <- factor(lookup_sum$order, levels = newOrder)
+
+pdf(file="output/8_PhyoDiversity/cladePlots/clade_counts_bar.pdf")
+ggplot(lookup_sum[(lookup_sum$order) != "", ], aes(x=order, fill = Pool)) + 
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
+  ylab("number of species")
+dev.off()
 
 
-df <- as.data.frame(summary(ecrins_tax.df$family))
-df.family <- cbind(rownames(df), df[,1])
-df.family <- as.data.frame(df.family)
-colnames(df.family) <- c("family", "count")
-df.family$family <- as.character(df.family$family)
-df.family$count <- as.character(df.family$count)
+pdf(file="figs/supplemental/clade_counts_bar.pdf")
+ggplot(lookup_sum[(lookup_sum$order) != "", ], aes(x=order, fill = Pool)) + 
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
+  ylab("number of species")
+dev.off()
+
+Data <- as.data.frame((lookup_sum %>% group_by(Pool, order) %>% summarise(n = n_distinct(Species))))
+head(Data)
+
+Data.tab <- dcast(Data, Pool ~ order, value.var = "n")
+write.csv(Data.tab, file="output/8_PhyoDiversity/cladePlots/clade.counts.csv")
+
+
 
 # http://mathematicalcoffee.blogspot.com/2014/06/ggpie-pie-graphs-in-ggplot2.html
 # ggpie: draws a pie chart.
@@ -105,7 +106,7 @@ mycolours1 <- c("Asterales" =  "#CC79A7",
                "Asparagales" = "#E69F00", 
                "Dipsacales"= "#999999")
 
-pdf(file="output/9_PhyoDiversity/Spermatophyta/CladesPlots/EcrinsCladeDiv.pdf", 11, 11)
+pdf(file="output/8_PhyoDiversity/cladePlots/EcrinsCladeDiv.pdf", 11, 11)
 ggpie(dat=df.tmp, by="order", totals="count",mycolours = mycolours1) +
   ggtitle("Ecrins NP") +
   theme(axis.ticks.margin=unit(0,"lines"),
@@ -126,8 +127,6 @@ ggplot(theTable.ord,
   scale_x_discrete("")
 
 
-## SUMMIT pool: Prune to specific clades for DAMOCLES analyses
-ecrins_tax.summits <- pruneCladeTaxonomyLookup(tip.labels = pezAlpes.summits$phy$tip.label, tax, level = "Angiospermae", taxonomy = "Angiospermae")
 
 
 tips.ecrins.summits=sapply(pezAlpes.summits$phy$tip.label, function(x){
@@ -181,13 +180,13 @@ mycolours <- c("Asterales" =  "#CC79A7",
                "Malpighiales" = "#999999", 
                "Fabales" = "#CC79A7")
 
-"Ericales" = "#D55E00", 
-"Saxifragales" = "#0072B2", 
-"Ranunculales" = "#F0E442", 
-"Gentianales" = "#009E73",  
-"Apiales" = "#56B4E9"
+#"Ericales" = "#D55E00", 
+#"Saxifragales" = "#0072B2", 
+#"Ranunculales" = "#F0E442", 
+#"Gentianales" = "#009E73",  
+#"Apiales" = "#56B4E9"
 
-pdf(file="output/9_PhyoDiversity/Spermatophyta/CladesPlots/EcrinsSumitsCladeDiv.pdf", 13, 13)
+pdf(file="output/8_PhyoDiversity/cladePlots/EcrinsSumitsCladeDiv.pdf", 13, 13)
 #par(mar=c(5,3,5,5)) #bottom, left, top and right, 
 ggpie(dat=df.tmp.summit, by="order", totals="count", mycolours) +
   ggtitle("Ecrins Sumits") +

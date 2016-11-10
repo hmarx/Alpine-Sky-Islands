@@ -5,7 +5,7 @@
 #####################################################################################################################
 
 source("analysisSkyIsl.R")
-source("R/alps.damocles.chooseClade.ecrins.R")
+source("R/chooseClade.R")
 source("R/pruneSpeciesPoolsPez.R")
 
 ###################################################################################### 
@@ -106,7 +106,7 @@ head(phylogeny.poolSES)
 phylogeny.poolSES <- phylogeny.poolSES[!phylogeny.poolSES$summits == "Ecrins NP",]
 phylogeny.poolSES$clade <- factor(phylogeny.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 phylogeny.poolSES <- cbind(phylogeny.poolSES, pool = rep(x = "Ecrins NP", times = nrow(phylogeny.poolSES)))
-#write.csv(phylogeny.poolSES, file="output/8_PhyoDiversity/alpha/static/phylogeny.pool.SES.csv")
+#write.csv(phylogeny.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/phylogeny.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -160,7 +160,7 @@ head(summit.poolSES)
 summit.poolSES <- summit.poolSES[!summit.poolSES$summits == "Ecrins NP",]
 summit.poolSES$clade <- factor(summit.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 summit.poolSES <- cbind(summit.poolSES, pool = rep(x = "Summits", times = nrow(summit.poolSES)))
-#write.csv(summit.poolSES, file="output/8_PhyoDiversity/alpha/static/summit.pool.SES.csv")
+#write.csv(summit.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/summit.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -214,7 +214,7 @@ head(persistent.poolSES)
 persistent.poolSES <- persistent.poolSES[!persistent.poolSES$summits == "Ecrins NP",]
 persistent.poolSES$clade <- factor(persistent.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 persistent.poolSES <- cbind(persistent.poolSES, pool = rep(x = "Persistent LGM", times = nrow(persistent.poolSES)))
-#write.csv(persistent.poolSES, file="output/8_PhyoDiversity/alpha/static/persistent.pool.SES.csv")
+#write.csv(persistent.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.pool.SES.csv")
 
 
 master.ses.alpha <- rbind(phylogeny.poolSES, summit.poolSES, persistent.poolSES)

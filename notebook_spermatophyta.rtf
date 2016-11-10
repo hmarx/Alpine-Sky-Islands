@@ -1,21 +1,18 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 TimesNewRomanPSMT;\f2\fnil\fcharset0 LucidaGrande;
-\f3\fnil\fcharset0 Calibri;\f4\fswiss\fcharset0 ArialMT;\f5\froman\fcharset0 Times-Roman;
-\f6\fnil\fcharset0 Consolas;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
 {\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red191\green191\blue191;\red14\green14\blue14;
 }
 \margl1440\margr1440\vieww18240\viewh15860\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0\b\fs24 \cf0 \
-output/
-\f1\fs28 \
+output/\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \b0 \cf0 Each subfolder contains the output from the following pipeline. Sub folders are described in more detail below.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\b\fs24 \cf0 \
+\b \cf0 \
 \
 0_IncludeFile: 
 \b0 prepare list of species to retrieve available sequence data from GenBank using PHLAWD pipeline
@@ -35,16 +32,15 @@ output/
 \b \
 \pard\pardeftab720
 
-\f2\b0 \cf2 Combined 3 different species lists:  (N=1376)\
+\b0 \cf2 Combined 3 different species lists:  (N=1376)\
 1) combined species lists from Cedric (relieves since 2009) to get a total species list of the Ecrins NP (N=1390)\
 2) matrix of species that occur on each summit (from Julien) (19 summits 363 species)\
 \pard\pardeftab720
-
-\f0 \cf0 3) LGM count lists (from Julien): underIce (N=165), persistant (N=261) 
+\cf0 3) LGM count lists (from Julien): underIce (N=165), persistant (N=261) 
 \b \
 \pard\pardeftab720
 
-\f2\b0 \cf2 \
+\b0 \cf2 \
 For each list, matched species to \'93iPlant_TNRS\'94 database, and used this name instead for merging lists (TaxonomyHarmony.R)\
 e.g.:\
 
@@ -54,8 +50,7 @@ e.g.:\
 \clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx6480
 \clvertalc \clshdrawnil \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
 \pard\intbl\itap1\pardeftab720
-
-\f3 \cf0 Acinos alpinus (L.) Moench\cell 
+\cf0 Acinos alpinus (L.) Moench\cell 
 \pard\intbl\itap1\pardeftab720
 \cf0 Acinos alpinus (L.) Moench subsp. alpinus\cell 
 \pard\intbl\itap1\pardeftab720
@@ -64,14 +59,13 @@ e.g.:\
 \cf0 Clinopodium alpinum subsp. alpinum \cell \lastrow\row
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f0\b \cf0 \
+\b \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \i\b0 \cf0 extract_names_and_ids_from_phlawd_db.py\
 
-\i0 To resolve inconsistent taxonomy between PHLAWD output (GenBank taxonomy) and include file (with taxonomy between species lists resolved prior to PHLAWD using 
-\f2 \cf2 TaxonomyHarmony.R)
-\f0\i \cf0 \
+\i0 To resolve inconsistent taxonomy between PHLAWD output (GenBank taxonomy) and include file (with taxonomy between species lists resolved prior to PHLAWD using \cf2 TaxonomyHarmony.R)
+\i \cf0 \
 
 \i0 Use code written by Cody Hinchliff to extract the names used to search GenBank (inculdefile = taxized names) with output tip labels\
 Extracted names and IDs == match taxonomy of PHLAWD output with includefile \
@@ -89,7 +83,7 @@ Extracted names and IDs == match taxonomy of PHLAWD output with includefile \
 
 \b \cf0 \
 1_PHLAWD: 
-\f1\b0\fs28 \cf2 search GenBank (release 209) for available sequence data for each gene region (
+\b0 \cf2 search GenBank (release 209) for available sequence data for each gene region (
 \i atpB
 \i0 , ITS, 
 \i matK
@@ -98,33 +92,29 @@ Extracted names and IDs == match taxonomy of PHLAWD output with includefile \
 \i0 , 
 \i trnTLF
 \i0 )
-\f0\b\fs24 \cf0 \
+\b \cf0 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\f2\b0 \cf0 pln170915.db (plant sequence database created 19 Sep. 2015)
-\f0\b \
+\b0 \cf0 pln170915.db (plant sequence database created 19 Sep. 2015)
+\b \
 \pard\pardeftab720
 
-\f2\b0 \cf2 \
+\b0 \cf2 \
 \pard\pardeftab720
 \cf0 nohup PHLAWD assemble config.txt > log.txt &	\
 \pard\pardeftab720
 \cf2 \
-\pard\pardeftab720
-
-\f4\fs26 \cf2 use ParsePHLAWD.R to remove NCBI ID from PHLAWD output alignment (*.FINAL.aln.full), and keep longest unique sequences (*.unique.fasta)
-\f2\fs24 \cf2 \
+use ParsePHLAWD.R to remove NCBI ID from PHLAWD output alignment (*.FINAL.aln.full), and keep longest unique sequences (*.unique.fasta)\
 \
 \
 \pard\pardeftab720
 
-\f5\b\fs28 \cf0 2_Remove
+\b \cf0 2_Remove
 \b0 : incorrect / outlier sequences from *unique.GB.fasta\
 After initial gene tree estimation, visually inspected each gene tree and removed the following sequences: \
 \pard\pardeftab720
-
-\f2\fs24 \cf2 \
+\cf2 \
 atpB: \
 >ncbi|Fragaria_vesca_subsp__vesca|101020|402238841|114|1\
 >ncbi|Triticum_aestivum|4565|525290|48|1\
@@ -152,38 +142,29 @@ matK:\
 \
 N= 12 species that were removed \
 \
-After removal from 
-\f5\fs28 \cf0 *unique.GB.fasta, redo the following analyses: 
-\f2\fs24 \cf2 \
+After removal from \cf0 *unique.GB.fasta, redo the following analyses: \cf2 \
 \pard\pardeftab720
-
-\f5\fs28 \cf0 parseREMOVED("atpB.unique.GB.fasta.rem") #62
-\f2\fs24 \cf2 \
-
-\f5\fs28 \cf0 \'97> renames files *.unique.rem.name.fasta\
+\cf0 parseREMOVED("atpB.unique.GB.fasta.rem") #62\cf2 \
+\cf0 \'97> renames files *.unique.rem.name.fasta\
 \pard\pardeftab720
-
-\f2\fs24 \cf2 \'97> re-clean: 
-\f5\fs28 \cf0 *.unique.rem.name.fasta.clean\
-\'97> save as .phy in se-al: *unique.rem.name.fasta.clean.phy
-\f2\fs24 \cf2 \
+\cf2 \'97> re-clean: \cf0 *.unique.rem.name.fasta.clean\
+\'97> save as .phy in se-al: *unique.rem.name.fasta.clean.phy\cf2 \
 \'97> re-run gene tree: /atpBrem\
 \
 \
 \pard\pardeftab720
 
 \b \cf0 3_Clean: 
-\f4\b0\fs26 \cf2 delete sites with gaps from 50% of each gene region alignment 
-\f2\b\fs24 \cf0 \
+\b0 \cf2 delete sites with gaps from 50% of each gene region alignment 
+\b \cf0 \
 \pard\pardeftab720
 
 \b0 \cf2 phyutility -clean 0.5 -in trnTLF.unique.rem.name.fasta -out trnTLF.unique.rem.name.fasta.clean\
 \pard\pardeftab720
 \cf0 \
 \
-\pard\pardeftab720
 
-\b \cf0 4_Concatenate (.fst -> .nex): \
+\b 4_Concatenate (.fst -> .nex): \
 \
 \pard\pardeftab720
 
@@ -230,22 +211,17 @@ module load raxml
 \b \cf2 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\f4\b0\fs26 \cf2 raxmlHPC -f a -s 
-\f2\fs24 trnTLF.unique.rem.name.fasta.clean.phy
-\f4\fs26  -x 12345 -# 100 -m GTRCAT 
-\f5\fs28 \cf0 -p 12345 
-\f4\fs26 \cf2 -n trnTLFrem.100.210915.sperma \
+\b0 \cf2 raxmlHPC -f a -s trnTLF.unique.rem.name.fasta.clean.phy -x 12345 -# 100 -m GTRCAT \cf0 -p 12345 \cf2 -n trnTLFrem.100.210915.sperma \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\f2\b\fs24 \
+\b \cf2 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
 \b0 \cf2 Pull off server:\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\f0 \cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/18092015/ITS/ITSrem/RAxML* ~/.\
+\cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/18092015/ITS/ITSrem/RAxML* ~/.\
 \pard\pardeftab720
-
-\f2 \cf2 \
+\cf2 \
 \
 Concatenated/ 
 \b \cf2 \
@@ -263,10 +239,8 @@ screen -S runEcrinsPhylo\
 crtl + a +d \
 screen -ls\
 \pard\pardeftab720
-
-\f6\fs26 \cf4 \expnd0\expndtw0\kerning0
-screen -r myprog
-\f2\fs24 \cf2 \kerning1\expnd0\expndtw0 \
+\cf4 \expnd0\expndtw0\kerning0
+screen -r myprog\cf2 \kerning1\expnd0\expndtw0 \
 \'91exit\'92 == KILL\
 \
 fourtytwo:\
@@ -290,15 +264,14 @@ qstat\
 showq\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\f0 \cf0 \'97> open in FigTree\
+\cf0 \'97> open in FigTree\
 \'97> root between gymnosperms and angiosperms\
 \'97> export: as displayed, save as .nex \
 \
 \
 \pard\pardeftab720
 
-\f2\b \cf2 6_Scaling: 15 July 2015\
+\b \cf2 6_Scaling: 15 July 2015\
 \pard\pardeftab720
 
 \b0 \cf2 *** Done on rooted tree, rooted on node in R !!\
@@ -306,23 +279,14 @@ showq\
 Spermatophyta/\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\f0 \cf0 scp RAxML* hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling
-\f5\fs28 \
+\cf0 scp RAxML* hmarx@fourtytwo.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling\
 \pard\pardeftab720
 \cf0 \
 \pard\pardeftab720\sa240
-
-\f1\fs32 \cf0 Run on fortytwo:
-\f2\fs24  module load treepl\
-\pard\pardeftab720\sa240
-
-\f5\fs28 \cf0 treePL 
-\f0\fs24 RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.intree
-\f5\fs28 \
+\cf0 Run on fortytwo: module load treepl\
+treePL RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.intree\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\f0\fs24 \cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre* ~/Dropbox/Work/FranceLab/FranceProjects/AlpinePD_France/Alpine-Sky-Islands/output/5_Scaling/Spermatophyta/\
+\cf0 scp hmarx@ford.ibest.uidaho.edu:~/Sky_Islands/12112015/scaling/RAxML_bipartitions.align.concat.EcrinSpPool.121115.1000.nex.treePL.dated.tre* ~/Dropbox/Work/FranceLab/FranceProjects/AlpinePD_France/Alpine-Sky-Islands/output/5_Scaling/Spermatophyta/\
 \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
@@ -345,18 +309,21 @@ Spermatophyta/\
 
 \b0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\b \cf0 alpha/\
+\cf0 \ul \ulc0 alpha/\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ulnone \
 
-\b0 \cf0 \
-static/ \
+\i static/ \
 	Endemics/\
 	Time/\
+	sourcePools/
+\i0 \
 \
 \
-dynamic/\
-qsub -t 1-10 DAMOCLES.pbs\
+
+\i dynamic/\
+
+\i0 qsub -t 1-10 DAMOCLES.pbs\
 \
 1:10 params set initial\
 11:20 took out initatl param estimates\
@@ -378,11 +345,16 @@ qsub -t 1-100 DAMOCLESboots.pbs\
 \'97> to_run.R \'97> alps.damocles.boots.R\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\b \cf0 beta/\
+\cf0 \ul \ulc0 beta/\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
-
-\b0 \cf0 \
+\cf0 \ulnone \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ul \ulc0 cladePlots/ \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
+\cf0 \ulnone  *quickly visualize species richness within each major order\
+\
+\
 \
 ############################ Updated Names:\
 ** for publication\
@@ -419,17 +391,16 @@ Summits \'97> All Summits \
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\b \cf0 9_Environment:\
+\b \cf0 9_Environment/\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
 \b0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural
 
-\b \cf0 10_Maps:
+\b \cf0 10_Maps/
 \b0 \
 \
 \pard\pardeftab720
-
-\f2 \cf2 \
+\cf2 \
 }
