@@ -1,5 +1,8 @@
-
-
+#####################################################################################################################
+############# Calculate phylogenetic diversity at each node in phylogeny, and plot ##################################
+############# beta-diversity at node times (spacodi) ################################################################
+############# Hannah E. Marx, 7 Mar 2016 ############################################################################
+#####################################################################################################################
 
 spacodiWrap <- function(phy, sites, clade, output){
   ecrins.clade <- pruneCladeTaxonomyLookup(tip.labels = phy$tip.label, tax, level = "order", taxonomy = clade)

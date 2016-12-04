@@ -10,11 +10,40 @@ alps.sites <- data.matrix(alps.sites)
 
 pezAlpes <- comparative.comm(phy = alps.phy, comm = alps.sites) #traits = alps.traits
 
-## Change community matrix to presence / absence 
+## REGIONAL community matrix to presence / absence 
 tmp <- pezAlpes$comm
 tmp[which(tmp != 0)] <- 1
 alps.sites.pa <- data.matrix(cbind("taxa"=rownames(t(tmp)), t(tmp[4:nrow(tmp),])))
 alps.phy <- pezAlpes$phy
+
+##### SUMMITS community presence / absence 
+alps.sites.df <- as.data.frame(alps.sites)
+## Contemporary species pool = summits 
+summits.sites.tmp <- as.data.frame(cbind("taxa" = names(alps.sites.df), as.data.frame(t(alps.sites.df))))
+summits.sites <- filter(summits.sites.tmp, Summits > 0)
+head(summits.sites)
+rownames(summits.sites) <- summits.sites$taxa
+dim(summits.sites)
+summits.sites <- t(summits.sites[-1])
+summits.sites <- data.matrix(summits.sites)
+tmp2 <- summits.sites
+tmp2[which(tmp2 != 0)] <- 1
+alps.summits.pa <- data.matrix(cbind("taxa"=rownames(t(tmp2)), t(tmp2[5:nrow(tmp2),])))
+
+##### LGM (PERSISTENT) community presence / absence 
+alps.sites.df <- as.data.frame(alps.sites)
+## Contemporary species pool = persistent 
+persistent.sites.tmp <- as.data.frame(cbind("taxa" = names(alps.sites.df), as.data.frame(t(alps.sites.df))))
+persistent.sites <- filter(persistent.sites.tmp, Persistent > 0)
+head(persistent.sites)
+rownames(persistent.sites) <- persistent.sites$taxa
+dim(persistent.sites)
+persistent.sites <- t(persistent.sites[-1])
+persistent.sites <- data.matrix(persistent.sites)
+tmp2 <- persistent.sites
+tmp2[which(tmp2 != 0)] <- 1
+alps.persistent.pa <- data.matrix(cbind("taxa"=rownames(t(tmp2)), t(tmp2[5:nrow(tmp2),])))
+
 
 ## Taxonomy lookup table
 tax=read.csv(file="data/AnalysesDatasets/fleshed_genera.csv", as.is=TRUE, row=1) ##"linkage table", From Jon (NESCent working group on plant rates and traits)

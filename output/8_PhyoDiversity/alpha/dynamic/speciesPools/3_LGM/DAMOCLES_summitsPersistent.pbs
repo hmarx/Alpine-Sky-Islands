@@ -1,0 +1,9 @@
+#!/bin/bash
+#PBS -q reg
+#PBS -N hannahDAMOCLESsummitPersisSperma
+
+cd $PBS_O_WORKDIR
+source /usr/modules/init/bash
+module load R
+
+Rscript alpha.damocles.allSummits.eachSummit.R $PBS_ARRAYID

@@ -1,5 +1,11 @@
-######################################## Install and load the following required packages ################################################# 
+#####################################################################################################################
+############# Code for: Riders in the sky (islands): using a mega-phylogenetic approach to understand plant species #
+###################### distribution and coexistence at the altitudinal limits of angiosperm plant life ##############
+############# Core datasets and required R packages #################################################################
+############# Hannah E. Marx, 6 June 2016 ###########################################################################
+#####################################################################################################################
 
+## Install and load the following required packages
 #devtools::install_github("richfitz/storr")
 #devtools::install_github("wcornwell/TaxonLookup")
 #devtools::install_github("taxize", "ropensci")

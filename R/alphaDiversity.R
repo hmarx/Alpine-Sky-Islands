@@ -16,8 +16,8 @@ source("R/pruneSpeciesPoolsPez.R")
 ## Random resample from phylogeny pool (==Ecrins NP), equal probability random draw from phylogeny pool
 ecrins.sesmpd.phylonull <- ses.mpd(pezAlpes$comm, cophenetic.phylo(pezAlpes$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
 ecrins.sesmntd.phylonull <- ses.mntd(pezAlpes$comm, cophenetic.phylo(pezAlpes$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-#write.csv(ecrins.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/ecrins.sesmpd.phylonull.csv")
-#write.csv(ecrins.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/ecrins.sesmntd.phylonull.csv")
+#write.csv(ecrins.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/ecrins.sesmpd.phylonull.csv")
+#write.csv(ecrins.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/ecrins.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -28,8 +28,8 @@ ecrins.sesmntd.phylonull <- ses.mntd(pezAlpes$comm, cophenetic.phylo(pezAlpes$ph
 ## Source pool = all summits, equal probability random draw from phylogeny (pruned to summits)
 summits.sesmpd.phylonull <- ses.mpd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
 summits.sesmntd.phylonull <- ses.mntd(pezAlpes.summits$comm, cophenetic.phylo(pezAlpes.summits$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-#write.csv(summits.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/summits.sesmpd.phylonull.csv")
-#write.csv(summits.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/summits.sesmntd.phylonull.csv")
+#write.csv(summits.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/summits.sesmpd.phylonull.csv")
+#write.csv(summits.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/summits.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -40,8 +40,8 @@ summits.sesmntd.phylonull <- ses.mntd(pezAlpes.summits$comm, cophenetic.phylo(pe
 ## Source pool = Persistent, equal probability random draw from phylogeny (pruned to persistent species)
 persistent.sesmpd.phylonull <- ses.mpd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
 persistent.sesmntd.phylonull <- ses.mntd(pezAlpes.persistent$comm, cophenetic.phylo(pezAlpes.persistent$phy), null.model = "phylogeny.pool", abundance.weighted = FALSE, runs = 999)
-#write.csv(persistent.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.sesmpd.phylonull.csv")
-#write.csv(persistent.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.sesmntd.phylonull.csv")
+#write.csv(persistent.sesmpd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/persistent.sesmpd.phylonull.csv")
+#write.csv(persistent.sesmntd.phylonull, file="output/8_PhyoDiversity/alpha/static/speciesPools/persistent.sesmntd.phylonull.csv")
 
 
 ###################################################################################### 
@@ -106,7 +106,7 @@ head(phylogeny.poolSES)
 phylogeny.poolSES <- phylogeny.poolSES[!phylogeny.poolSES$summits == "Ecrins NP",]
 phylogeny.poolSES$clade <- factor(phylogeny.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 phylogeny.poolSES <- cbind(phylogeny.poolSES, pool = rep(x = "Ecrins NP", times = nrow(phylogeny.poolSES)))
-#write.csv(phylogeny.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/phylogeny.pool.SES.csv")
+#write.csv(phylogeny.poolSES, file="output/8_PhyoDiversity/alpha/static/speciesPools/phylogeny.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -160,7 +160,7 @@ head(summit.poolSES)
 summit.poolSES <- summit.poolSES[!summit.poolSES$summits == "Ecrins NP",]
 summit.poolSES$clade <- factor(summit.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 summit.poolSES <- cbind(summit.poolSES, pool = rep(x = "Summits", times = nrow(summit.poolSES)))
-#write.csv(summit.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/summit.pool.SES.csv")
+#write.csv(summit.poolSES, file="output/8_PhyoDiversity/alpha/static/speciesPools/summit.pool.SES.csv")
 
 
 ###################################################################################### 
@@ -214,7 +214,7 @@ head(persistent.poolSES)
 persistent.poolSES <- persistent.poolSES[!persistent.poolSES$summits == "Ecrins NP",]
 persistent.poolSES$clade <- factor(persistent.poolSES$clade, levels = c( "Caryophyllales", "Lamiales", "Rosales", "Poales", "Asterales", "Spermatophyta"))
 persistent.poolSES <- cbind(persistent.poolSES, pool = rep(x = "Persistent LGM", times = nrow(persistent.poolSES)))
-#write.csv(persistent.poolSES, file="output/8_PhyoDiversity/alpha/static/sourcePools/persistent.pool.SES.csv")
+#write.csv(persistent.poolSES, file="output/8_PhyoDiversity/alpha/static/speciesPools/persistent.pool.SES.csv")
 
 
 master.ses.alpha <- rbind(phylogeny.poolSES, summit.poolSES, persistent.poolSES)

@@ -113,5 +113,5 @@ pools.stats[5:9] <- apply(pools.stats[5:9], 2, as.numeric)
 
 pools.stats$p.value <- round(pools.stats$p.value, 9)
 
-#write.csv(pools.stats, file="output/8_PhyoDiversity/alpha/static/sourcePools/diff.SES.pools.csv")
+#write.csv(pools.stats, file="output/8_PhyoDiversity/alpha/static/speciesPools/diff.SES.pools.csv")
 

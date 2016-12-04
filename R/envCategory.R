@@ -1,6 +1,10 @@
+#####################################################################################################################
+############# Group BioClim variables into categories (available energy, environmental stress, environmental stability, environmental heterogeneity) 
+############# Get principle componets of each category = potential environmental drivers  
+############# Hannah E. Marx, 30 Mar 2016 ###########################################################################
+#####################################################################################################################
 
-### Multiple regression on beta diversity distance 
-
+##### Definitions for BioCim variables
 ##### http://pubs.usgs.gov/ds/691/ds691.pdf
 # BIO1 = Annual Mean Temperature : The annual mean temperature approximates the total energy inputs for an ecosystem.
 # BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)) : This index can help provide information pertaining to the relevance of temperature fluctuation for different species
@@ -92,8 +96,7 @@ print(pc.stress$scores, cutoff=0.001)
 pc.stress.score <- pc.stress$scores[,1]
 pc.stress.score.df <- as.data.frame(pc.stress.score)
 
-
-### Present Environmental stability:
+### Environmental stability:
 # BIO2 = Mean Diurnal Range
 # BIO3 = Isothermality (BIO2/BIO7)
 # BIO4 = Temperature Seasonality
@@ -104,7 +107,6 @@ print(pc.stabil$loadings, cutoff=0.001)
 print(pc.stabil$scores, cutoff=0.001)
 pc.stabil.score <- scores(pc.stabil)[,1]
 pc.stabil.score.df <- as.data.frame(pc.stabil.score)
-
 
 ### Environmental heterogeneity: 
 # range_elev

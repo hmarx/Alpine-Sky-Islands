@@ -1,4 +1,8 @@
-
+#####################################################################################################################
+############# Funciton to calculate and summarize multiple regression (MRM) on SES beta diversity (decomposed) ######
+############# For specified clades ##################################################################################
+############# Hannah E. Marx, 15 Mar 2016 ###########################################################################
+#####################################################################################################################
 
 betaDivSummary <- function(betaOutput, geog.dist, nperm, clade, dependent, independent){
   phylosor.alps <- read.csv(betaOutput, row.names=1)
