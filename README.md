@@ -1,2 +1,5 @@
 # Alpine-Sky-Islands
-Phylogenetic diversity of alpine plants in the Écrins National Park, France, and Sawtooth Mountains, Idaho 
+Phylogenetic diversity of alpine plants in the Écrins National Park, France
+
+***
+![](figs/misc/PhyloCladesColoredV3.png)
