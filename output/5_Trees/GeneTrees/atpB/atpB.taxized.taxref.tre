@@ -1,0 +1,194 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=115;
+	taxlabels
+	Campanula_rhomboidalis
+	Campanula_rotundifolia
+	Campanula_cenisia
+	Campanula_patula
+	Phyteuma_spicatum
+	Campanula_persicifolia
+	Jasione_montana
+	'Campanula_glomerata_subsp._glomerata'
+	Campanula_alpestris
+	Campanula_glomerata
+	Campanula_rapunculoides
+	Campanula_latifolia
+	Campanula_trachelium
+	Cichorium_intybus
+	Tragopogon_dubius
+	Echinops_ritro
+	Adoxa_moschatellina
+	Sambucus_nigra
+	Viburnum_opulus
+	Valeriana_officinalis
+	Valerianella_locusta
+	Scabiosa_columbaria
+	Hedera_helix
+	Angelica_sylvestris
+	Arctostaphylos_uva-ursi
+	Vaccinium_uliginosum
+	Plantago_lanceolata
+	Digitalis_grandiflora
+	Veronica_persica
+	Antirrhinum_majus
+	Verbascum_thapsus
+	Buddleja_davidii
+	Lamium_purpureum
+	Lamium_amplexicaule
+	Veronica_anagallis-aquatica
+	Ligustrum_vulgare
+	Cynoglossum_officinale
+	Myosotis_arvensis
+	Lappula_squarrosa
+	Buglossoides_arvensis
+	Echium_vulgare
+	Vinca_minor
+	Convolvulus_arvensis
+	Convolvulus_sepium
+	Cuscuta_europaea
+	Hyoscyamus_niger
+	Atropa_belladonna
+	Stellaria_media
+	Silene_nutans
+	Viscum_album
+	Rhamnus_cathartica
+	Hippophae_rhamnoides
+	Urtica_dioica
+	Humulus_lupulus
+	Dryas_octopetala
+	Filipendula_vulgaris
+	Lotus_corniculatus
+	Medicago_sativa
+	Alnus_alnobetula
+	Corylus_avellana
+	Betula_pendula
+	Oxalis_acetosella
+	Lythrum_salicaria
+	Chamerion_angustifolium
+	Geranium_nodosum
+	Geranium_sanguineum
+	Geranium_phaeum
+	Hypericum_perforatum
+	Salix_reticulata
+	Parnassia_palustris
+	Helianthemum_grandiflorum
+	Tilia_platyphyllos
+	Arabidopsis_thaliana
+	Saxifraga_retusa
+	Buxus_sempervirens
+	Aquilegia_vulgaris
+	Thalictrum_minus
+	Caltha_palustris
+	Ranunculus_trichophyllus
+	Dactylis_glomerata
+	Cynosurus_cristatus
+	Schedonorus_arundinaceus
+	Lolium_perenne
+	Sesleria_caerulea
+	Festuca_rubra
+	Deschampsia_cespitosa
+	Poa_bulbosa
+	Phleum_pratense
+	Bellardiochloa_variegata
+	Avenella_flexuosa
+	Anthoxanthum_odoratum
+	Bromopsis_inermis
+	Brachypodium_pinnatum
+	Phragmites_australis
+	Luzula_multiflora
+	Juncus_effusus
+	Typha_latifolia
+	Maianthemum_bifolium
+	Polygonatum_odoratum
+	Convallaria_majalis
+	Anthericum_liliago
+	Leopoldia_comosa
+	Asphodelus_albus
+	Goodyera_repens
+	Cypripedium_calceolus
+	Colchicum_autumnale
+	Paris_quadrifolia
+	Gagea_serotina
+	Dioscorea_communis
+	Alisma_plantago-aquatica
+	Potamogeton_alpinus
+	Tofieldia_calyculata
+	Juniperus_communis
+	Taxus_baccata
+	Abies_alba
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((((((((((((((((Campanula_rhomboidalis:1.4574125539734695E-6,Campanula_rotundifolia:0.0011813987569999629)[&bs=72]:0.0011751992940000067,Campanula_cenisia:0.0011658434379999694)[&bs=89]:0.002269960449000019,Campanula_patula:0.008456523485000034)[&bs=92]:0.01057104016999999,(Phyteuma_spicatum:0.015472604260000022,Campanula_persicifolia:0.016026672700000022)[&bs=67]:0.0026443330489999695)[&bs=63]:0.005254605864000006,Jasione_montana:0.034329752599999985)[&bs=41]:7.712944432000102E-4,((((('Campanula_glomerata_subsp._glomerata':0.002315618020999999,Campanula_alpestris:0.001152521229000003)[&bs=77]:1.4574125540289806E-6,Campanula_glomerata:0.004470937844000045)[&bs=65]:1.4574125539734695E-6,Campanula_rapunculoides:0.005471211431999967)[&bs=70]:1.4574125540289806E-6,Campanula_latifolia:0.0021105830340000242)[&bs=83]:0.0020150059609999604,Campanula_trachelium:0.021389403019999975)[&bs=88]:0.007163242565000005)[&bs=100]:0.07294927667000001,((Cichorium_intybus:0.007698411856999987,Tragopogon_dubius:0.015910197199999976)[&bs=99]:0.008708719799000009,Echinops_ritro:1.4574125540289806E-6)[&bs=100]:0.031153502279999967)[&bs=69]:0.011212629959999942,((((Adoxa_moschatellina:0.008824438513000021,Sambucus_nigra:9.193725809999997E-4)[&bs=100]:0.011203715409999981,Viburnum_opulus:0.012053912339999973)[&bs=83]:0.002058693642000009,((Valeriana_officinalis:0.010206733440000032,Valerianella_locusta:0.033431298780000035)[&bs=90]:0.020596529679999975,Scabiosa_columbaria:0.038156990830000015)[&bs=99]:0.02184039135999999)[&bs=39]:0.0030588552260000235,(Hedera_helix:0.010147771040000031,Angelica_sylvestris:0.03458463595)[&bs=100]:0.019103700270000024)[&bs=47]:0.0015779453850000014)[&bs=82]:0.007022854160000036,(Arctostaphylos_uva-ursi:0.02390272423999995,Vaccinium_uliginosum:0.06100507315999998)[&bs=74]:0.007117346608000008)[&bs=64]:0.0015923109009999825,((((((((Plantago_lanceolata:0.05283868998999999,Digitalis_grandiflora:0.006301834322999994)[&bs=99]:0.00781411331099996,Veronica_persica:0.028884193649999973)[&bs=100]:0.011037749139999997,Antirrhinum_majus:0.03116312927999998)[&bs=71]:0.004669678663000054,(Verbascum_thapsus:0.005182584062999984,Buddleja_davidii:0.007340277063)[&bs=95]:0.003614111047000046)[&bs=43]:1.4574125539734695E-6,((Lamium_purpureum:1.457412554001225E-6,Lamium_amplexicaule:1.457412554001225E-6)[&bs=100]:0.02678624272000002,Veronica_anagallis-aquatica:0.016152014150000032)[&bs=50]:0.0022283615999999506)[&bs=99]:0.00811867058900001,Ligustrum_vulgare:0.0233219724)[&bs=100]:0.010754267890000002,((((Cynoglossum_officinale:0.003459884161999993,Myosotis_arvensis:0.012085747469999991)[&bs=93]:0.0015974588730000017,Lappula_squarrosa:0.0025647811850000035)[&bs=99]:0.006802474894999994,(Buglossoides_arvensis:9.185911035999861E-4,Echium_vulgare:0.006509494286000006)[&bs=96]:0.004672547030000002)[&bs=100]:0.03554874274,Vinca_minor:0.03739211151999999)[&bs=55]:0.003635483233000003)[&bs=58]:3.3280595779999755E-4,(((Convolvulus_arvensis:0.006254584886000003,Convolvulus_sepium:0.00361883771999999)[&bs=99]:0.011744679040000011,Cuscuta_europaea:0.09934419100999997)[&bs=100]:0.04999649653999999,(Hyoscyamus_niger:0.004847689733000038,Atropa_belladonna:1.4574125540289806E-6)[&bs=100]:0.01956987166999996)[&bs=100]:0.013554238820000009)[&bs=98]:0.010066704189999998)[&bs=94]:0.009331641384,((Stellaria_media:0.02175840266000001,Silene_nutans:0.03219820428)[&bs=100]:0.07095219244000003,Viscum_album:0.09180934792000003)[&bs=50]:1.4574125539734695E-6)[&bs=85]:0.004985481723000007,((((((((((Rhamnus_cathartica:0.034631643200000006,Hippophae_rhamnoides:0.04306572232)[&bs=73]:0.005296850299000011,(Urtica_dioica:0.05298783127000001,Humulus_lupulus:0.029044451589999992)[&bs=80]:0.014348292829999998)[&bs=67]:0.005678497050999987,(Dryas_octopetala:0.014719494410000006,Filipendula_vulgaris:0.05290112272)[&bs=96]:0.01346160146)[&bs=59]:0.0060393739419999926,(Lotus_corniculatus:0.03958332920999999,Medicago_sativa:0.06868101156)[&bs=77]:0.024528067260000008)[&bs=17]:0.0019652261449999986,((Alnus_alnobetula:0.0024562474139999957,Corylus_avellana:0.005540882349999998)[&bs=89]:0.0014554834319999987,Betula_pendula:0.0050997007680000095)[&bs=100]:0.03213964999999999)[&bs=19]:0.005387331275000018,Oxalis_acetosella:0.04568974161)[&bs=8]:9.669644931999954E-4,(Lythrum_salicaria:0.026064044489999993,Chamerion_angustifolium:0.04307289633)[&bs=89]:0.02369544789)[&bs=3]:0.001987645863999965,((Geranium_nodosum:1.457412554001225E-6,Geranium_sanguineum:1.457412554001225E-6)[&bs=100]:0.015666791870000002,Geranium_phaeum:0.01937743333)[&bs=100]:0.07973289079999996)[&bs=6]:9.931333307000578E-4,((Hypericum_perforatum:0.12116121250000003,Salix_reticulata:0.031235888969999986)[&bs=75]:0.017214594589999993,Parnassia_palustris:0.09670463610999999)[&bs=15]:0.005606440023000037)[&bs=4]:4.0291447829998717E-4,((Helianthemum_grandiflorum:0.12366179099999997,Tilia_platyphyllos:0.029540042500000002)[&bs=86]:0.01616839498,Arabidopsis_thaliana:0.08659616817999999)[&bs=35]:0.007286854381000019)[&bs=82]:0.010559867519999988)[&bs=38]:1.4574125540289806E-6,Saxifraga_retusa:0.055599381879999965)[&bs=97]:0.01935713823999996,Buxus_sempervirens:0.026290777089999995)[&bs=51]:0.007497836054000007,((Aquilegia_vulgaris:0.025420490089999997,Thalictrum_minus:0.0035094716050000085)[&bs=100]:0.0201869338,(Caltha_palustris:0.01772719265,Ranunculus_trichophyllus:0.032894571129999994)[&bs=46]:0.0030665242829999995)[&bs=100]:0.029028205159999987)[&bs=64]:0.010487235340000012,(((((((((((((Dactylis_glomerata:0.004669755469999981,Cynosurus_cristatus:0.013079898729999984)[&bs=47]:6.913334449000219E-4,(Schedonorus_arundinaceus:1.4574125539734695E-6,Lolium_perenne:0.0026801594709999765)[&bs=100]:0.012046501320000014)[&bs=25]:1.4574125539734695E-6,((Sesleria_caerulea:0.001780163108999977,Festuca_rubra:0.016497274299999976)[&bs=60]:9.360723447000008E-4,Deschampsia_cespitosa:0.009204939188000028)[&bs=43]:8.663411522000231E-4)[&bs=57]:0.0016840861540000085,(((Poa_bulbosa:0.007206832167999999,Phleum_pratense:0.006197951596999984)[&bs=50]:1.4574125539734695E-6,Bellardiochloa_variegata:0.006283446791000014)[&bs=83]:0.0035379565670000113,Avenella_flexuosa:0.0044957214820000035)[&bs=50]:1.4574125539734695E-6)[&bs=90]:0.0036796908819999863,Anthoxanthum_odoratum:0.01097818422000002)[&bs=80]:0.0038878342129999854,Bromopsis_inermis:0.014982848599999987)[&bs=94]:0.0028575523430000027,Brachypodium_pinnatum:0.019071658830000005)[&bs=100]:0.014685368849999991,Phragmites_australis:0.016874007849999983)[&bs=100]:0.08394607562,(Luzula_multiflora:0.08116200698999998,Juncus_effusus:0.05520369262000002)[&bs=100]:0.06095426321999997)[&bs=79]:0.016058914750000014,Typha_latifolia:0.030942997529999988)[&bs=89]:0.009610357167999989,((((((Maianthemum_bifolium:0.002536677685999994,Polygonatum_odoratum:0.002510046685999995)[&bs=97]:9.008750985000091E-4,Convallaria_majalis:0.008404177561000009)[&bs=99]:0.013434515260000002,(Anthericum_liliago:0.027255802989999994,Leopoldia_comosa:0.015653096650000003)[&bs=97]:0.00563512445799999)[&bs=90]:0.006608127733000013,Asphodelus_albus:0.022561642160000006)[&bs=98]:0.011970582980000005,(Goodyera_repens:0.031328988129999985,Cypripedium_calceolus:0.030728488639999996)[&bs=100]:0.027783767469999998)[&bs=66]:0.004734103909000004,((Colchicum_autumnale:0.051436986530000006,Paris_quadrifolia:0.029816638829999992)[&bs=50]:0.002826190108000004,Gagea_serotina:0.051173360040000004)[&bs=54]:0.003599561141999996)[&bs=39]:0.0025432912639999916)[&bs=64]:0.0028150495350000027,Dioscorea_communis:0.040099026280000005)[&bs=100]:0.012745152610000005,((Alisma_plantago-aquatica:0.05138699199999999,Potamogeton_alpinus:0.05386748176)[&bs=98]:0.024954216380000005,Tofieldia_calyculata:0.029221941899999992)[&bs=86]:0.004300751935000013)[&bs=97]:0.014567004979999992)[&bs=100]:0.05661303815,((Juniperus_communis:0.06498355379999998,Taxus_baccata:0.053590049699999975)[&bs=100]:0.06770257292999998,Abies_alba:0.08469163679000002)[&bs=100]:0.05661303815000003);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="User Selection";
+	set appearance.backgroundColour=#-1;
+	set appearance.branchColorAttribute="User Selection";
+	set appearance.branchLineWidth=1.0;
+	set appearance.foregroundColour=#-16777216;
+	set appearance.selectionColour=#-2144520576;
+	set branchLabels.colorAttribute="User Selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=400;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set nodeBars.barWidth=4.0;
+	set nodeLabels.colorAttribute="User Selection";
+	set nodeLabels.displayAttribute="bs";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleAxis.significantDigits=4;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set scaleBar.significantDigits=4;
+	set tipLabels.colorAttribute="User Selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="decreasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

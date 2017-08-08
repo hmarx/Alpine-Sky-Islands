@@ -1,0 +1,93 @@
+"","Combined.Name","GENRE","x","ESPECE","RG","SUBSP.","END.","DIST.","NF","NG","NE","NI","X","Valid_LIB.C.150","Alien_origin","rep.1..length.pezAlpes.phy.tip.label..","Endemic","Ecrins.NP","Summits","Persistent","Under.Ice","Plat.de.la.Selle","Barre.des.Ecrins","La.Meije","Sirac","Rouies","Olan","Pelvoux","Occidentale.Ailefroide","Brevoort","Burlan","Rocher.de.la.Selle","Choisy","Muraillette","Rateau","Lauvitel"
+"1","Aconitum_variegatum","Aconitum","","variegatum","subsp.    ","valesiacum","End.","W-Alp.",19,9,3,4,16,"Aconitum_variegatum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"2","Adenostyles_leucophylla","Adenostyles","","leucophylla","","","End.","W-Alp.",124,44,3,NA,21,"Adenostyles_leucophylla","",1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,1
+"3","Alyssum_alpestre","Alyssum","","alpestre","","","End.","W-Alp.",54,31,10,NA,70,"Alyssum_alpestre","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"4","Androsace_vitaliana","Androsace","","vitaliana","subsp.    ","sesleri","End.","E-Alp.",60,2,1,3,80,"Androsace_vitaliana","",0,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+"5","Anthyllis_vulneraria","Anthyllis","","vulneraria","subsp.    ","valesiaca","End.","W-Alp.",64,36,2,8,98,"Anthyllis_vulneraria","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"6","Arabis_allionii","Arabis","","allionii","","","End.","W-Alp.",54,24,4,NA,102,"Arabis_allionii","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"7","Arabis_caerulea","Arabis","","caerulea","","","End.","Alp.",54,24,16,NA,104,"Arabis_caerulea","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"8","Artemisia_atrata","Artemisia","","atrata","","","End.","Alp.",124,40,6,NA,125,"Artemisia_atrata","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"9","Artemisia_campestris","Artemisia","","campestris","subsp.    ","alpina","End.","Alp.",124,40,19,2,126,"Artemisia_campestris","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"10","Artemisia_genipi","Artemisia","","genipi","","","End.","Alp.",124,40,13,NA,127,"Artemisia_genipi","",1,1,1,1,1,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0
+"11","Astragalus_australis","Astragalus","","australis","subsp.    ","gerardii","End.","W-Alp.",64,17,11,2,148,"Astragalus_australis","",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"12","Astragalus_sempervirens","Astragalus","","sempervirens","subsp.    ","alpinus","End.","W-Alp.",64,17,15,2,158,"Astragalus_sempervirens","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"13","Astragalus_vesicarius","Astragalus","","vesicarius","subsp.    ","pastellianus","End.","Alp.",64,17,21,2,160,"Astragalus_vesicarius","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"14","Berardia_subacaulis","Berardia","","subacaulis","","","End.","W-Alp.",124,55,1,NA,175,"Berardia_lanuginosa","",1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+"15","Biscutella_laevigata","Biscutella","","laevigata","subsp.    ","ossolana","End.","W-Alp.",54,53,1,3,181,"Biscutella_laevigata","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"16","Biscutella_laevigata","Biscutella","","laevigata","subsp.    ","lucida","End.?","E-Alp.",54,53,1,4,181,"Biscutella_laevigata","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"17","Brassica_repanda","Brassica","","repanda","subsp.    ","repanda","End.","W-Alp.",54,59,7,1,194,"Brassica_repanda","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"18","Bupleurum_petraeum","Bupleurum","","petraeum","","","End.","Alp.",97,35,10,NA,210,"Bupleurum_petraeum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"19","Campanula_cenisia","Campanula","","cenisia","","","End.","W-Alp.",118,1,1,NA,223,"Campanula_alpestris","",1,1,1,1,1,1,0,0,0,1,1,0,0,0,0,1,1,0,1,0,1
+"20","Carduus_defloratus","Carduus","","defloratus","subsp.    ","crassifolius","End.?","E-Alp.",124,60,9,4,241,"Carduus_defloratus","",1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"21","Carduus_defloratus","Carduus","","defloratus","subsp.    ","tridentinus","End.","Alp.",124,60,9,5,241,"Carduus_defloratus","",1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"22","Carduus_nutans","Carduus","","nutans","subsp.    ","platylepis","End.","Alp.",124,60,1,3,244,"Carduus_nutans","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"23","Carduus_nutans","Carduus","","nutans","subsp.    ","alpicola","End.","W-Alp.",124,60,1,2,244,"Carduus_nutans","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"24","Carex_ferruginea","Carex","","ferruginea","subsp.    ","tendae","End.","W-Alp.",138,17,83,3,254,"Carex_ferruginea","",1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,1,1,1
+"25","Carex_ferruginea","Carex","","ferruginea","subsp.    ","austroalpina","End.","E-Alp.",138,17,83,2,254,"Carex_ferruginea","",1,1,1,1,1,1,1,1,0,1,0,1,0,1,0,1,1,0,1,1,1
+"26","Cephalaria_alpina","Cephalaria","","alpina","","","Subend.","W-Alp.",123,1,3,NA,300,"Cephalaria_alpina","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"27","Cerastium_pedunculatum","Cerastium","","pedunculatum","","","End.","Alp.",38,8,11,NA,306,"Cerastium_pedunculatum","",0,1,1,1,1,1,0,1,1,0,1,1,0,1,0,0,1,0,1,1,1
+"28","Cirsium_spinosissimum","Cirsium","","spinosissimum","","","End.","Alp.",124,61,12,NA,328,"Cirsium_spinosissimum","",1,1,1,1,1,1,1,0,0,1,1,1,0,0,0,0,1,0,0,1,1
+"29","Coincya_richeri","Coincya","","richeri","","","End.","W-Alp.",54,63,1,NA,339,"Coincya_richeri","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"30","Dactylis_glomerata","Dactylis","","glomerata","subsp.    ","reichenbachii","End.","E-Alp.",139,9,1,3,388,"Dactylis_glomerata","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"31","Dianthus_carthusianorum","Dianthus","","carthusianorum","subsp.    ","vaginatus","End.","Alp.",38,29,5,5,406,"Dianthus_carthusianorum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"32","Dianthus_carthusianorum","Dianthus","","carthusianorum","subsp.    ","capillifrons","Subend.","E-Alp.",38,29,5,3,406,"Dianthus_carthusianorum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"33","Dianthus_pavonius","Dianthus","","pavonius","","","End.","W-Alp.",38,29,13,NA,410,"Dianthus_pavonius","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"34","Draba_aizoides","Draba","","aizoides","subsp.    ","beckeri","Subend.","E-Alp./Carpat.",54,37,1,2,418,"Draba_aizoides","",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1
+"35","Erigeron_neglectus","Erigeron","","neglectus","","","End.","Alp.",124,6,7,NA,469,"Erigeron_neglectus","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"36","Erysimum_jugicola","Erysimum","","jugicola","","","End.","W-Alp.",54,11,5,NA,484,"Erysimum_jugicola","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"37","Erysimum_rhaeticum","Erysimum","","rhaeticum","","","End.?","Alp.",54,11,6,NA,486,"Erysimum_rhaeticum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"38","Festuca_acuminata","Festuca","","acuminata","","","End.","W-Alp.",139,1,16,NA,506,"Festuca_acuminata","",0,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,0,1,1
+"39","Festuca_flavescens","Festuca","","flavescens","","","End.","W-Alp.",139,1,12,NA,508,"Festuca_flavescens","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"40","Festuca_halleri","Festuca","","halleri","subsp.    ","halleri","End.","Alp.",139,1,32,1,509,"Festuca_halleri","",1,1,1,1,1,1,1,1,0,1,1,1,0,1,0,1,1,0,1,1,1
+"41","Festuca_melanopsis","Festuca","","melanopsis","","","End.","Alp.",139,1,24,NA,512,"Festuca_melanopsis","",1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"42","Galium_megalospermum","Galium","","megalospermum","","","End.","Alp.",119,4,36,NA,535,"Galium_megalospermum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"43","Galium_pseudohelveticum","Galium","","pseudohelveticum","","","End.","W-Alp.",119,4,35,NA,539,"Galium_pseudohelveticum","",0,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,1
+"44","Geranium_rivulare","Geranium","","rivulare","","","Subend.","Alp.",93,1,6,NA,567,"Geranium_rivulare","",0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"45","Hedysarum_hedysaroides","Hedysarum","","hedysaroides","subsp.    ","exaltatum","End.","E-Alp.",64,41,2,2,592,"Hedysarum_hedysaroides","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"46","Helictotrichon_sempervirens","Helictotrichon","","sempervirens","","","End.","W-Alp.",139,32,6,NA,601,"Helictotrichon_sempervirens","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"47","Hieracium_intybaceum","Hieracium","","intybaceum","","","Subend.","Alp.",124,99,32,NA,615,"Hieracium_intybaceum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"48","Holosteum_umbellatum","Holosteum","","umbellatum","subsp.    ","hirsutum","End.","W-Alp.",38,7,1,2,635,"Holosteum_umbellatum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"49","Knautia_dipsacifolia","Knautia","","dipsacifolia","subsp.    ","sixtina","End.","W-Alp.",123,5,2,2,683,"Knautia_dipsacifolia","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"50","Koeleria_cenisia","Koeleria","","cenisia","","","End.","W-Alp.",139,36,2,NA,684,"Koeleria_cenisia","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"51","Laserpitium_halleri","Laserpitium","","halleri","","","End.","Alp.",97,59,6,NA,702,"Laserpitium_halleri","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"52","Leucanthemum_atratum","Leucanthemum","","atratum","subsp.    ","lithopolitanicum","End.","E-Alp.",124,39,8,6,720,"Leucanthemum_atratum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"53","Leucanthemum_atratum","Leucanthemum","","atratum","subsp.    ","atratum","End.","E-Alp.",124,39,8,1,720,"Leucanthemum_atratum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"54","Leucanthemum_atratum","Leucanthemum","","atratum","subsp.    ","halleri","End.","E-Alp.",124,39,8,2,720,"Leucanthemum_atratum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"55","Leucanthemum_atratum","Leucanthemum","","atratum","subsp.    ","coronopifolium","End.","W-Alp.",124,39,8,3,720,"Leucanthemum_atratum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"56","Minuartia_rupestris","Minuartia","","rupestris","subsp.    ","clementei","End.","W-Alp.",38,3,9,2,794,"Minuartia_rupestris","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"57","Minuartia_rupestris","Minuartia","","rupestris","subsp.    ","rupestris","End.","Alp.",38,3,9,1,794,"Minuartia_rupestris","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"58","Oxytropis_campestris","Oxytropis","","campestris","subsp.    ","tyroliensis","End.","E-Alp.",64,18,8,2,853,"Oxytropis_campestris","",1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1
+"59","Oxytropis_fetida","Oxytropis","","fetida","","","End.","W-Alp.",64,18,11,NA,854,"Oxytropis_fetida","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"60","Oxytropis_helvetica","Oxytropis","","helvetica","","","End.","W-Alp.",64,18,4,NA,856,"Oxytropis_helvetica","",0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"61","Papaver_alpinum","Papaver","","alpinum","","","End.","E-Alp.",22,1,8,NA,861,"Papaver_alpinum","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"62","Paronychia_kapela","Paronychia","","kapela","subsp.    ","galloprovincialis","Subend.","W-Alp.",38,14,3,3,867,"Paronychia_kapela","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"63","Pedicularis_gyroflexa","Pedicularis","","gyroflexa","","","End.?","Alp.",114,27,21,NA,873,"Pedicularis_gyroflexa","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"64","Pedicularis_rostratospicata","Pedicularis","","rostratospicata","subsp.    ","helvetica","End.?","W-Alp.",114,27,17,2,875,"Pedicularis_rostratospicata_subsp._helvetica","",0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1
+"65","Phyteuma_michelii","Phyteuma","","michelii","","","End.","W-Alp.",118,4,3,NA,894,"Phyteuma_michelii","",0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+"66","Phyteuma_scheuchzeri","Phyteuma","","scheuchzeri","subsp.    ","scheuchzeri","End.","Alp.",118,4,10,1,897,"Phyteuma_scheuchzeri","",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"67","Phyteuma_scheuchzeri","Phyteuma","","scheuchzeri","subsp.    ","columnae","Subend.","S-Alp./Illyr.",118,4,10,2,897,"Phyteuma_scheuchzeri","",1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"68","Poa_cenisia","Poa","","cenisia","","","Subend.","Alp.",139,6,6,NA,932,"Poa_cenisia","",1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,1,1
+"69","Pulsatilla_alpina","Pulsatilla","","alpina","subsp.    ","schneebergensis","End.","E-Alp.",19,14,1,2,81,"Anemone_alpina","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"70","Pulsatilla_alpina","Pulsatilla","","alpina","subsp.    ","cottianaea","End.","W-Alp.",19,14,1,3,81,"Anemone_alpina","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"71","Pulsatilla_alpina","Pulsatilla","","alpina","subsp.    ","austriaca","End.","E-Alp.",19,14,1,5,81,"Anemone_alpina","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"72","Pulsatilla_halleri","Pulsatilla","","halleri","subsp.    ","halleri","End.","W-Alp.",19,14,6,1,83,"Anemone_halleri","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"73","Pulsatilla_halleri","Pulsatilla","","halleri","subsp.    ","styriaca","End.","E-Alp.",19,14,6,2,83,"Anemone_halleri","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"74","Salix_glaucosericea","Salix","","glaucosericea","","","End.","Alp.",52,1,11,NA,1085,"Salix_glaucosericea","",0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"75","Salix_laggeri","Salix","","laggeri","","","End.","Alp.",52,1,20,NA,1088,"Salix_laggeri","",0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"76","Saussurea_alpina","Saussurea","","alpina","subsp.    ","depressa","End.","W-Alp.",124,57,2,3,1107,"Saussurea_alpina","",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"77","Saxifraga_biflora","Saxifraga","","biflora","subsp.    ","macropetala","End.","Alp.",62,1,15,2,1112,"Saxifraga_biflora","",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"78","Saxifraga_biflora","Saxifraga","","biflora","subsp.    ","biflora","End.","Alp.",62,1,15,1,1112,"Saxifraga_biflora","",1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+"79","Saxifraga_exarata","Saxifraga","","exarata","subsp.    ","delphinensis","End.","W-Alp.",62,1,33,2,1115,"Saxifraga_exarata","",0,1,1,1,1,1,1,0,1,0,1,1,0,1,0,0,1,1,0,1,1
+"80","Saxifraga_exarata","Saxifraga","","exarata","subsp.    ","atropurpurea","End.","E-Alp.",62,1,33,6,1115,"Saxifraga_exarata","",0,1,1,1,1,1,1,0,1,0,1,1,0,1,0,0,1,1,0,1,1
+"81","Saxifraga_exarata","Saxifraga","","exarata","subsp.    ","carniolica","End.","E-Alp.",62,1,33,5,1115,"Saxifraga_exarata","",0,1,1,1,1,1,1,0,1,0,1,1,0,1,0,0,1,1,0,1,1
+"82","Saxifraga_oppositifolia","Saxifraga","","oppositifolia","subsp.    ","blepharophylla","End.","E-Alp.",62,1,13,3,1119,"Saxifraga_oppositifolia","",1,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1
+"83","Saxifraga_retusa","Saxifraga","","retusa","subsp.    ","augustana","End.","W-Alp.",62,1,14,2,1120,"Saxifraga_retusa","",0,1,1,1,1,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+"84","Sempervivum_montanum","Sempervivum","","montanum","subsp.    ","stiriacum","End.","E-Alp.",61,2,5,3,1153,"Sempervivum_montanum","",0,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,1,1,1,1,1
+"85","Senecio_incanus","Senecio","","incanus","subsp.    ","insubricus","End.","E-Alp.",124,48,2,3,663,"Jacobaea_leucophylla","",0,1,1,1,1,1,1,1,1,0,1,1,0,1,0,1,1,0,1,1,1
+"86","Seseli_annuum","Seseli","","annuum","subsp.    ","carvifolium","End.?","W-Alp.",97,20,8,2,1161,"Seseli_annuum","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"87","Silene_vallesia","Silene","","vallesia","","","End.","W-Alp.",38,22,16,NA,1173,"Silene_vallesia","",0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"88","Trifolium_saxatile","Trifolium","","saxatile","","","End.","W-Alp.",64,33,21,NA,1265,"Trifolium_saxatile","",0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"89","Veronica_allionii","Veronica","","allionii","","","End.","W-Alp.",114,17,14,NA,1301,"Veronica_allionii","",1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"90","Veronica_chamaedrys","Veronica","","chamaedrys","subsp.    ","micans","End.?","E-Alp.",114,17,15,3,1309,"Veronica_chamaedrys","",1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"91","Viola_calcarata","Viola","","calcarata","subsp.    ","villarsiana","End.","W-Alp.",49,1,27,3,1332,"Viola_calcarata","",1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1
+"92","Viola_calcarata","Viola","","calcarata","subsp.    ","calcarata","Subend.","W-Alp.",49,1,27,1,1332,"Viola_calcarata","",1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1
